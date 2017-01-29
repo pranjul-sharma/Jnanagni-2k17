@@ -4,11 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgrndstart"
-    tools:context="com.example.pranjul.materialtest.StartActivity">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+
+    tools:context="com.example.pranjul.materialtest.Main2Activity">
     <TextView
         android:text="JNANAGNI'2k17"
         android:layout_width="match_parent"
@@ -24,23 +21,26 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40sp"
+        android:layout_below="@id/textJnanagi"
+        android:layout_above="@id/button"
+        android:paddingTop="10sp"
         >
-    <TextView
-        android:layout_width="match_parent"
-        android:textColor="#ffffff"
-        android:layout_height="wrap_content"
-        android:text="@string/placeholdertext"/>
-    </ScrollView>
-    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholdertext"/>
 
+    </ScrollView>
+    
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="get started"
-        android:id="@+id/button"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:textColor="#F3F0EA"
-        android:onClick="callMe"
+        android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:text="get strated"
+        android:onClick="callMe"/>
 </RelativeLayout>

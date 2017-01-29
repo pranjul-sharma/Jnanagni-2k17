@@ -15,7 +15,7 @@
             android:layout_height="?attr/actionBarSize"
             android:id="@+id/toolbarevent"
             android:background="@color/cardview_dark_background"
-            app:title="Events"
+            app:title="@string/event"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme"/>
         <android.support.design.widget.TabLayout

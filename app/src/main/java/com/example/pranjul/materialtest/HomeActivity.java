@@ -1,6 +1,8 @@
 package com.example.pranjul.materialtest;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -31,6 +33,7 @@ public class HomeActivity extends AppCompatActivity
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.BLACK));
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -44,7 +47,6 @@ public class HomeActivity extends AppCompatActivity
         LinearLayout nav_header_home=(LinearLayout)navigationView.getHeaderView(0);
         login=(Button)nav_header_home.findViewById(R.id.login);
         login.setText("Login");
-        login.setVisibility(View.GONE);
     }
 
     @Override

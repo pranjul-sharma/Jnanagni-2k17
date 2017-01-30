@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        LinearLayout nav_header_home=(LinearLayout)getLayoutInflater().inflate(R.layout.nav_header_home, null);
+        LinearLayout nav_header_home=(LinearLayout)navigationView.getHeaderView(0);
         login=(Button)nav_header_home.findViewById(R.id.login);
         login.setText("Login");
         login.setVisibility(View.GONE);

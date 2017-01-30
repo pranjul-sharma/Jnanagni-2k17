@@ -23,6 +23,6 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void callMe(View view){
-        startActivity(new Intent(this,Main3Activity.class));
+        startActivity(new Intent(this,HomeActivity.class));
     }
 }

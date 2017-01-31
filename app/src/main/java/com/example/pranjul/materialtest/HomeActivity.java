@@ -80,6 +80,11 @@ public class HomeActivity extends AppCompatActivity
                     item=menuNav.findItem(R.id.nav_send);
                     getSupportActionBar().setTitle("Feedback");
                 }
+                else if(fragment instanceof ContactFragment) {
+                    //currentPosition=5;
+                    item=menuNav.findItem(R.id.nav_contact);
+                    getSupportActionBar().setTitle("Contact");
+                }
                 if(item!=null) {
                     prevItem.setChecked(false);
                     item.setChecked(true);
@@ -104,7 +109,7 @@ public class HomeActivity extends AppCompatActivity
         else {
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.popBackStack();
-            if (fragmentManager.getBackStackEntryCount() == 1)
+            if (fragmentManager.getBackStackEntryCount() == 0)
                 super.onBackPressed();
         }
     }
@@ -159,6 +164,11 @@ public class HomeActivity extends AppCompatActivity
             ft.commit();
             getSupportActionBar().setTitle("Feedback");
         } else if(id==R.id.nav_contact) {
+            FragmentTransaction ft=getFragmentManager().beginTransaction();
+            ft.replace(R.id.content_frame, new ContactFragment(), "visible_fragment");
+            ft.addToBackStack(null);
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            ft.commit();
             getSupportActionBar().setTitle("Contact Us");
         }
 

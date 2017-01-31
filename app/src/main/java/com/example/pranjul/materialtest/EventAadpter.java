@@ -36,7 +36,7 @@ public class EventAadpter extends RecyclerView.Adapter<EventAadpter.MyViewHodler
 
     @Override
     public void onBindViewHolder(MyViewHodler holder, int position) {
-        Event event=eventList.get(position);
+        final Event event=eventList.get(position);
         holder.textView.setText(event.getEventName());
 
         Glide.with(mContext).load(event.getEventCover()).into(holder.imageView);
@@ -45,6 +45,8 @@ public class EventAadpter extends RecyclerView.Adapter<EventAadpter.MyViewHodler
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(mContext,EventInfoActivity.class);
+                String eventName=event.getEventName();
+                intent.putExtra("eventName",eventName);
                 mContext.startActivity(intent);
             }
         });

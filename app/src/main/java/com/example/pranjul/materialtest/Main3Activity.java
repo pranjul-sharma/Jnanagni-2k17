@@ -25,6 +25,7 @@ public class Main3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
         toolbar=(Toolbar)findViewById(R.id.toolbarevent);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         viewPager=(ViewPager)findViewById(R.id.viewpager);
         setUpViewPager(viewPager);
         tabs=(TabLayout)findViewById(R.id.tabs);

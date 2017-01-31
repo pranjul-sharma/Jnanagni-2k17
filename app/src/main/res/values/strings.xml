@@ -1,53 +1,19 @@
 <resources>
     <string name="app_name" translatable="false">Jnanagni</string>
     <string name="title_activity_start">StartActivity</string>
-    <string name="placeholdertext">this is dummy text . thi so isd shfsjf sjfbasfjfbjvkjhmbsdfjkbdmvxgj,hfsbd fshfgsadjfh sfslhf shgfsdfvsdhfkasbf
-    svbzhjxmvnbx vhxznbcv,jsnxv xc,bmxmnvbhskfghjsdfwuiafg skdjhhv
-    v hsdgskyhmvsabvjsg fusfhsbfjwlhfi asjdfslsbvsb sjvbvslbsdlvshbd
-    s hdubhjs fvals jf,nfUIFLBSDNFBZGubsdj fgkdnfvjlan
-    a kzjxhvbd vnb laudfhfsdjvcnbas hf;ioa sdnv
-     agkuhjb sdjvhdsiof;h bahg fuigdbzkxcuvkxj bsdhsuvj bsludvhsvlzuxvkh bsj
-    this is dummy text . thi so isd shfsjf sjfbasfjfbjvkjhmbsdfjkbdmvxgj,hfsbd fshfgsadjfh sfslhf shgfsdfvsdhfkasbf
-    svbzhjxmvnbx vhxznbcv,jsnxv xc,bmxmnvbhskfghjsdfwuiafg skdjhhv
-    v hsdgskyhmvsabvjsg fusfhsbfjwlhfi asjdfslsbvsb sjvbvslbsdlvshbd
-    s hdubhjs fvals jf,nfUIFLBSDNFBZGubsdj fgkdnfvjlan
-    a kzjxhvbd vnb laudfhfsdjvcnbas hf;ioa sdnv
-     agkuhjb sdjvhdsiof;h bahg fuigdbzkxcuvkxj bsdhsuvj bsludvhsvlzuxvkh bsj
-    this is dummy text . thi so isd shfsjf sjfbasfjfbjvkjhmbsdfjkbdmvxgj,hfsbd fshfgsadjfh sfslhf shgfsdfvsdhfkasbf
-    svbzhjxmvnbx vhxznbcv,jsnxv xc,bmxmnvbhskfghjsdfwuiafg skdjhhv
-    v hsdgskyhmvsabvjsg fusfhsbfjwlhfi asjdfslsbvsb sjvbvslbsdlvshbd
-    s hdubhjs fvals jf,nfUIFLBSDNFBZGubsdj fgkdnfvjlan
-    a kzjxhvbd vnb laudfhfsdjvcnbas hf;ioa sdnv
-     agkuhjb sdjvhdsiof;h bahg fuigdbzkxcuvkxj bsdhsuvj bsludvhsvlzuxvkh bsj
-    this is dummy text . thi so isd shfsjf sjfbasfjfbjvkjhmbsdfjkbdmvxgj,hfsbd fshfgsadjfh sfslhf shgfsdfvsdhfkasbf
-    svbzhjxmvnbx vhxznbcv,jsnxv xc,bmxmnvbhskfghjsdfwuiafg skdjhhv
-    v hsdgskyhmvsabvjsg fusfhsbfjwlhfi asjdfslsbvsb sjvbvslbsdlvshbd
-    s hdubhjs fvals jf,nfUIFLBSDNFBZGubsdj fgkdnfvjlan
-    a kzjxhvbd vnb laudfhfsdjvcnbas hf;ioa sdnv
-     agkuhjb sdjvhdsiof;h bahg fuigdbzkxcuvkxj bsdhsuvj bsludvhsvlzuxvkh bsjthis is dummy text . thi so isd shfsjf sjfbasfjfbjvkjhmbsdfjkbdmvxgj,hfsbd fshfgsadjfh sfslhf shgfsdfvsdhfkasbf
-    svbzhjxmvnbx vhxznbcv,jsnxv xc,bmxmnvbhskfghjsdfwuiafg skdjhhv
-    v hsdgskyhmvsabvjsg fusfhsbfjwlhfi asjdfslsbvsb sjvbvslbsdlvshbd
-    s hdubhjs fvals jf,nfUIFLBSDNFBZGubsdj fgkdnfvjlan
-    a kzjxhvbd vnb laudfhfsdjvcnbas hf;ioa sdnv
-     agkuhjb sdjvhdsiof;h bahg fuigdbzkxcuvkxj bsdhsuvj bsludvhsvlzuxvkh bsj
-        this is dummy text . thi so isd shfsjf sjfbasfjfbjvkjhmbsdfjkbdmvxgj,hfsbd fshfgsadjfh sfslhf shgfsdfvsdhfkasbf
-    svbzhjxmvnbx vhxznbcv,jsnxv xc,bmxmnvbhskfghjsdfwuiafg skdjhhv
-    v hsdgskyhmvsabvjsg fusfhsbfjwlhfi asjdfslsbvsb sjvbvslbsdlvshbd
-    s hdubhjs fvals jf,nfUIFLBSDNFBZGubsdj fgkdnfvjlan
-    a kzjxhvbd vnb laudfhfsdjvcnbas hf;ioa sdnv
-     agkuhjb sdjvhdsiof;h bahg fuigdbzkxcuvkxj bsdhsuvj bsludvhsvlzuxvkh bsj
-        this is dummy text . thi so isd shfsjf sjfbasfjfbjvkjhmbsdfjkbdmvxgj,hfsbd fshfgsadjfh sfslhf shgfsdfvsdhfkasbf
-    svbzhjxmvnbx vhxznbcv,jsnxv xc,bmxmnvbhskfghjsdfwuiafg skdjhhv
-    v hsdgskyhmvsabvjsg fusfhsbfjwlhfi asjdfslsbvsb sjvbvslbsdlvshbd
-    s hdubhjs fvals jf,nfUIFLBSDNFBZGubsdj fgkdnfvjlan
-    a kzjxhvbd vnb laudfhfsdjvcnbas hf;ioa sdnv
-     agkuhjb sdjvhdsiof;h bahg fuigdbzkxcuvkxj bsdhsuvj bsludvhsvlzuxvkh bsj
-    </string>
     <string name="events">Events</string>
     <string name="title_activity_home">HomeActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--event attributes-->
+    <string name="event_decs">Description</string>
+    <string name="event_task">Task</string>
+    <string name="event_prerequisite">Prerequisites / Specifications ( if any )</string>
+    <string name="event_judgemental_criteria">Judgemental Criteria</string>
+    <string name="event_rules">Rules and Regulations</string>
+    <string name="event_time_and_venue">Time and Venue</string>
+    <string name="event_coordinator">Coordinator(s)</string>
 
     <string name="contact_info">Insert Contact Information</string>
 

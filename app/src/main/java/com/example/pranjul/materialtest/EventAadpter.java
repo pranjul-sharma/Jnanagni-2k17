@@ -1,6 +1,7 @@
 package com.example.pranjul.materialtest;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -39,6 +40,14 @@ public class EventAadpter extends RecyclerView.Adapter<EventAadpter.MyViewHodler
         holder.textView.setText(event.getEventName());
 
         Glide.with(mContext).load(event.getEventCover()).into(holder.imageView);
+
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(mContext,EventInfoActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
 
     }
 

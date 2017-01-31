@@ -23,12 +23,21 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".Main3Activity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity"></meta-data>
+        </activity>
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EventInfoActivity"
+            android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main3Activity"></meta-data>
+
         </activity>
     </application>
 

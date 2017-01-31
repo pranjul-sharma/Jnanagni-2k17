@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
         <item
             android:id="@+id/nav_events"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Events" />
-        <item
-            android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Events" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
@@ -31,7 +31,7 @@
                 android:icon="@drawable/ic_menu_send"
                 android:title="Feedback" />
             <item
-                android:id="@+id/contact"
+                android:id="@+id/nav_contact"
                 android:icon="@android:drawable/sym_action_chat"
                 android:title="Contact Us" />
         </menu>

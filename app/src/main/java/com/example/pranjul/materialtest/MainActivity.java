@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    startActivity(new Intent(MainActivity.this,Main2Activity.class));
+                    startActivity(new Intent(MainActivity.this,HomeActivity.class));
                 }
             }
         };

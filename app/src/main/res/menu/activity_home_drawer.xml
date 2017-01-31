@@ -25,11 +25,15 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="Spread the word" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Feedback" />
+            <item
+                android:id="@+id/contact"
+                android:icon="@android:drawable/sym_action_chat"
+                android:title="Contact Us" />
         </menu>
     </item>
 

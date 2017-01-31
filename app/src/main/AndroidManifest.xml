@@ -29,6 +29,7 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait">
+
         </activity>
     </application>
 

@@ -9,7 +9,7 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/appbar"
+        android:id="@+id/appbarEvent"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         >
         <android.support.v7.widget.Toolbar
@@ -24,6 +24,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/appbarEvent"
         android:id="@+id/frame_event_info"/>
 
 </RelativeLayout>

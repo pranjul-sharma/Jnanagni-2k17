@@ -33,7 +33,7 @@ public class EventInfoFragment extends Fragment {
         eventDesc.setText(str);
         eventTimeVenue.setText(str);
         eventTask.setText(str);
-        eventImage.setImageResource(R.drawable.copter);
+        eventImage.setImageResource(R.drawable.cipher);
         eventPrerequisites.setText(str);
         eventJudgementalCriteria.setText(str);
         eventCoordinators.setText(str);

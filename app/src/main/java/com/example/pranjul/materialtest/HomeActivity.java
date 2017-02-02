@@ -57,7 +57,7 @@ public class HomeActivity extends AppCompatActivity
         if(!sharedpreferences.getBoolean("IS_SIGNED_IN", false)) {
             editor.putBoolean("IS_SIGNED_IN", false);
             login.setText("Login");
-            headerTV.setText("Jnanagni 2017");
+            headerTV.setText("Home");
         }
         else {
             login.setText("Logout");
@@ -70,14 +70,20 @@ public class HomeActivity extends AppCompatActivity
                 FragmentManager fragMan=getFragmentManager();
                 Fragment fragment=fragMan.findFragmentByTag("visible_fragment");
                 Menu menuNav=navigationView.getMenu();
-                MenuItem item=null;
-                //Log.e("I'm :", "here");
-                if(fragment instanceof HomeFragment) {
+                MenuItem item=menuNav.findItem(R.id.nav_home);;
+                getSupportActionBar().setTitle("Home");
+                prevItem.setChecked(false);
+                item.setChecked(true);
+                prevItem=item;
+                Log.e("I'm :", "here too");
+                /*if(!(fragment instanceof HomeFragment)) {
                     item=menuNav.findItem(R.id.nav_home);
                     getSupportActionBar().setTitle("Home");
+                    prevItem.setChecked(false);
+                    item.setChecked(true);
+                    prevItem=item;
                 }
                 else if(fragment instanceof FeedbackFragment) {
-                    //currentPosition=5;
                     item=menuNav.findItem(R.id.nav_send);
                     getSupportActionBar().setTitle("Feedback");
                 }
@@ -90,7 +96,7 @@ public class HomeActivity extends AppCompatActivity
                     prevItem.setChecked(false);
                     item.setChecked(true);
                     prevItem=item;
-                }
+                }*/
             }
         });
         FragmentTransaction ft=getFragmentManager().beginTransaction();
@@ -100,6 +106,7 @@ public class HomeActivity extends AppCompatActivity
         ft.commit();
         prevItem=navigationView.getMenu().getItem(0);
         navigationView.getMenu().getItem(0).setChecked(true);
+        Log.e("I'm :", "here");
     }
 
     @Override
@@ -110,7 +117,8 @@ public class HomeActivity extends AppCompatActivity
         else {
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.popBackStack();
-            if (fragmentManager.getBackStackEntryCount() == 1)
+            //Fragment fragment=fragmentManager.findFragmentByTag("visible_fragment");
+            if (fragmentManager.getBackStackEntryCount() == 0)
                 super.onBackPressed();
         }
     }
@@ -160,14 +168,12 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
             FragmentTransaction ft=getFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, new FeedbackFragment(), "visible_fragment");
-            ft.addToBackStack(null);
             ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             ft.commit();
             getSupportActionBar().setTitle("Feedback");
         } else if(id==R.id.nav_contact) {
             FragmentTransaction ft=getFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, new ContactFragment(), "visible_fragment");
-            ft.addToBackStack(null);
             ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             ft.commit();
             getSupportActionBar().setTitle("Contact Us");
@@ -180,6 +186,12 @@ public class HomeActivity extends AppCompatActivity
     @Override
     protected void onStart() {
         super.onStart();
+        //Log.e("I'm in", "the start method");
+        if(prevItem!=null) {
+            prevItem.setChecked(false);
+            prevItem=navigationView.getMenu().findItem(R.id.nav_home);
+            prevItem.setChecked(true);
+        }
         /*int size = navigationView.getMenu().size();
         for (int i = 0; i < size; i++)
             navigationView.getMenu().getItem(i).setChecked(false);*/

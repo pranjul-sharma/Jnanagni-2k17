@@ -57,6 +57,7 @@ public class HomeFragment extends Fragment implements ViewSwitcher.ViewFactory {
                 while(pos==currPos)
                     pos=rand.nextInt(10);
                 currPos=pos;
+                imageSwitcher.setImageDrawable(null);
                 imageSwitcher.setImageResource(images[currPos]);
                 imageSwitcher.postDelayed(this, 4000);
             }

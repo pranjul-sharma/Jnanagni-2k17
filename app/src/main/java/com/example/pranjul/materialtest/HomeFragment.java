@@ -47,6 +47,7 @@ public class HomeFragment extends Fragment implements ViewSwitcher.ViewFactory {
                 android.R.anim.fade_in));
         imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(HomeActivity.currObject,
                 android.R.anim.fade_out));
+        imageSwitcher.setImageDrawable(null);
         imageSwitcher.setImageResource(images[currPos]);
         isFragmentActive=true;
         final Random rand=new Random();

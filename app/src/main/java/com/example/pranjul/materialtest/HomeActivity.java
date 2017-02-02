@@ -70,12 +70,13 @@ public class HomeActivity extends AppCompatActivity
                 FragmentManager fragMan=getFragmentManager();
                 Fragment fragment=fragMan.findFragmentByTag("visible_fragment");
                 Menu menuNav=navigationView.getMenu();
-                MenuItem item=menuNav.findItem(R.id.nav_home);;
-                getSupportActionBar().setTitle("Home");
+                MenuItem item=menuNav.findItem(R.id.nav_home);
+                if(fragment instanceof HomeFragment)
+                    getSupportActionBar().setTitle("Home");
                 prevItem.setChecked(false);
                 item.setChecked(true);
                 prevItem=item;
-                Log.e("I'm :", "here too");
+                Log.e("I'm :", "here in back stack changed ");
                 /*if(!(fragment instanceof HomeFragment)) {
                     item=menuNav.findItem(R.id.nav_home);
                     getSupportActionBar().setTitle("Home");
@@ -106,7 +107,6 @@ public class HomeActivity extends AppCompatActivity
         ft.commit();
         prevItem=navigationView.getMenu().getItem(0);
         navigationView.getMenu().getItem(0).setChecked(true);
-        Log.e("I'm :", "here");
     }
 
     @Override
@@ -118,6 +118,7 @@ public class HomeActivity extends AppCompatActivity
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.popBackStack();
             //Fragment fragment=fragmentManager.findFragmentByTag("visible_fragment");
+            Log.e("No. of back entries :", fragmentManager.getBackStackEntryCount()+"");
             if (fragmentManager.getBackStackEntryCount() == 1)
                 super.onBackPressed();
         }
@@ -145,18 +146,16 @@ public class HomeActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        FragmentTransaction ft=getFragmentManager().beginTransaction();
         int id = item.getItemId();
         item.setCheckable(true);
         item.setChecked(true);
         prevItem.setChecked(false);
         prevItem=item;
         if (id == R.id.nav_home) {
-            FragmentTransaction ft=getFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, new HomeFragment(), "visible_fragment");
-            ft.addToBackStack(null);
             ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-            ft.commit();
-            getSupportActionBar().setTitle("Jnanagni '17");
+            getSupportActionBar().setTitle("Home");
         } else if (id == R.id.nav_events) {
             startActivity(new Intent(this, Main3Activity.class));
         } else if (id == R.id.nav_slideshow) {
@@ -166,19 +165,17 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
-            FragmentTransaction ft=getFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, new FeedbackFragment(), "visible_fragment");
             ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-            ft.commit();
             getSupportActionBar().setTitle("Feedback");
         } else if(id==R.id.nav_contact) {
-            FragmentTransaction ft=getFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, new ContactFragment(), "visible_fragment");
             ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-            ft.commit();
             getSupportActionBar().setTitle("Contact Us");
         }
-
+        if(id!=R.id.nav_home&&getFragmentManager().getBackStackEntryCount()!=2)
+            ft.addToBackStack(null);
+        ft.commit();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

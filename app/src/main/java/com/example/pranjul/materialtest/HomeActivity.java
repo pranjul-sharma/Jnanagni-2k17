@@ -118,7 +118,7 @@ public class HomeActivity extends AppCompatActivity
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.popBackStack();
             //Fragment fragment=fragmentManager.findFragmentByTag("visible_fragment");
-            if (fragmentManager.getBackStackEntryCount() == 0)
+            if (fragmentManager.getBackStackEntryCount() == 1)
                 super.onBackPressed();
         }
     }

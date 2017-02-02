@@ -25,13 +25,14 @@ import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    static HomeActivity currObject;
     private ShareActionProvider shareActionProvider;
     private Button login;
     private NavigationView navigationView;
-    private int currentPosition;
     private MenuItem prevItem=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        currObject=this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -109,7 +110,7 @@ public class HomeActivity extends AppCompatActivity
         else {
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.popBackStack();
-            if (fragmentManager.getBackStackEntryCount() == 0)
+            if (fragmentManager.getBackStackEntryCount() == 1)
                 super.onBackPressed();
         }
     }

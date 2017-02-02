@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,7 +8,14 @@
         <ImageSwitcher
             android:id="@+id/imageSwitcher"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true" />
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/description"
+            android:background="@color/cardview_dark_background"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="INSERT JNANAGNI DESCRIPTION TEXT HERE"/>
 
-</LinearLayout>
+</RelativeLayout>

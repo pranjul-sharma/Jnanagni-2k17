@@ -4,15 +4,15 @@
     <group>
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_menu_home"
             android:title="Home" />
         <item
             android:id="@+id/nav_events"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Events" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:id="@+id/nav_location"
+            android:icon="@android:drawable/ic_menu_home"
             android:title="Location" />
         <item
             android:id="@+id/nav_manage"

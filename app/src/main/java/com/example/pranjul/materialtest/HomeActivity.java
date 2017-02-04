@@ -70,13 +70,16 @@ public class HomeActivity extends AppCompatActivity
                 FragmentManager fragMan=getFragmentManager();
                 Fragment fragment=fragMan.findFragmentByTag("visible_fragment");
                 Menu menuNav=navigationView.getMenu();
-                MenuItem item=menuNav.findItem(R.id.nav_home);
-                if(fragment instanceof HomeFragment)
+                MenuItem item;
+                if(fragment instanceof HomeFragment) {
                     getSupportActionBar().setTitle("Home");
-                prevItem.setChecked(false);
-                item.setChecked(true);
-                prevItem=item;
-                Log.e("I'm :", "here in back stack changed ");
+                    item=menuNav.findItem(R.id.nav_home);
+                    prevItem.setChecked(false);
+                    item.setChecked(true);
+                    prevItem=item;
+                }
+
+                //Log.e("I'm :", "here in back stack changed ");
                 /*if(!(fragment instanceof HomeFragment)) {
                     item=menuNav.findItem(R.id.nav_home);
                     getSupportActionBar().setTitle("Home");
@@ -158,8 +161,10 @@ public class HomeActivity extends AppCompatActivity
             getSupportActionBar().setTitle("Home");
         } else if (id == R.id.nav_events) {
             startActivity(new Intent(this, Main3Activity.class));
-        } else if (id == R.id.nav_slideshow) {
-
+        } else if (id == R.id.nav_location) {
+            ft.replace(R.id.content_frame, new LocationFragment(), "visible_fragment");
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            getSupportActionBar().setTitle("Location");
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {

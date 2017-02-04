@@ -2,8 +2,10 @@ package com.example.pranjul.materialtest;
 
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.annotation.NonNull;
@@ -13,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.gms.drive.Drive;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -124,9 +127,13 @@ public class LocationFragment extends Fragment implements OnMapReadyCallback, Co
                             Manifest.permission.ACCESS_COARSE_LOCATION},
                     11);
         }
+        GoogleMapsPath mapsPath;
         mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-
-        GoogleMapsPath mapsPath=new GoogleMapsPath(HomeActivity.currObject, map, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()),FET);
+        LocationManager locationManager= (LocationManager) HomeActivity.currObject.getSystemService(Context.LOCATION_SERVICE);
+        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || !locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER))
+            Toast.makeText(HomeActivity.currObject, "Please enable location service", Toast.LENGTH_SHORT).show();
+        else
+            mapsPath=new GoogleMapsPath(HomeActivity.currObject, map, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()),FET);
     }
 
     @Override

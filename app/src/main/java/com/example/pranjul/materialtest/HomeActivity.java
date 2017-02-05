@@ -153,8 +153,8 @@ public class HomeActivity extends AppCompatActivity
         FragmentTransaction ft=getFragmentManager().beginTransaction();
         int id = item.getItemId();
         item.setCheckable(true);
-        item.setChecked(true);
         prevItem.setChecked(false);
+        item.setChecked(true);
         prevItem=item;
         if (id == R.id.nav_home) {
             ft.replace(R.id.content_frame, new HomeFragment(), "visible_fragment");

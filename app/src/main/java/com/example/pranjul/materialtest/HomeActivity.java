@@ -195,8 +195,5 @@ public class HomeActivity extends AppCompatActivity
             prevItem=navigationView.getMenu().findItem(R.id.nav_home);
             prevItem.setChecked(true);
         }
-        /*int size = navigationView.getMenu().size();
-        for (int i = 0; i < size; i++)
-            navigationView.getMenu().getItem(i).setChecked(false);*/
     }
 }

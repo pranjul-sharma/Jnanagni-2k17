@@ -48,6 +48,7 @@
                 android:value=".Main3Activity"></meta-data>
 
         </activity>
+        <activity android:name=".FullScreenActivity"></activity>
     </application>
 
 </manifest>

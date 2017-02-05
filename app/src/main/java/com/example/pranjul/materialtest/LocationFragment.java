@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.annotation.NonNull;
@@ -15,9 +16,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 //import com.google.android.gms.drive.Drive;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -33,13 +36,18 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 
-public class LocationFragment extends Fragment implements OnMapReadyCallback, ConnectionCallbacks, OnConnectionFailedListener {
+public class LocationFragment extends Fragment implements OnMapReadyCallback, ConnectionCallbacks, OnConnectionFailedListener,
+LocationListener{
     //private GoogleMap googleMap;
     private MapView mapView;
     private GoogleApiClient mGoogleApiClient;
     private Location mLastLocation;
     public static GoogleMap map;
     private LatLng FET;
+    private boolean permissionGiven=true;
+    private LocationManager locationManager;
+    private String locationProvider;
+    private TextView toGo;
 
     public LocationFragment() {
         // Required empty public constructor
@@ -58,6 +66,7 @@ public class LocationFragment extends Fragment implements OnMapReadyCallback, Co
                     .build();
         }
 
+        toGo=(TextView)rootView.findViewById(R.id.toGo);
         mapView = (MapView) rootView.findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
@@ -79,7 +88,8 @@ public class LocationFragment extends Fragment implements OnMapReadyCallback, Co
                             Manifest.permission.ACCESS_COARSE_LOCATION},
                     11);
         }
-        googleMap.setMyLocationEnabled(true);
+        if(permissionGiven)
+            googleMap.setMyLocationEnabled(true);
         //Log.e("What the", "is happening");
     }
 
@@ -128,12 +138,23 @@ public class LocationFragment extends Fragment implements OnMapReadyCallback, Co
                     11);
         }
         GoogleMapsPath mapsPath;
-        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-        LocationManager locationManager= (LocationManager) HomeActivity.currObject.getSystemService(Context.LOCATION_SERVICE);
-        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || !locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER))
-            Toast.makeText(HomeActivity.currObject, "Please enable location service", Toast.LENGTH_SHORT).show();
-        else
-            mapsPath=new GoogleMapsPath(HomeActivity.currObject, map, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()),FET);
+        if (permissionGiven) {
+            float[] results = new float[1];
+            mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+            Location.distanceBetween(mLastLocation.getLatitude(), mLastLocation.getLongitude(),
+                    FET.latitude, FET.longitude, results);
+            if(results[0]<1000)
+                toGo.setText(results[0]+" meters to go");
+            else
+                toGo.setText(results[0]/1000+" KM to go");
+            ConnectivityManager cm = (ConnectivityManager) HomeActivity.currObject.getSystemService(Context.CONNECTIVITY_SERVICE);
+            locationManager = (LocationManager) HomeActivity.currObject.getSystemService(Context.LOCATION_SERVICE);
+            if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || !locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+                    || cm.getActiveNetworkInfo() == null)
+                Toast.makeText(HomeActivity.currObject, "Please enable location service", Toast.LENGTH_SHORT).show();
+            else
+                mapsPath = new GoogleMapsPath(HomeActivity.currObject, map, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()), FET);
+        }
     }
 
     @Override
@@ -144,5 +165,28 @@ public class LocationFragment extends Fragment implements OnMapReadyCallback, Co
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode == 11) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                permissionGiven=true;
+            }
+            else
+                permissionGiven=false;
+        }
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        CameraUpdate center = CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(),location.getLongitude()));
+        map.moveCamera(center);
+        float[] results = new float[1];
+        Location.distanceBetween(location.getLatitude(), location.getLongitude(),
+                FET.latitude, FET.longitude, results);
+        if(results[0]<1000)
+            toGo.setText(results[0]+" meters to go");
+        else
+            toGo.setText(results[0]/1000+" KM to go");
     }
 }

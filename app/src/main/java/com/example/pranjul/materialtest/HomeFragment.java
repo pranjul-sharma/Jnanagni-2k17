@@ -1,5 +1,7 @@
 package com.example.pranjul.materialtest;
 
+import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -64,6 +66,13 @@ public class HomeFragment extends Fragment implements ViewSwitcher.ViewFactory {
     @Override
     public View makeView() {
         ImageView iView = new ImageView(HomeActivity.currObject);
+        iView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FullScreenActivity.fImage= BitmapFactory.decodeResource(HomeActivity.currObject.getResources(), images[currPos]);
+                startActivity(new Intent(HomeActivity.currObject, FullScreenActivity.class));
+            }
+        });
         iView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
         iView.setLayoutParams(new ImageSwitcher.LayoutParams
                 (RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT));

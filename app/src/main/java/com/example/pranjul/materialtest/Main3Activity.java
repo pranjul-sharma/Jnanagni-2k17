@@ -69,10 +69,11 @@ public class Main3Activity extends AppCompatActivity {
     private void setUpViewPager(ViewPager upViewPager) {
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
         adapter.addFragment(EventFragment.newInstance(0,"Technical"),"Technical");
-        adapter.addFragment(EventFragment.newInstance(1,"NonTechnical"),"NonTechnical");
-        adapter.addFragment(EventFragment.newInstance(2,"Cultural"),"Cultural");
-        adapter.addFragment(EventFragment.newInstance(3,"Sports"),"Sports");
-        adapter.addFragment(EventFragment.newInstance(4,"Workshops"),"Workshops");
+        adapter.addFragment(EventFragment.newInstance(1,"Non Technical"),"Non Technical");
+        adapter.addFragment(EventFragment.newInstance(2,"Game On"),"Game On");
+        adapter.addFragment(EventFragment.newInstance(3,"Fun Events"),"Fun Events");
+        adapter.addFragment(EventFragment.newInstance(4,"Cultural"),"Cultural");
+        adapter.addFragment(EventFragment.newInstance(5,"Mega Shows"),"Mega Shows");
         upViewPager.setAdapter(adapter);
 
     }

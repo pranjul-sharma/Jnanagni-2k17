@@ -1,5 +1,6 @@
 package com.example.pranjul.materialtest;
 
+import android.graphics.drawable.RippleDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -23,7 +24,7 @@ public class EventFragment extends Fragment {
     private RecyclerView recyclerView;
     private EventAadpter eventAadpter;
     private List<Event> eventList;
-    public  String eventCat[]={"Technical","NonTechnical","Cultural","Sports","Workshops"};
+    public  String eventCat[]={"Technical","Non Technical","Game On","Fun Events","Cultural","Mega Shows"};
     public  static int count=0;
     private int page;
     private String title;
@@ -61,23 +62,63 @@ public class EventFragment extends Fragment {
         return view;
     }
     private void prepareEvents(String eventCategory) {
-        if(eventCategory.equals("Technical"))
+       if (eventCategory.equals("Technical"))
             prepareTechnicals();
-        else if(eventCategory.equals("NonTechnical"))
-            prepareNonTechnicals();
+        else if(eventCategory.equals("Non Technical"))
+           prepareNonTechnicals();
+        else if(eventCategory.equals("Game On"))
+           prepareSports();
         else if(eventCategory.equals("Cultural"))
-            prepareCultural();
-        else if(eventCategory.equals("Sports"))
-            prepareSports();
-        else if(eventCategory.equals("Workshops"))
-            prepareWorkshops();
+           prepareCultural();
+        else if(eventCategory.equals("Fun Events"))
+           prepareFunEvents();
+        else if(eventCategory.equals("Mega Shows"))
+           prepareMegaShows();
     }
 
+
+
+
+    private void prepareTechnicals() {
+        String[] events={"HYDRORISER", "CI-PHER", "ELECTROGUISIAL", "ANNIHILATOR",
+                "APPTITUDE", "EX-GESIS", "CONCATENATION", "ELECTRICIO",
+                "TINKERER", "NOPC", "INCLINO", "CUANDIGO", "AMELIORATOR",
+                "COLONIZER"};
+        int[] eventCovers={R.drawable.hydroriser,R.drawable.cipher,R.drawable.electroguisial,R.drawable.annihilator,
+                R.drawable.apptitude,R.drawable.exgesis,R.drawable.concatination,R.drawable.electricio
+                ,R.drawable.tinkerer,R.drawable.nopc,R.drawable.inclino,R.drawable.cuandigo,R.drawable.ameliorator,
+                R.drawable.colonizer};
+        Event event;
+        for(int i=0;i<events.length;i++){
+            event=new Event(events[i],eventCovers[i]);
+            eventList.add(event);
+        }
+
+        eventAadpter.notifyDataSetChanged();
+    }
+    private void prepareNonTechnicals() {
+        String[] events={"ABHIVYAKTI", "THIRD VISION",
+                "MIST TREASURE HUNT", "Q-COGNITO", "FREEDOSCRAWL",
+                "BRUSH AND PAINT", "CREATIVE FASHION SHOW", "ENTHUSE"};
+        int[] eventCovers={R.drawable.abhivakti,R.drawable.thirdvision,R.drawable.mist,R.drawable.qcognito
+                ,R.drawable.freedoscrawl,R.drawable.brushndpaint,R.drawable.creativefashionshw,R.drawable.enthuse};
+        Event event;
+        for(int i=0;i<events.length;i++){
+            event=new Event(events[i],eventCovers[i]);
+            eventList.add(event);
+        }
+        eventAadpter.notifyDataSetChanged();
+
+    }
+
+
+
     private void prepareSports() {
-        String[] events={"CHESS", "CARROM", "TABLE TENNIS", "NEED FOR SPEED",
-                "COUNTER STRIKE", "FIFA", "MINI MILITIA", "BADMINTON"};
-        int[] eventCovers={R.drawable.chess,R.drawable.carrom,R.drawable.tabletennis,R.drawable.needforspeed,
-                R.drawable.counterstrike,R.drawable.fifa,R.drawable.minimilitia,R.drawable.badminton};
+        String[] events={"CARROM", "TABLE TENNIS", "CHESS",
+                "BADMINTON", "NEED FOR SPEED", "COUNTER STRIKE",
+                "FIFA"};
+        int[] eventCovers={R.drawable.carrom,R.drawable.tabletennis,R.drawable.chess,R.drawable.badminton,
+                R.drawable.needforspeed,R.drawable.counterstrike,R.drawable.fifa};
         Event event;
         for(int i=0;i<events.length;i++){
             event=new Event(events[i],eventCovers[i]);
@@ -89,11 +130,8 @@ public class EventFragment extends Fragment {
     }
 
     private void prepareCultural() {
-        String events[]={ "SYNVOGUE", "JUNOON", "ANKRITI", "FLASH MOB", "SINGING",
-                "LOL", "REPARTEE", "NAUTANKI SHALA","ANUBHAV (ENTREPRENEUR)","POETRY"};
-        int eventCovers[]={R.drawable.ceventgray,R.drawable.ceventgray,R.drawable.ceventgray,
-                R.drawable.flashmob,R.drawable.singing,R.drawable.ceventgray,R.drawable.ceventgray,
-                R.drawable.ceventgray,R.drawable.anubhav,R.drawable.poetry};
+        String events[]={"ANUKRITI", "SARGAM", "ROCK SYNDROME", "KRITIKA", "LOL"};
+        int eventCovers[]={R.drawable.anukriti,R.drawable.sargam,R.drawable.rocksynrom,R.drawable.kritika,R.drawable.lol};
         Event event;
         for(int i=0;i<events.length;i++){
             event=new Event(events[i],eventCovers[i]);
@@ -106,57 +144,29 @@ public class EventFragment extends Fragment {
 
     }
 
-    private void prepareNonTechnicals() {
-        String[] events={"CRAFTSVILLA", "POSTER PRESENTATION", "APTOZIUM", "DEBATE",
-                "EXTEMPORE", "RUBIK\'S CUBE", "QUIZ", "ART & CRAFT",
-                "TREASURE HUNT", "SOCIAL QUOTIENT", "THIRD VISION","ROBOTICS"};
-        int eventCovers=R.drawable.nteventgray;
-        Event event;
-        for(int i=0;i<events.length;i++){
-            event=new Event(events[i],eventCovers);
-            eventList.add(event);
-        }
-        eventAadpter.notifyDataSetChanged();
-
-    }
-
-    private void prepareWorkshops() {
-        String[] events={"CI-PHER", "AMELIORATOR", "APPTITUDE", "CUANDIGO", "NOPC",
-                "FANGZHI", "ELECTROGUISIAL", "TINKERER", "AERIALTRONICS", "CIRCUIT DEBUGGING",
-                "SIMPRO", "HYDRORISER", "CONCATENATION", "INCLINO", "COLONIZER & SKY-SCREPER"};
-        int[] eventCovers={R.drawable.cipher,R.drawable.teventgray,R.drawable.apptitude,
-                R.drawable.cuandigo,R.drawable.nopc,R.drawable.teventgray,R.drawable.teventgray,
-                R.drawable.tinkerer,R.drawable.aerialtronics,R.drawable.circuitdebugging,
-                R.drawable.simpro,R.drawable.hydroriser,R.drawable.teventgray,R.drawable.inclino,
-                R.drawable.teventgray};
+    private void prepareFunEvents() {
+        String events[]={"RUBIK\'S CUBE", "MINI-MILITIA", "BOWLING",
+                "DART", "THROWBALL"};
+        int eventCovers[]={R.drawable.rubik,R.drawable.minimilitia,R.drawable.bowling,R.drawable.dart,R.drawable.throwball};
         Event event;
         for(int i=0;i<events.length;i++){
             event=new Event(events[i],eventCovers[i]);
             eventList.add(event);
         }
-
         eventAadpter.notifyDataSetChanged();
+
 
     }
 
-    private void prepareTechnicals() {
-        String[] events={"CI-PHER", "AMELIORATOR", "APPTITUDE", "CUANDIGO", "NOPC",
-                "FANGZHI", "ELECTROGUISIAL", "TINKERER", "AERIALTRONICS", "CIRCUIT DEBUGGING",
-                "SIMPRO", "HYDRORISER", "CONCATENATION", "INCLINO", "COLONIZER & SKY-SCREPER"};
-        int[] eventCovers={R.drawable.cipher,R.drawable.teventgray,R.drawable.apptitude,
-                R.drawable.cuandigo,R.drawable.nopc,R.drawable.teventgray,R.drawable.teventgray,
-                R.drawable.tinkerer,R.drawable.aerialtronics,R.drawable.circuitdebugging,
-                R.drawable.simpro,R.drawable.hydroriser,R.drawable.teventgray,R.drawable.inclino,
-                R.drawable.teventgray};
+    private void prepareMegaShows() {
+        String events[]={"SAMAGAM","SYMVOGUE"};
+        int eventCovers[]={R.drawable.samagam, R.drawable.symvogue};
         Event event;
         for(int i=0;i<events.length;i++){
             event=new Event(events[i],eventCovers[i]);
             eventList.add(event);
         }
-
         eventAadpter.notifyDataSetChanged();
     }
-
-
 
 }

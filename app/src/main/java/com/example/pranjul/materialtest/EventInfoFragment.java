@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Pranjul on 31-01-2017.
@@ -16,6 +17,15 @@ import android.widget.TextView;
 public class EventInfoFragment extends Fragment {
     TextView eventDesc,eventTimeVenue,eventJudgementalCriteria,eventCoordinators,eventTask,eventPrerequisites;
     String str="Coming soon ";
+    String eventName;
+    Event eventInfo;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Bundle bundle=getArguments();
+        eventName=bundle.getString("eventName");
+    }
 
     ImageView eventImage;
     @Nullable
@@ -30,6 +40,8 @@ public class EventInfoFragment extends Fragment {
         eventPrerequisites=(TextView)view.findViewById(R.id.text_event_prerequisite);
         eventJudgementalCriteria=(TextView)view.findViewById(R.id.text_event_judgemental_criteria);
         eventCoordinators=(TextView)view.findViewById(R.id.text_event_coordinators);
+        Toast.makeText(getActivity(),eventName+" clicked",Toast.LENGTH_SHORT).show();
+        prepareEventInfo(eventName);
         eventDesc.setText(str);
         eventTimeVenue.setText(str);
         eventTask.setText(str);
@@ -38,6 +50,13 @@ public class EventInfoFragment extends Fragment {
         eventJudgementalCriteria.setText(str);
         eventCoordinators.setText(str);
         return view;
+    }
+
+    private void prepareEventInfo(String eventName) {
+        switch (eventName){
+            case "CI-PHER":
+
+        }
     }
 }
 

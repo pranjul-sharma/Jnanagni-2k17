@@ -25,6 +25,9 @@ public class EventInfoActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         EventInfoFragment eventInfoFragment=new EventInfoFragment();
+        Bundle bundle=new Bundle();
+        bundle.putString("eventName",eventName);
+        eventInfoFragment.setArguments(bundle);
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame_event_info,eventInfoFragment);
         fragmentTransaction.commit();

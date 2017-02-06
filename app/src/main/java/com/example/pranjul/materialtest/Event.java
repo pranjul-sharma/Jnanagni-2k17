@@ -8,11 +8,11 @@ public class Event {
 
     private int eventCover;
     private String eventName;
-    private int eventDescription;
-    private int eventTask;
-    private int eventPrerequisites;
-    private int eventTime;
-    private int eventVenue;
+    private String eventDescription;
+    private String eventTask;
+    private String eventPrerequisites;
+    private String eventTime;
+    private String eventJudgementalCriteria;
     private Coordinator[] eventCoordinator;
     public Event(){}
 
@@ -20,14 +20,14 @@ public class Event {
         this.eventName=eventName;
         this.eventCover=eventCover;
     }
-    public Event(String eventName,int eventDescription,int eventTask,int eventPrerequisites,
-                 int eventTime,int eventVenue,Coordinator[] coordinators){
-        this.eventName=eventName;
+    public Event(int eventCover,String eventDescription,String eventTask,String eventPrerequisites,
+                 String eventTime,String eventJudgementalCriteria,Coordinator[] coordinators){
+        this.eventCover=eventCover;
         this.eventDescription=eventDescription;
         this.eventTask=eventTask;
         this.eventPrerequisites=eventPrerequisites;
         this.eventTime=eventTime;
-        this.eventVenue=eventVenue;
+        this.eventJudgementalCriteria=eventJudgementalCriteria;
         eventCoordinator=coordinators;
     }
 
@@ -39,5 +39,28 @@ public class Event {
         return eventCover;
     }
 
+    public String getEventDescription() {
+        return eventDescription;
+    }
 
+    public String getEventTask() {
+        return eventTask;
+    }
+
+    public String getEventTime() {
+        return eventTime;
+    }
+
+    public String getEventPrerequisites() {
+        return eventPrerequisites;
+    }
+
+    public String getEventJudgementalCriteria() {
+        return eventJudgementalCriteria;
+    }
+
+    public String getEventCoordinator() {
+        return eventCoordinator.toString();
+    }
 }
+

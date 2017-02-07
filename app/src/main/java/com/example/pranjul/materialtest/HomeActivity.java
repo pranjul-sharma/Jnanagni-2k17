@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.widget.ShareActionProvider;
@@ -31,6 +32,8 @@ public class HomeActivity extends AppCompatActivity
     private Button login;
     private NavigationView navigationView;
     private MenuItem prevItem=null;
+    private TextView title;
+    private TextView title_year;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         currObject=this;
@@ -51,8 +54,16 @@ public class HomeActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         LinearLayout nav_header_home=(LinearLayout)navigationView.getHeaderView(0);
-        login=(Button)nav_header_home.findViewById(R.id.login);
-        TextView headerTV=(TextView)nav_header_home.findViewById(R.id.headerTV);
+        title=(TextView)nav_header_home.findViewById(R.id.title_nav);
+        Typeface typeface=Typeface.createFromAsset(getAssets(),"Neptune.otf");
+        title.setTypeface(typeface);
+        title.setAllCaps(true);
+
+        //setting typeface for the title year
+        title_year=(TextView)nav_header_home.findViewById(R.id.title_nav_year);
+        title_year.setTypeface(typeface);
+        //login=(Button)nav_header_home.findViewById(R.id.login);
+        /*TextView headerTV=(TextView)nav_header_home.findViewById(R.id.headerTV);
         SharedPreferences sharedpreferences = getSharedPreferences("myPreferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor=sharedpreferences.edit();
         if(!sharedpreferences.getBoolean("IS_SIGNED_IN", false)) {
@@ -63,7 +74,7 @@ public class HomeActivity extends AppCompatActivity
         else {
             login.setText("Logout");
             headerTV.setText("Hi "+sharedpreferences.getString("USER_NAME", ""));
-        }
+        }*/
 
         getFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override

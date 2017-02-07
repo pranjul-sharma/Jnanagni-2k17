@@ -4,30 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="260dp"
-    android:background="@drawable/side_nav_bar"
+    android:background="#000"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35sp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/title_nav"
+            android:layout_height="wrap_content"
+            android:text="Jnanagni "
+            android:layout_gravity="center"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/title_nav_year"
+            android:layout_height="wrap_content"
+            android:text="2k17"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_gravity="center"
+            android:textSize="35sp"/>
+    </LinearLayout>
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="24dp"
         app:srcCompat="@drawable/agni_icon"
-        android:layout_gravity="center"/>
-
-    <TextView
-        android:id="@+id/headerTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#333"
-        android:background="@android:color/background_light"
-        android:shadowColor="@android:color/background_dark" />
-
+        android:layout_gravity="center"
+        android:layout_marginTop="35sp"/>
 </LinearLayout>

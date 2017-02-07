@@ -1,41 +1,27 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.pranjul.materialtest.HomeFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-        <ImageSwitcher
-            android:id="@+id/imageSwitcher"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_above="@+id/separator"
-            android:background="@color/cardview_dark_background"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:id="@+id/separator"
-        android:paddingTop="2dp"
-        android:visibility="visible"
-        android:layout_above="@+id/description"
-        android:background="@android:color/white"/>
+    tools:context="com.example.pranjul.materialtest.HomeFragment"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical"
+    android:paddingTop="140sp">
 
     <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/cardview_dark_background"
-        android:textSize="15dp"
-        android:textAlignment="viewStart"
-        android:paddingBottom="5dp"
-        android:paddingTop="3dp"
-        android:paddingLeft="3dp"
-
-        android:paddingRight="2dp"
-        android:textColor="@android:color/white"
-        android:text="On behalf of Faculty of Engineering and Technology, Gurukula Kangri Vishwavidyalaya, we introduce you to Jñānāgni‘17, our annual national level technical festival which in its inaugural year in 2006 met with a wonderful response, and was applauded for its success.
-" />
-
-</RelativeLayout>
+        android:textColor="@android:color/holo_red_light"
+        android:text="@string/home_content_head"
+        android:layout_gravity="right"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:paddingRight="40sp"
+        android:paddingLeft="40sp"
+        android:layout_marginTop="150sp"
+        android:text="@string/home_content"
+        android:textAlignment="center"/>
+</LinearLayout>

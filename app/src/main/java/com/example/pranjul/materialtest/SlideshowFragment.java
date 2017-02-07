@@ -26,7 +26,6 @@ public class SlideshowFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View layout= inflater.inflate(R.layout.fragment_slideshow, container, false);
-        imageSwitcher=(ImageSwitcher)layout.findViewById(R.id.imageSwitcher);
         return layout;
     }
 

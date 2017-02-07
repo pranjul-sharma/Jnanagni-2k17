@@ -38,28 +38,6 @@ public class HomeFragment extends Fragment implements ViewSwitcher.ViewFactory {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View layout= inflater.inflate(R.layout.fragment_home, container, false);
-        imageSwitcher=(ImageSwitcher)layout.findViewById(R.id.imageSwitcher);
-        imageSwitcher.setFactory(this);
-        imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(HomeActivity.currObject,
-                android.R.anim.fade_in));
-        imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(HomeActivity.currObject,
-                android.R.anim.fade_out));
-        imageSwitcher.setImageDrawable(null);
-        imageSwitcher.setImageResource(images[currPos]);
-        isFragmentActive=true;
-        final Random rand=new Random();
-        imageSwitcher.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                int pos=rand.nextInt(19);
-                while(pos==currPos)
-                    pos=rand.nextInt(19);
-                currPos=pos;
-                imageSwitcher.setImageDrawable(null);
-                imageSwitcher.setImageResource(images[currPos]);
-                imageSwitcher.postDelayed(this, 4000);
-            }
-        }, 4000);
         return layout;
     }
 

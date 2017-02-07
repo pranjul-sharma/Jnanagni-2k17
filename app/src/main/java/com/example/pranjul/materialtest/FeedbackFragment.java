@@ -37,11 +37,10 @@ public class FeedbackFragment extends Fragment {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent emailIntent=new Intent(Intent.ACTION_SEND);
-                emailIntent.setType("text/plain");
+                Intent emailIntent=new Intent(Intent.ACTION_SENDTO);
+                emailIntent.setData(Uri.parse("mailto:singhamitch@gmail.com"));
                 emailIntent.putExtra(Intent.EXTRA_TEXT, message.getText());
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
-                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"singhamitch@gmail.com"});
                 startActivity(emailIntent);
             }
         });

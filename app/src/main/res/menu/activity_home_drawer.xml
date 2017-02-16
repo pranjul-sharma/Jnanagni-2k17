@@ -3,9 +3,9 @@
 
     <group>
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_login"
             android:icon="@android:drawable/ic_lock_idle_lock"
-            android:title="Login" />
+            android:title="Pre-Register" />
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home"

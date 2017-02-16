@@ -159,8 +159,10 @@ public class HomeActivity extends AppCompatActivity
             ft.replace(R.id.content_frame, new LocationFragment(), "visible_fragment");
             ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
             getSupportActionBar().setTitle("Location");
-        } else if (id == R.id.nav_manage) {
-
+        } else if (id == R.id.nav_login) {
+            ft.replace(R.id.content_frame,new RegisterFragment(),"visible_fragment");
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            getSupportActionBar().setTitle("Register");
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

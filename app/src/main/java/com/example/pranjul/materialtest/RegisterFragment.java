@@ -61,7 +61,7 @@ public class RegisterFragment extends Fragment{
         email=(EditText)view.findViewById(R.id.email);
         phone=(EditText)view.findViewById(R.id.phone);
         college=(EditText)view.findViewById(R.id.college);
-        Button btnReg=(Button)view.findViewById(R.id.btnReg);
+        Button btnReg=(Button)view.findViewById(R.id.btnreg);
 
         //for input text validation
         firstName.addTextChangedListener(new MyTextWatcher(firstName));

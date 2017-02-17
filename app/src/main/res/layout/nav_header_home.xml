@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="Jnanagni "
             android:layout_gravity="center"
-            android:textSize="35sp"/>
+            android:textSize="30sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:id="@+id/title_nav_year"
@@ -29,7 +29,7 @@
             android:text="2k17"
             android:textColor="@android:color/holo_red_light"
             android:layout_gravity="center"
-            android:textSize="35sp"/>
+            android:textSize="30sp"/>
     </LinearLayout>
     <ImageView
         android:id="@+id/logo"

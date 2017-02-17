@@ -141,19 +141,23 @@ LocationListener{
         if (permissionGiven) {
             float[] results = new float[1];
             mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-            Location.distanceBetween(mLastLocation.getLatitude(), mLastLocation.getLongitude(),
-                    FET.latitude, FET.longitude, results);
-            if(results[0]<1000)
-                toGo.setText(results[0]+" meters to go");
-            else
-                toGo.setText(results[0]/1000+" KM to go");
-            ConnectivityManager cm = (ConnectivityManager) HomeActivity.currObject.getSystemService(Context.CONNECTIVITY_SERVICE);
-            locationManager = (LocationManager) HomeActivity.currObject.getSystemService(Context.LOCATION_SERVICE);
-            if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || !locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
-                    || cm.getActiveNetworkInfo() == null)
-                Toast.makeText(HomeActivity.currObject, "Please enable location service", Toast.LENGTH_SHORT).show();
-            else
-                mapsPath = new GoogleMapsPath(HomeActivity.currObject, map, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()), FET);
+            if (mLastLocation == null) {
+                Toast.makeText(HomeActivity.currObject, "Enable location services", Toast.LENGTH_SHORT).show();
+            } else {
+                Location.distanceBetween(mLastLocation.getLatitude(), mLastLocation.getLongitude(),
+                        FET.latitude, FET.longitude, results);
+                if (results[0] < 1000)
+                    toGo.setText(results[0] + " meters to go");
+                else
+                    toGo.setText(results[0] / 1000 + " KM to go");
+                ConnectivityManager cm = (ConnectivityManager) HomeActivity.currObject.getSystemService(Context.CONNECTIVITY_SERVICE);
+                locationManager = (LocationManager) HomeActivity.currObject.getSystemService(Context.LOCATION_SERVICE);
+                if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || !locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+                        || cm.getActiveNetworkInfo() == null)
+                    Toast.makeText(HomeActivity.currObject, "Please enable location service", Toast.LENGTH_SHORT).show();
+                else
+                    mapsPath = new GoogleMapsPath(HomeActivity.currObject, map, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()), FET);
+            }
         }
     }
 

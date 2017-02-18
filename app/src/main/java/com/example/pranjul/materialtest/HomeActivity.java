@@ -64,15 +64,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
             @Override
             public void onDrawerClosed(View drawerView) {
-                if (mPendingRunnable != null) {
-                    mHandler.post(mPendingRunnable);
+                mPendingRunnable.run();
+                //if (mPendingRunnable != null) {
+                    //mHandler.post(mPendingRunnable);
                     //mPendingRunnable = null;
-                }
+                //}
             }
 
             @Override
             public void onDrawerStateChanged(int newState) {
-
+                //if (newState == DrawerLayout.STATE_IDLE) {
+                    //mHandler.post(mPendingRunnable);
+                    //mPendingRunnable.run();
+                //}
             }
         });
 

@@ -18,11 +18,11 @@ import java.util.List;
  * Created by Pranjul on 28-01-2017.
  */
 
-public class EventAadpter extends RecyclerView.Adapter<EventAadpter.MyViewHodler> {
+public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHodler> {
     private Context mContext;
 
     private List<Event> eventList;
-    public EventAadpter(Context context,List<Event> eventList) {
+    public EventAdapter(Context context,List<Event> eventList) {
         this.mContext=context;
         this.eventList=eventList;
 

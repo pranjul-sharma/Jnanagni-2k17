@@ -18,7 +18,6 @@ public class EventInfoFragment extends Fragment {
     TextView eventDesc,eventTimeVenue,eventJudgementalCriteria,eventCoordinators,eventTask,eventPrerequisites;
     String str="Coming soon ";
     String eventName;
-    Event eventInfo;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,7 +40,6 @@ public class EventInfoFragment extends Fragment {
         eventJudgementalCriteria=(TextView)view.findViewById(R.id.text_event_judgemental_criteria);
         eventCoordinators=(TextView)view.findViewById(R.id.text_event_coordinators);
         Toast.makeText(getActivity(),eventName+" clicked",Toast.LENGTH_SHORT).show();
-        prepareEventInfo(eventName);
         eventDesc.setText(str);
         eventTimeVenue.setText(str);
         eventTask.setText(str);
@@ -52,11 +50,5 @@ public class EventInfoFragment extends Fragment {
         return view;
     }
 
-    private void prepareEventInfo(String eventName) {
-        switch (eventName){
-            case "CI-PHER":
-
-        }
-    }
 }
 

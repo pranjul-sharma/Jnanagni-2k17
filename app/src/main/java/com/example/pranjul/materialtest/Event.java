@@ -13,7 +13,7 @@ public class Event {
     private String eventPrerequisites;
     private String eventTime;
     private String eventJudgementalCriteria;
-    private Coordinator[] eventCoordinator;
+    private String[] eventCoordinator;
     public Event(){}
 
     public Event(String eventName,int eventCover){
@@ -21,7 +21,7 @@ public class Event {
         this.eventCover=eventCover;
     }
     public Event(int eventCover,String eventDescription,String eventTask,String eventPrerequisites,
-                 String eventTime,String eventJudgementalCriteria,Coordinator[] coordinators){
+                 String eventTime,String eventJudgementalCriteria,String[] coordinators){
         this.eventCover=eventCover;
         this.eventDescription=eventDescription;
         this.eventTask=eventTask;

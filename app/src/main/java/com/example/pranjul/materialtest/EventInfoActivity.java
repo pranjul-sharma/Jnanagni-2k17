@@ -23,7 +23,6 @@ public class EventInfoActivity extends AppCompatActivity {
         String eventName=intent.getStringExtra("eventName");
         toolbar.setTitle(eventName);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         EventInfoFragment eventInfoFragment=new EventInfoFragment();
         Bundle bundle=new Bundle();
         bundle.putString("eventName",eventName);

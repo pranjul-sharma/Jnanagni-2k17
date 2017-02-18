@@ -15,6 +15,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,10 +32,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private TextView title_year;
     private FragmentManager fragMan;
     private FragmentTransaction ft;
-    private Handler mHandler = new Handler();
+    //private Handler mHandler = new Handler();
     private DrawerLayout drawer;
     private Runnable  mPendingRunnable;
     private int id;
+    private View headerView;
+    private boolean navItemClicked=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +67,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
             @Override
             public void onDrawerClosed(View drawerView) {
-                mPendingRunnable.run();
+                if(navItemClicked)
+                    mPendingRunnable.run();
                 //if (mPendingRunnable != null) {
                     //mHandler.post(mPendingRunnable);
                     //mPendingRunnable = null;
@@ -73,15 +77,18 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
             @Override
             public void onDrawerStateChanged(int newState) {
-                //if (newState == DrawerLayout.STATE_IDLE) {
-                    //mHandler.post(mPendingRunnable);
-                    //mPendingRunnable.run();
-                //}
             }
         });
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        headerView=navigationView.getHeaderView(0);
+        headerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawer.closeDrawer(GravityCompat.START);
+            }
+        });
 
         LinearLayout nav_header_home=(LinearLayout)navigationView.getHeaderView(0);
         title=(TextView)nav_header_home.findViewById(R.id.title_nav);
@@ -146,6 +153,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 if(id!=R.id.nav_events)
                     ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 ft.commit();
+                navItemClicked=false;
             }
         };
     }
@@ -164,6 +172,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        navItemClicked=true;
         id = item.getItemId();
         item.setCheckable(true);
         prevItem.setChecked(false);

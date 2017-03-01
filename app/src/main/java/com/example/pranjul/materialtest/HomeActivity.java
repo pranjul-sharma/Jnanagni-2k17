@@ -129,7 +129,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             public void run() {
                 ft=fragMan.beginTransaction();
                 if (id == R.id.nav_home) {
-                    fragMan.popBackStack();
+                    if(fragMan.getBackStackEntryCount()>1)
+                        fragMan.popBackStack();
                     getSupportActionBar().setTitle("Home");
                 } else if (id == R.id.nav_events) {
                     startActivity(new Intent(HomeActivity.currObject, Main3Activity.class));

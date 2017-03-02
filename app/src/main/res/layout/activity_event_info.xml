@@ -20,11 +20,152 @@
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme"/>
     </android.support.design.widget.AppBarLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_below="@id/appbarEvent">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/appbarEvent"
-        android:id="@+id/frame_event_info"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="200sp"
+                    android:id="@+id/image_event_info"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginLeft="5sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/event_decs"
+                    android:id="@+id/text_desc"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/text_event_desc"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="18sp"
+                    android:id="@+id/text_task"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginLeft="5sp"
+                    android:text="@string/event_task"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/text_event_task"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="18sp"
+                    android:id="@+id/text_venue"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginLeft="5sp"
+                    android:text="@string/event_time_and_venue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/text_event_timevenue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginLeft="5sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/text_spec"
+                    android:textSize="18sp"
+                    android:text="@string/event_prerequisite"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/text_event_prerequisite"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginLeft="5sp"
+                    android:id="@+id/text_judge"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="18sp"
+                    android:text="@string/event_judgemental_criteria"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/text_event_judgemental_criteria"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="18sp"
+                    android:id="@+id/text_coor"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginLeft="5sp"
+                    android:text="@string/event_coordinator"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/text_event_coordinators"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_marginTop="10sp"
+                android:background="@android:color/darker_gray"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:id="@+id/btn_reg_event"
+                android:text="Register for this event"
+                android:layout_gravity="center"
+                android:background="@drawable/mybutton"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+        </ScrollView>
 
 </RelativeLayout>

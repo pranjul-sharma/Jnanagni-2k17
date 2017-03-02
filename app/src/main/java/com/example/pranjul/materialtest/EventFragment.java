@@ -21,7 +21,7 @@ public class EventFragment extends Fragment {
     private RecyclerView recyclerView;
     private EventAdapter eventAdapter;
     private List<Event> eventList;
-    public  String eventCat[]={"Technical","Non Technical","Game On","Fun Events","Cultural","Mega Shows"};
+    public  String eventCat[]={"Technical","Non Technical","Cultural","Mega Events","Game On","Fun Events"};
     private int page;
     private String title;
 
@@ -61,22 +61,32 @@ public class EventFragment extends Fragment {
         switch (eventCategory){
             case "Technical":
                 String[] eventsTechnical={"HYDRORISER", "CI-PHER", "ELECTROGUISIAL", "ANNIHILATOR",
-                        "APPTITUDE", "EX-GESIS", "CONCATENATION", "ELECTRICIO",
+                        "APPTITUD", "EX-GESIS", "CONCATENATION", "ELECTRICIO",
                         "TINKERER", "NOPC", "INCLINO", "CUANDIGO", "AMELIORATOR",
-                        "COLONIZER"};
+                        "HYDROBOT"};
                 int[] coversTechnical={R.drawable.hydroriser,R.drawable.cipher,R.drawable.electroguisial,R.drawable.annihilator,
                         R.drawable.apptitude,R.drawable.exgesis,R.drawable.concatination,R.drawable.electricio
                         ,R.drawable.tinkerer,R.drawable.nopc,R.drawable.inclino,R.drawable.cuandigo,R.drawable.ameliorator,
-                        R.drawable.colonizer};
+                        R.drawable.hydrobot};
                 prepareEvents(eventsTechnical,coversTechnical);
                 break;
             case "Non Technical":
                 String[] eventsNonTechnical={"ABHIVYAKTI", "THIRD VISION",
                         "MIST TREASURE HUNT", "Q-COGNITO", "FREEDOSCRAWL",
-                        "BRUSH AND PAINT", "CREATIVE FASHION SHOW", "ENTHUSE"};
+                        "KALAKRITI", "ENTHUSE"};
                 int[] coversNonTechnical={R.drawable.abhivakti,R.drawable.thirdvision,R.drawable.mist,R.drawable.qcognito
-                        ,R.drawable.freedoscrawl,R.drawable.brushndpaint,R.drawable.creativefashionshw,R.drawable.enthuse};
+                        ,R.drawable.freedoscrawl,R.drawable.brushndpaint,R.drawable.enthuse};
                 prepareEvents(eventsNonTechnical,coversNonTechnical);
+                break;
+            case "Cultural":
+                String eventsCultural[]={"FANCY FOOTWORK", "SARGAM","CRAFT-VILLA" , "KRITIKA", "LOL"};
+                int coversCultural[]={R.drawable.anukriti,R.drawable.sargam,R.drawable.creativefashionshw,R.drawable.kritika,R.drawable.lol};
+                prepareEvents(eventsCultural,coversCultural);
+                break;
+            case "Mega Events":
+                String eventsMega[]={"SAMAGAM","CELEBRITY VISIT","STARTUP FAIR"};
+                int coversMega[]={R.drawable.samagam,R.drawable.celeb,R.drawable.startup};
+                prepareEvents(eventsMega,coversMega);
                 break;
             case "Game On":
                 String[] eventsSports={"CARROM", "TABLE TENNIS", "CHESS",
@@ -86,22 +96,14 @@ public class EventFragment extends Fragment {
                         R.drawable.needforspeed,R.drawable.counterstrike,R.drawable.fifa};
                 prepareEvents(eventsSports,coversSports);
                 break;
-            case "Cultural":
-                String eventsCultural[]={"ANUKRITI", "SARGAM", "ROCK SYNDROME", "KRITIKA", "LOL"};
-                int coversCultural[]={R.drawable.anukriti,R.drawable.sargam,R.drawable.rocksynrom,R.drawable.kritika,R.drawable.lol};
-                prepareEvents(eventsCultural,coversCultural);
-                break;
+
             case "Fun Events":
                 String eventsFun[]={"RUBIK\'S CUBE", "MINI-MILITIA", "BOWLING",
                         "DART", "THROWBALL"};
                 int coversFun[]={R.drawable.rubik,R.drawable.minimilitia,R.drawable.bowling,R.drawable.dart,R.drawable.throwball};
                 prepareEvents(eventsFun,coversFun);
                 break;
-            case "Mega Shows":
-                String eventsMega[]={"SAMAGAM","SYMVOGUE","CELEBRITY VISIT","STARTUP FAIR"};
-                int coversMega[]={R.drawable.samagam, R.drawable.symvogue,R.drawable.celeb,R.drawable.startup};
-                prepareEvents(eventsMega,coversMega);
-                break;
+
         }
     }
 

@@ -1,15 +1,13 @@
 package com.example.pranjul.materialtest;
 
-import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.app.Fragment;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -22,31 +20,16 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLEncoder;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 
-
-
-public class RegisterFragment extends Fragment{
-    private EditText firstName,lastName,email,phone,college;
+public class RegisterFragment extends Fragment {
+    private EditText firstName,lastName,email,phone,college,password;
     private TextInputLayout firstNameLayout,emailLayout,phoneLayout;
-
-
-
-
+    private RadioGroup radioGroup;
+    private RadioButton radioButton;
 
     @Nullable
     @Override
@@ -60,8 +43,20 @@ public class RegisterFragment extends Fragment{
         lastName=(EditText)view.findViewById(R.id.last_name);
         email=(EditText)view.findViewById(R.id.email);
         phone=(EditText)view.findViewById(R.id.phone);
+        password=(EditText)view.findViewById(R.id.password);
         college=(EditText)view.findViewById(R.id.college);
+        radioGroup=(RadioGroup)view.findViewById(R.id.radio_gender_group);
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                radioButton=(RadioButton)radioGroup.findViewById(i);
+            }
+        });
         Button btnReg=(Button)view.findViewById(R.id.btnreg);
+        Typeface tf=Typeface.createFromAsset(getContext().getAssets(),"Neptune.otf");
+        btnReg.setTypeface(tf);
+
 
         //for input text validation
         firstName.addTextChangedListener(new MyTextWatcher(firstName));
@@ -85,16 +80,12 @@ public class RegisterFragment extends Fragment{
                 }
                 //otherwise do
                 else {
-
                     submitDetails();
-
                 }
             }
         });
         return view;
     }
-
-
 
     private boolean isNetworkEnabled(){
         ConnectivityManager connectivityManager=(ConnectivityManager)getActivity().getSystemService(HomeActivity.CONNECTIVITY_SERVICE);
@@ -109,105 +100,11 @@ public class RegisterFragment extends Fragment{
             return;
         if (!validatePhone())
             return;
-
-
-
-        RegistrationTask registrationTask=new RegistrationTask(getActivity());
+        BackgroundTask registrationTask=new BackgroundTask(getActivity());
         registrationTask.execute(firstName.getText().toString(),lastName.getText().toString(),
-                email.getText().toString(),phone.getText().toString(),college.getText().toString());
-
-
+                email.getText().toString(),phone.getText().toString(),college.getText().toString(),password.getText().toString(),radioButton.getText().toString());
     }
 
-
-
-    public class RegistrationTask extends AsyncTask<String,Void,String>{
-        Context context;
-        ProgressDialog progressDialog=null;
-        String register_url="http://test.jnanagni17.in/pre-register/api";
-
-        private RegistrationTask(Context context) {
-            this.context=context;
-        }
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            progressDialog=new ProgressDialog(context);
-            progressDialog.setMessage("Registering...");
-            progressDialog.setCancelable(false);
-            progressDialog.show();
-
-        }
-
-        @Override
-        protected String doInBackground(String... strings) {
-            String first=strings[0];
-            String last=strings[1];
-            String email=strings[2];
-            String phone=strings[3];
-            String college=strings[4];
-
-
-            try {
-                URL url=new URL(register_url);
-
-                HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
-                httpURLConnection.setRequestProperty("Api-Key","e80f491806701ca2c737b01e7ba5a37d");
-                httpURLConnection.setRequestMethod("POST");
-
-
-                httpURLConnection.setDoOutput(true);
-                OutputStream outputStream=httpURLConnection.getOutputStream();
-
-                BufferedWriter writer=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-                String data= URLEncoder.encode("first-name","UTF-8")+"="+URLEncoder.encode(first,"UTF-8")+"&"
-                        + URLEncoder.encode("last-name","UTF-8")+"="+URLEncoder.encode(last,"UTF-8")+"&"
-                        + URLEncoder.encode("email","UTF-8")+"="+URLEncoder.encode(email,"UTF-8")+"&"
-                        + URLEncoder.encode("phone","UTF-8")+"="+URLEncoder.encode(phone,"UTF-8")+"&"
-                        + URLEncoder.encode("college","UTF-8")+"="+URLEncoder.encode(college,"UTF-8");
-                writer.write(data);
-                writer.flush();
-                writer.close();
-                outputStream.close();
-                InputStream inputStream=httpURLConnection.getInputStream();
-                BufferedReader reader=new BufferedReader(new InputStreamReader(inputStream));
-                StringBuilder stringBuilder=new StringBuilder();
-                String jsonResponse;
-                while ((jsonResponse=reader.readLine())!=null){
-                        stringBuilder.append(jsonResponse);
-                }
-                reader.close();
-                inputStream.close();
-
-                JSONObject jsonObject=new JSONObject(stringBuilder.toString());
-                httpURLConnection.disconnect();
-
-                return jsonObject.getString("msg");
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            return "Connection Failed";
-        }
-
-        @Override
-        protected void onPostExecute(String s) {
-            progressDialog.dismiss();
-            AlertDialog.Builder builder=new AlertDialog.Builder(context);
-            builder.setMessage(s).setCancelable(true).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    dialogInterface.dismiss();
-                }
-            });
-
-            AlertDialog alertDialog=builder.create();
-            alertDialog.show();
-        }
-    }
 
     private class MyTextWatcher implements TextWatcher {
         View view;
@@ -247,7 +144,7 @@ public class RegisterFragment extends Fragment{
         String first=firstName.getText().toString().trim();
 
         if (first.isEmpty()){
-            firstNameLayout.setError("Field can't be empty!!!");
+            firstNameLayout.setError("Field can't be empty!");
             requestFocus(firstName);
             return false;
         }else{

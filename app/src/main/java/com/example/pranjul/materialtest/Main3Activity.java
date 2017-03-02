@@ -70,10 +70,12 @@ public class Main3Activity extends AppCompatActivity {
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
         adapter.addFragment(EventFragment.newInstance(0,"Technical"),"Technical");
         adapter.addFragment(EventFragment.newInstance(1,"Non Technical"),"Non Technical");
-        adapter.addFragment(EventFragment.newInstance(2,"Game On"),"Game On");
-        adapter.addFragment(EventFragment.newInstance(3,"Fun Events"),"Fun Events");
-        adapter.addFragment(EventFragment.newInstance(4,"Cultural"),"Cultural");
-        adapter.addFragment(EventFragment.newInstance(5,"Mega Shows"),"Mega Shows");
+        adapter.addFragment(EventFragment.newInstance(2,"Cultural"),"Cultural");
+        adapter.addFragment(EventFragment.newInstance(3,"Mega Events"),"Mega Events");
+        adapter.addFragment(EventFragment.newInstance(4,"Game On"),"Game On");
+        adapter.addFragment(EventFragment.newInstance(5,"Fun Events"),"Fun Events");
+
+
         upViewPager.setAdapter(adapter);
 
     }

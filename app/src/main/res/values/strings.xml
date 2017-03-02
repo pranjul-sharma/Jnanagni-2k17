@@ -8,7 +8,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <!--event attributes-->
     <string name="event_decs">Description</string>
-    <string name="event_task">Task</string>
+    <string name="event_task">Tasks and Rules</string>
     <string name="event_prerequisite">Prerequisites / Specifications ( if any )</string>
     <string name="event_judgemental_criteria">Judgemental Criteria</string>
     <string name="event_rules">Rules and Regulations</string>
@@ -16,17 +16,882 @@
     <string name="event_coordinator">Coordinator(s)</string>
 
     <string name="contact_info">Insert Contact Information</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="google_android_map_api_key">AIzaSyB5GoLgxGqpkfXJebPTNLWGpoXx2tKIsJo</string>
     <string name="home_content_head">
         We invite you to Jnanagni
     </string>
     <string name="home_content">
-        Our annual Techno-Cultural Fest
-        We gurantee you with a three day pacakage of Masti,Maza &amp; Thrive Knowledge.
-        You can enjoy yourself by taking part in our Technical/Cultural or Contemperory Events.
-        In the holy land of Haridwar.
+        On behalf of Faculty of Engineering &amp; Technology, Gurukula Kangri University, We introduce you to Jñānāgni\'17, the annual technical fest. The national level technical festival which in its inaugural year in 2006 met with a wonderful response and was applauded for its success.
+This year we invite you to adorn the most esteemed position by sponsoring the event.\n
+- the enlightenment of knowledge, creativity and success. Jñānāgni vies to provide platform to all those talents of the nation who think beyond the books and are eager to get past the oblivion of illusion. Jñānāgni aims to celebrate the festival of experimentation and learning. The plethora of events that Jñānāgni promises is designed in a way to challenge all the dimension of a student\'s cerebrum and we try to keep assure that the winner is "knowledge" in the end.\n\n
+It will be a pleasure to have you become a part of Jñānāgni by way of participating in it,and by your valuable suggestions and academic inputs.</string>
+    <string name="desc_hydroriser">Teams have to make a rope climbing machine using only hydraulic mechanisms, should be able to push the ball from an adjacent platform.
+\nIn this action it will have to compete with another machine in a knockout tournament.
+\n\n
+There would be two Major Checkpoints. Each major checkpoint has two minor checkpoints.\n
+The completion of the minor checkpoints will be considered as completion of major checkpoint.\n
+The minor checkpoints in a particular major checkpoint can be completed in any order.\n
+The minor checkpoints will be used for reinstallation during the run.\n
+The minor checkpoints are -\n
+- Pushing the ball of the platform\n
+- All the parts of the bot must cross the corresponding distance line for the platform i.e. 500mm/1000mm..\n
+\n\n\n
+
+Arena Description\n
+\t• The arena will be four ropes. The ropes will look like corners of a square when arena is seen from the top.\n
+\t• There will be a central rigid pipe at the centre of square mentioned in point 1.\n
+\t• The ropes will be tied at both the ends to rigid surfaces. The rope will be taut.\n
+\t• The horizontal distance between the ropes, on the diagonally opposite ends, will be 600 mm.(figure1)\n
+\t• The rope would be a jute rope of diameter approximately 40 mm.\n
+\t• There would be platforms at three different levels attached to a support pillar at distances of 500mm, 1000 mm, and 2000 mm from the start line. (Please refer to the diagram below for further details about the platform).\n
+\t• The Arena from here on is defined form the perspective of a single rope; it will be the same for the remaining ropes.\n
+\t• The distance from the centre of the rope to the centre of platform support pillar will be 300 mm.\n
+\t• Each rope has a corresponding platform.\n
+\t• The distance between the centre of the rope to the near end of the platform will be 200mm.(refer figures)\n
+\t• There would be a table tennis ball of diameter 40 mm kept on the platform at a distance of 50mm from the end i.e at a distance of 250mm from the centre of the rope.\n
+\t• The balls will be held stationary by mounting them on a holder. (Refer figure 2)\n
+\t• The topmost platform will have a single ball at the centre of the support pillar. This ball will be at a distance of 300mm from the centre of the rope.\n
+\n\n
+
+Machine Specifications\n
+\t• Machine should fit into a box of dimension 300 mm x 300 mm x 300 mm at the time of start. There is no restriction on the height of the machine. The extensions used to control the machine are excluded while measuring the machine dimensions.\n
+\t• Machine can expand or compress during the run.\n
+\t• Locomotion of any part of the machine should be governed by some hydraulic force.\n
+\t• Use of batteries or any other source of stored energy is prohibited.\n
+\t• Use of any type of electrical motors, springs, compressor and pressurised cylinders is prohibited.\n\n
+Controls\n
+\t• The machine should only be controlled with the help of syringes(any other cylinder piston arrangement).\n
+\t• Maximum of two people will be allowed to control the machine at any point of time.\n
+\n\n
+Materials allowed\n
+Any material from this list can be used in making the machine:\n
+\t1. Syringes (or any other cylinder-piston arrangement)\n
+\t2. Tubes\n
+\t3. Wood\n
+\t4. Metallic frames\n
+\t5. Rubber bands\n
+\t6. Plastic\n
+\t7. Water\n
+\t8. Metal pulleys</string>
+    <string name="desc_cipher">Ever came across the team <span class="quote"> ‘blind-coding’ </span>? Well this enthralling event would provide an opportunity to showcase your coding skills but in a different way.</string>
+    <string name="desc_electroguisial">Task which has to performed, will be decided by organizers but cannot be disclosed beforehand.\n
+Candidates will know it at the venue.
+</string>
+    <string name="desc_annihilator">
+The robot which traverses the specified part of the track in the least time will be winner.\n\n
+
+
+Robot specification\n
+\t1. The robot can have maximum dimension of:\n
+         \t\t\tlength- 30cm\n
+         \t\t\twidth  - 30cm\n
+         \t\t\theight - 30cm.\n
+\n
+\t2. The motor can be used maximum of 200 rpm.\n
+\n\n
+<b>Power Sspecification </b>\n
+\t- The potential difference between any two terminals should not exceed 12v.\n
+\t- AC power supply will be provided.\n
+\n\n
+
+Descreption of Arena\n
+\t- The track may consist of obstacles like:-\n
+\t- Grvels with obstacles.\n
+\t- Valleys, see-saw.\n
+\t- Steps, slopes, rotating element, slipry floor.\n
+</string>
+    <string name="desc_apptitude">Android – The fastest growing operating system for smart phone devices has been growing in popularity with each update. Its versatile, user friendly applications and flexibility has made it the majority favorite. In this event the participants would be given a platform to show their enthusiasm and skills for Android application development.</string>
+    <string name="desc_exgesis">The event has three rounds which test your circuit debugging skills.\n
+        \n\n
+ROUND 1\n
+\tIn this round 10 general aptitude and 10 simple electronics and electrical related questions will be given.time provided for this round 30 min. participant are required to have basic knowledge of electronics and electrical.\n
+\n\n
+ROUND 2\n
+\tParticipants who are selected to the second round are tested on their knowledge of digital circuitry. In this round 5 digital electronics questions  will be given and they are supposed to identify the faults and rectify the circuit.time for this round is 45 min. in this round 5 analog circuit questions will also given. Paricipants  are supposed to find the bugs and solve them. Time for this round is 45 min.\n
+\n\n
+ROUND 3\n
+\tParticipants selected to this round are given a hardware circuit either digital or analog    fault in the circuit should be identified to get the correct output. Time for this round is 2 hours\n</string>
+    <string name="desc_concatenation">It is generally a series of process which is linking to one another. It just require a initial triggering and rest is spontanepous. So this event will testify your innate ability to link the key pieces of something so creative that would itself be a marvel……</string>
+    <string name="desc_electrocio">Are you ready to show your knowledge about electronics .Knowledge about application of electronics equipment .Where you have to arrange these in such a way what we think! Then come and become the hero of electronics era.
+</string>
+    <string name="desc_tinkerer">This event consist of 3 Rounds.
+\n\n
+Round 1\n
+\tIn first level the participants will be given three messages which they have to decode and on the basis of their correctness they would be judged.\n
+\n\n\nRound 2\n
+\tIn the second level participants will be given different objects which they have to utilize or analyze to get the clue for the next level. This level will include the usage of Physics, Chemistry, Basic Electronics lab, Machine lab, and Computer Center.\n
+\n\n\nRound 3\n
+\tThis level is a "top secret", will be disclosed on successful entry.\n
+
+</string>
+    <string name="desc_nopc">This event will be hosted on Hackerearth.\n\n
+Round 1\n
+\t1. Quiz competition of MCQ type\n
+\t2. Questions related to basic algorithms and programming (30min time limit)\n
+\n\n
+Round 2\n
+\tParticipants will have to code according to the instructions provided (3hrs time limit)\n
     </string>
+    <string name="desc_inclino">\t1. Participants have to construct their own inclined structure using some materials that we will provide.\n
+\t2. It will be tested for its strength and stability.\n
+\t3. Make your structure as inclined as possible but at the same time keep its strength in mind.\n
+\t4. Time constraint will be given.\n
+\t5. A participant has to finish the task as soon as possible.\n
+\t6. At the same time they have to take care of the accuracy too.\n
+</string>
+    <string name="desc_cuandigo">Life as it is, is riddled with problems, both easy and complex. Most of these problems have solutions, and we tend to solve them manually and laboriously.\n
+        Did we hear a "no"? Maybe you prefer more elegant solutions, perhaps even automating them. Hence, we present <span class="quote">Cuandigo</span>, bringing you an opportunity, to showcase your skills in solving real-life problems, because hey, we\'ve got loads of them.</string>
+    <string name="desc_ameliorator"></string>
+    <string name="desc_hydrobot">This Jñānāgni ,FET presents to you the ultimate competition of building, We present to you “HYDROBOT-The battle of Pirates”.
+        This event basically deals with the notion of war of several RC electronic Boats. Your Boat must be build by the use of these components –\n
+    \t• Transmitter \n
+        \t• Receiver\n
+       \t • Propeller \n
+        \t• Motor &amp; motor controller\n
+        \t• Batteries (12 V) \n
+        \t• Body of Boat ( either made by wooden sheet or Thermocol )\n</string>
+    <string name="desc_abhivyakti">This event will involve extempore in the first round and a debate in the second.\n
+
+\nFor Extempore\n
+\tParticipant have to pickout a paper from the  random-box which contains three topic of three fields like science ,social science, art, politics, entertainment etc. and He/She have speak on any topic written in his/her paper in very less time.\n
+
+\tLevels:
+     \t\t\tLevel 1:- Participant will have 30 sec to think about that topic and 1 min to speak on it.In this level all registered participant are eligible.\n
+
+     \t\t\tLevel 2:- Participant will have 5 min to think about that topic and 3 min to speak on it. Only top-5 from level 1 are eligible.\n
+
+\nFor Debate\n
+\tThe debate will be held on currently trending topics. The topic will be given by the organizers at the end of EXTEMPORE Level-1, so you\'ll have enough time to prepare about the topic.\n
+
+\tThe participant should also be among the top 12 participants of the EXTEMPORE event.\n
+</string>
+    <string name="desc_third_vision">
+        There will be 3 rounds based on the categories given below\n
+
+Round 1: Mobile photography ( Date:- 1 to 14 Feb 2017 )\n
+Round 2: Digital Photography ( Date:- 15 to 21 Feb 2017 )\n
+Round 3: Natural Photography ( Date:- 22 to 28 Feb )\n
+
+\n\nRound Description\n
+
+        \nMobile Photography (Round 1)\n
+Mobile photography means not only the selfie of a person, it means that what can you capture through your mobile camera, because camera is a camera and a photographer knows how to use it.\n
+\tSome category of it, are as follows:-\n
+\t\tLandscape\n
+\t\tMicro\n
+\t\tNature\n
+\t\tSelfie\n
+\t\tPortraid\n
+\t\tTravel\n
+\t\tStreet photography, etc.\n
+
+
+\nDigital Photography (Round 2)\n
+\tDigital photography contain the edited pictures.\n
+\tFor example:-\n
+\t\tPhoto manipulation\n
+\t\tFilter effect\n
+\t\tVisual FX\n
+\t\tPhoto illustration\n
+\t\tEtc.\n
+
+\nNatural Click (Round 3)\n
+\tThis round contain natural clicks by any camera like some expression, or any tourism place, or any random click without any editing.\n
+\tFor example:-\n
+\t\tNatural facial expression\n
+\t\tRandom click\n
+\t\tEtc.\n
+        <b>NOTE: Participants whose photographs comes in our list of \'TOP THREE LUCKY\' photographs selected by the organising committee will get a 50% discount in the registration of our event Jnanagni.</b>\n
+</string>
+    <string name="desc_mist">If you’re a person who loves solving riddles, if the word <span class="quote"> “adventure” </span> makes adrenaline rush through your body, if you want to explore the campus or just want to make some new friends – treasure hunt is what might catch your fancy which is a game in which players search for hidden objects by following a trail of clues.</string>
+    <string name="desc_qcognito">Four teams will participate in which each branch student will be added in a team of four (CS + EC + ME + EE) so that these four teams perform current affairs quiz on technical developments worldwide.\n
+
+\nRound Details\n
+ \t\t\t      <b>Level 1:</b>\t\t 6 minutes\n
+\t\t\t<b>Level 2:</b>\t\t 4 minutes\n
+\t\t\t<b>Level 3:</b>\t\t 3 minutes\n
+\t\t\t<b>Level 4:</b>\t\t 2 minutes (15 minutes)\n
+</string>
+    <string name="desc_freedscrawl">This is to expose the inner spirit of writing hidden in you to the outside
+world.\nThe more you expose the more you learn.\n
+So BURN THE INNER YOU AND SHINE FOR OTHERS.\n
+        \t• Freedoscrawl is the event organized by the fetians of gurukula kangri Vishwavidyalaya haridwar.\n
+\t• There will be total 3 rounds, which are to test the writing skills of contestants in each field and they are given the freedom to choose their field of interest.\n
+        \t***** Here
+\t1. *Anything refers to anything that is your comfort zone of writing
+AS ART FLOODS FROM OUR HEART.\n
+        \nPrizes for champions and winners-\n
+\t• First prize-\n
+ \t\tPremium membership of Grammarly.\n
+ \t\tHeaps of Books.\n
+\t\t Certificate of championship.\n
+
+</string>
+    <string name="desc_bursh_n_paint">The Kalakriti will terminate in two levels as described below:\n
+
+\nPrimary Level (Sketching)\n
+\tA common topic will be provided on the spot for sketching for everyone. This is the Qualifier round. The top 50% of the contestents will be selected for the next round.\n
+
+\nSecondory Level\n
+\tThere will be a common topic for painting and you have to paint by using water colour.\n
+</string>
+    <string name="desc_enthuse">The topic chosen is entirely up to the participant. Show your skills and creativity on the poster.
+</string>
+    <string name="desc_carrom">Carrom (also known as Karrom) is a <span class="quote"> "strike and pocket" </span> table game of Eastern origin similar to billiards and table shuffleboard.</string>
+    <string name="desc_chess">Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an eight-by-eight grid Chess is played by millions of people worldwide, both amateurs and professionals.</string>
+    <string name="desc_badminton"></string>
+    <string name="desc_table_tennis">Table tennis, also known as ping pong, is a sport in which two or four players hit a lightweight ball back and forth across a table using a small bat. The game takes place on a hard table divided by a net.</string>
+    <string name="desc_nfs">Need for Speed, also known by its initials NFS, is a racing video game.\n
+All games in the series have some form of multiplayer mode allowing players to race one another via a split screen, a LAN or the Internet.\n
+</string>
+    <string name="desc_counter_strike">Counter Strike is a series of multiplayer first-person shooter video games, in which teams of terrorists and counter-terrorists battle to,  respectively, perpetrate an act of terror (bombing, hostage-taking) and prevent it (bomb defusal, hostage rescue).</string>
+    <string name="desc_fifa">FIFA, also known as FIFA Football or FIFA Soccer, is a series of association football video games or football simulator.</string>
+    <string name="desc_rubik_cube"></string>
+    <string name="desc_minimilitia"></string>
+    <string name="desc_bowling"></string>
+    <string name="desc_dart"></string>
+    <string name="desc_throwball"></string>
+    <string name="desc_anukriti">Each participant can perform only once.</string>
+    <string name="desc_sargam">There will be only one round in which your qualities such as consistency, voice, entertainment, rhythm, and melody will be judged.\n
+To get into the event however, you should clear our audition round.
+</string>
+    <string name="desc_craftvilla" formatted="false">CRAFT is skill where we have to make things with hands with your mind\'s creativity. Explore yourself in
+    the world of craft . This time Jnanagni , FET welcomes everyone to show your creativity through craft.\n
+    \nThis competition consists of three levels:\n
+    Primary Level:-\n
+    \t In this level you have to prepare a mosaic of your wish by using buttons which will be provided by us . The 50% of the contestant will be selected from this round.\n
+    Secondary Level:-\n
+    \t In this level you have to prepare a meaningful concept of your wish by using craft papers which will be provided by us . the 50% of the contest will be selected for the final round .\n
+    Final Level:-\n
+    \t In this level you have to prepare any 3D object or innovate things by using u=copper wire which will be provided by us . Top three contestants will be selected \n
+    \n
+    Note:-\t\tYou have to bring your own geometry stuff , Scissors etc as per the level requirement.\n </string>
+    <string name="desc_kritika">\n\nRound 1\n
+\tThis will be a knockout round, leaving only 3 participants in the end.\n
+\nRound 2\n
+\tThe remaining 3 participants should create some instant shayri on a specific line which is given to them by the judges.\n
+</string>
+    <string name="desc_lol"></string>
+    <string name="desc_samagam">Recoupling Alumni’s with their alma-mater. It is an annual crown Jewel event of Student Alumni Meet, which will be entering its third Phase this year, with some untouched event but with the same gray-haired motive of bringing student and alumni in sync. The meet is now a major event anticipated by both the alumni and the students. As the years pass by and wind of change keep blowing, the alumni meet too shall keep evolving with the pace of time, hoping to bring the alumni an experience that they may cherish all their lives
+</string>
+    <string name="desc_celebrity_visit">There will be a grand celebration with the celebrity, and juke-box after that on 25<sup>th</sup> March, 2017.
+</string>
+    <string name="desc_startup_fair">Our goal is to give something to the startup community by introducing emerging startups to resources, mentorship, and investment opportunities. We are most interested in working with entrepreneurs using data management to solve public policy, human development, and business challenges. Architecting, analyzing, and managing data in an effective manner is a great challenge and a tremendous area of opportunity for new business innovation.</string>
+
+    <string name="task_hydroriser">\t1. The teams must adhere to the spirit of healthy competition.\n
+\t2. Any team that is not ready at the time specified will be disqualified from the competition automatically.\n
+\t3. The organizers reserve all rights to change any of the above rules as they deem fit. Change in rules, if any will be highlighted on the website.\n
+\t4. In case of any discrepancy decision of the judges shall be treated as final and binding on all.\n
+[!$]</string>
+    <string name="task_cipher">Round 1 \n
+\tA simple code with syntax error will be given on paper.\n
+\tParticipants have to correct the errors on paper and type the code with MONITOR SWITCHED OFF.\n
+\tTen minutes will be given to type and correct the code.\n
+\tBased on the results of first round  25 participants will be selected for second round.\n
+\n\n\<n></n>
+Round 2\n
+\tEvery participants will be given same problem .\n
+\tTime limit in this level will be 45 min.\n
+\tMarking will be based on their logic, programming skill and minimum error .\n
+\t10 participants will be selected for next level.\n
+\n\n\n
+
+Round 3\n
+\t5 problems will be given to each participant .\n
+\tPut your all programming skill together, in this level your screen will not be turned off.\n
+\tTime limit is 1 and half hours.\n
+\tMarking will be based on their logic, programming skill.\n</string>
+    <string name="task_electroguisial">\t1. Participants can form a team(max. 3 members) or can participate on a singular basis.\n
+\t2. Two rounds will be conducted(both linked).\n
+\t3. First round will be of writing code for the task, Secound will be \'hardware implementation\'. Adequate hardware components/kit will be provided.\n
+\t4. Each round will have time constraints. However, if \'code writing\' gets completed before allotted time ,remaining time can be utilized in 2nd round to maximize winning chances.\n
+\t5. If a participant/team fails to write code, then it is meaningless to get into further round. Hence failure in round one will automatically lead to elimination.(Generation of hex file will be analyzed).\n
+\t6. To facilitate hardware implementation and debugging, participant may use \'Proteus Isis\' (simulation purpose). Proteus will not be provided by us.\n</string>
+    <string name="task_annihilator">\t1. Maximum of five members are allowed in a team, where only two of them are allowed on the arena at a time.\n
+\t2. The robot should not damage the arena.\n
+\t3. It is your responsibility to take care of all type of equipiment i.e, wire connection or any sort of robot assembly parts.\n
+\t4. No arguments regarding this issue will be entertained. The organiser decision regarding this issue or any other issue will be final.\n
+\t5. No technical assistance will be provided by the organising team at the time of event.\n
+\t6. Top three teams will get the certificate and prize money.\n
+
+<b>Note</b>
+Extra point will be rewarded for autonomous robot.
+For any quaries contact to organiser.</string>
+    <string name="task_apptitude">Round 1\n
+\tIt consists multiple choice Questions on General aptitude Test, Java language
+proficiency.\n
+\nRound 2\n
+\tEvery participant in the group must qualify round 1 in order to participate in Round 2.\n
+\tNearly 50% of participants are selected for Round 2.\n
+\tRound 2 consists descriptive type questions regarding Traditional problems in android app
+development, General Algorithms.\n
+\nRound 3\n
+\tParticipant groups should present their Own Developed App in front of the judges.\n
+\tThe winner is decided according to:\n
+\t\t1. Idea (on which the app is based)\n
+\t\t2. Prototype of the app.\n
+\t\t3. Implementation on the app and the logic used.\n</string>
+    <string name="task_exgesis">\t1. Every team should consist a maximum of  TWO members.\n
+\t2. Every team has to register for jnanagni 17.\n
+\t3. The decision of judges and event coordinators shall be treated  as final and binding to all.\n
+\t4. A basic knowledge of digital and digital and analog circuitry is necessary.\n
+\t5. Any malpractice is strictly treated  and is submitted to the jnanagni disciplinary committee.\n</string>
+    <string name="task_concatenation">There may be 2-3 rounds with the following tasks:-\n\t1. All the events should be connected to one another.\n
+\t2. After starting series team will not be allowed to touch the setup until finishing of event.\n
+\t3. Five events must be there in the series for initial round.\n
+\t4. Two more events should be there in series for final round.(if qualified in initial round)\n
+\t5. Team only allow 3 chances to show a concatenation.\n
+\t6. Each more chances will lesser your points.\n
+\t7. Team should be of 3-4 members.\n
+\t8. They have to bring their own materials to setup their concatenation.\n
+</string>
+    <string name="task_electrocio">ROUND 1\n
+\tParticipants would be selected on the basis of there knowledge about electronics.\n
+\tTo check knowledge of participants we will give them 100 questions.\n
+\tParticipants will achieve virtual money in this ROUND on the basis of there performance.\n
+\tThey have to use these money in ROUND 2.\n
+\n\n\nROUND 2\n
+\tParticipants will be given a circuit.\n
+\tThey have to make it with help of components.\n
+\tThey will get these components on their virtual money.\n</string>
+    <string name="task_tinkerer">\t1. Number of participants should not be more than 3 in a team.\n
+\t2. If any one found mishandling the given objects he/she will be disqualified.\n
+\t3. All decisions by the organizers are deemed final and cannot be questioned, however, they can give an explanation if requested.\n
+</string>
+    <string name="task_nopc">\t1. All Rules of HackerEarth.\n
+\t2.  Participant can use any language supported by HackerEarth Platform.\n</string>
+    <string name="task_inclino">\t1. All the participants have to construct the tower on their own.\n
+\t2. Any rules or information are subject to change and nothing could be held liable against the Coordinators or the university staff.\n
+\t3. In such case, the decision of the management and organizing committee would be final.\n
+</string>
+    <string name="task_cuandigo"><b>Cuandigo</b> will be held in two rounds.
+        \nRound 1\n
+\tParticipants will be given 5 general algorithmic problems to solve.\n
+\tAlthough these won\'t necessarily be related to real-life problems, they\'ll help assessing your programming skills.\n
+\tProblems will involve the use of <b>Data Structures</b>, so brush up on them, before typing away.\n
+\t<b>Duration:</b> 2 Hrs\n
+\n
+Round 2\n
+\tThis round actually involves the problems as advertised, and will allow only the top 50% of the participants who qualify from the previous round. Participants will be given one problem each (not necessarily unique) to solve. Example topics are Graph Colouring, Route Finding, Scheduling, Bin Packing, etc.\n
+<b>Duration:</b> 3 Hrs\n
+</string>
+    <string name="task_ameliorator"></string>
+    <string name="task_hydrobot">Team Size :- 10 Teams having 4 Member each\n
+        Round 01\n
+        \tThis is the Qualifier round,You have to cross the Track &amp; Obstacle without touching the shore .The 60% of the Participants will be selected for further round .
+        Round 02 \n
+        \tThis is the endurance test of your boat means you have to carry some load and cross the linear track but without touching the shore .
+        Two teams fight at the same time ,those who acquire maximum load in minimum time.Top 3 will be decided through this Round.</string>
+    <string name="task_abhivyakti">\t1. Participant should registered online for the this event threw Jnanagni website.\n
+\t2. He/She should have Jnanagni Identity-Card.\n
+\t3. There will four teams three students named as Team-A, Team-B, Team-C and Team-D\n
+\t4. The team will grouped as below:\n
+        \t\t\t\tTop-1, 8, 9 of EXTEMPORE will be in Team-A\n
+        \t\t\t\tTop-2, 7, 10 of EXTEMPORE will be in Team-B\n
+        \t\t\t\tTop-3, 6, 11 of EXTEMPORE will in Team-C\n
+        \t\t\t\tTop-4, 5,12 of EXTEMPORE will in Team-D\n
+5. The participant can bring only pen, papers, newspaper cuttings on the desk for Debate. No electronic items are allowed.
+6. The topic will be explained by the organizer and passed to Team-A to start.
+7. Team-A will speak on that topic for 5 minutes and then Team-B will have to oppose the Team-A and then Team-C, Team-D have to put their views and so on..</string>
+    <string name="task_third_vision">\t1. Any rules or information are subject to change and nothing could be held liableagainst Organisers or the Jnanagni Team.\n
+\t2. In such case the decision of the management and organizing committee would be considered as the final one.\n
+\t3. Inbox your enteries to our Email id jnanagnifet@gmail.com before the deadline.\n
+\t4. Mailed photographs will be uploaded on our facebook page www.facebook.com/jnanagniofficial by the admin.\n
+\t5. The photographs should be sent along with your name,age, your college name, email id and contact no.\n
+\t6. You also have to mention the category of the photograph with the same.\n
+\t7. Likes by only those people who have already liked our page will only be counted. Rest will be discarded.\n
+\t8. Auto likes will not be counted and the entry may be disqualified.\n</string>
+    <string name="task_mist">This event will test the speed and intelligence of the participants. Teams will be selected based on how well they perform in the preliminary round. All rounds will be held in FET. Clues could be inside any building, field or area.</string>
+    <string name="task_qcognito">\t1. A maximum of 10 seconds is allowed to answer a question.\n
+\t2. Questions are passed on to the next team if the current team is unable to answer.\n
+\t3. There are four levels, with each level having 5, 3, 2 and 1 questions respectively.\n</string>
+    <string name="task_freedscrawl"> Round 0: The online round-\n
+\tPresent a poem or story or any tale in just 100 words and mail it to us.\n
+\tDo mention your name, college name, place, and contact details along with it.\n
+\t50% marks will be of the likes and shares you get on social networking site and 50% marks will be based on Expert judgment.\n
+        \nRound 1: COO—the birth of sparrow-\n
+\tTotal time-15 minutes.\n
+\tPart (a): Warming of Eggs\n
+\tTime limit--- 10 minutes\n
+\tDifferent themes will be given in packets and candidates will
+have to choose a theme among the given set of themes.
+Candidate will have to write according to the theme.
+\tPart (b): Hatching of Eggs\n
+\tTime limit--- 5 minutes\n
+\tWord limit--- 50 words.\n
+       \t Candidates will have to write a summary of the writing submitted in part a.\n
+        \nRound 2: Expose --- Nurturing\n
+\tTime limit--- 20 minutes\n
+\tParticipants will be provided with colorful cards on which there will be written keywords.\n
+        \tThey have to write anything creative using the card\'s keyword.\n
+\tCandidates may use the hints provided on the cards provided.\n
+        \nRound 3: Burning Train--- The ultimate flight\n
+\tTime limit---15 minutes.\n
+\tWord limit--- NO limit\n
+\tExpress your best memories.\n
+\n\tConcepts for Tie-Breaker RoundTime\n
+\tlimit--- 12 minutes.\n
+\tWord limit--- No limit\n
+\tExpress the love of your life in a tale or a short poem.\n
+
+\n\nNOTE:- \n
+        \t•The content provided in any round should not be copied and
+should be 100% unique on plagiarism tests.OTHERWISE you will be disqualified.</string>
+    <string name="task_bursh_n_paint">
+      \t  1. You have to carry your own painting tools, geometry box etc.\n
+\t2. The water colour, water, container will be provided to you in the second level.\n
+\t3. You are not allowed to use any type of reference related to the topics provided for sketching and painting both.\n
+
+</string>
+    <string name="task_enthuse">\t• All posters are displayed in a single one-hour session. All poster presenters are required to be present with their poster during the session.\n
+\t• Posters are printed on paper, or it may be hand-made.\n
+\t• Maximum 5-7 minutes of time for individual presenter.\n
+\t• This is not a team event so all participants would be present their poster individually\n</string>
+    <string name="task_carrom">\t1. Pieces of different color will be chosen for both participants.\n
+\t2. If any participant will get the opposition’s piece will give fine.\n
+\t3. Total time given to a game will be 10 mins.\n
+</string>
+    <string name="task_chess">\t1. All participants will have to make their moves within 20 seconds.\n
+\t2. Points will be given on every move according to pieces.\n
+\t3. Total time given to a game will be 10 mins.\n
+</string>
+    <string name="task_badminton">In this event, rally starts with serve. Rally ends when shuttle touches the ground or gets caught by net or when someone commits a faults. You will get 1 point if you win the rally and if you win 21 rallies you win the game.</string>
+    <string name="task_table_tennis">Win the game. The loser will be eliminated.</string>
+    <string name="task_nfs">100(it may be changed later) meter race, participant completed the race with minimum time will be the winner.</string>
+    <string name="task_counter_strike">\t• Participant make a team of five members. One player can participate only once.\n
+\t•	Only one random map with two rounds, each round consist of five minutes.\n
+\t•	Team wins more rounds will be the winner.\n</string>
+    <string name="task_fifa"></string>
+    <string name="task_rubik_cube">The participant has to solve a given Rubik\'s Cube configuration. The time taken to solve it will be recorded on a stopwatch. The one who registers the minimum duration is declared the winner.</string>
+    <string name="task_minimilitia">will be delivered to you on the time of event</string>
+    <string name="task_bowling">will be delivered to you on the time of event</string>
+    <string name="task_dart">will be delivered to you on the time of event</string>
+    <string name="task_throwball">will be delivered to you on the time of event</string>
+    <string name="task_anukriti"></string>
+    <string name="task_sargam"></string>
+    <string name="task_craftvilla">1. You have to carry your own geometry box etc .\n
+2. Buttons , wires will be provided to you in this level.\n
+3. You are not allowed to use any type of reference related to the craft .\n </string>
+    <string name="task_kritika"></string>
+    <string name="task_lol"></string>
+    <string name="task_samagam"></string>
+    <string name="task_celebrity_visit"></string>
+    <string name="task_startup_fair"></string>
+
+
+    <string name="venue_hydroriser"></string>
+    <string name="venue_cipher">As specified in schedule computer center OR computer lab</string>
+    <string name="venue_electroguisial"></string>
+    <string name="venue_annihilator"></string>
+    <string name="venue_apptitude"></string>
+    <string name="venue_exgesis"></string>
+    <string name="venue_concatenation">4-5 hours</string>
+    <string name="venue_electrocio"></string>
+    <string name="venue_tinkerer">Duration:\t     2:30 hrs.\nVenue: (As per in schedule)</string>
+    <string name="venue_nopc">As per decided in schedule.</string>
+    <string name="venue_inclino"></string>
+    <string name="venue_cuandigo"></string>
+    <string name="venue_ameliorator"></string>
+    <string name="venue_hydrobot">Time Duration :- 4 Hours</string>
+    <string name="venue_abhivyakti"></string>
+    <string name="venue_third_vision"><a href="https://www.facebook.com/JnanagniOfficial/">Facebook Page</a>\n1 Feb to 28 February</string>
+    <string name="venue_mist">Room No. 208, FET CAMPUS\nDAY 2, 3</string>
+    <string name="venue_qcognito"></string>
+    <string name="venue_freedscrawl"></string>
+    <string name="venue_bursh_n_paint">MCR-1\tDay 2</string>
+    <string name="venue_enthuse">CANTEEN\tDay 1</string>
+    <string name="venue_carrom">Electrical lab or canteen.</string>
+    <string name="venue_chess">Upper floor of canteen\nDay 1, 2, 3</string>
+    <string name="venue_badminton"></string>
+    <string name="venue_table_tennis">Upper floor of canteen
+</string>
+    <string name="venue_nfs">DAY 1,2,3 IBM &amp; CC</string>
+    <string name="venue_counter_strike">DAY 1,2,3 IBM &amp; CC</string>
+    <string name="venue_fifa"></string>
+    <string name="venue_rubik_cube"></string>
+    <string name="venue_minimilitia"></string>
+    <string name="venue_bowling"></string>
+    <string name="venue_dart"></string>
+    <string name="venue_throwball"></string>
+    <string name="venue_anukriti">Stage Day 1 </string>
+    <string name="venue_sargam">Stage\t 23\'rd March 2017, 7:00 pm
+</string>
+    <string name="venue_craftvilla"></string>
+    <string name="venue_kritika">Cricket Ground</string>
+    <string name="venue_lol"></string>
+    <string name="venue_samagam">23 March eve Stage
+</string>
+    <string name="venue_celebrity_visit"></string>
+    <string name="venue_startup_fair">Duration: 4 hrs\n
+        Venue: As per schedule.
+</string>
+
+    <string name="spcf_hydroriser"></string>
+    <string name="spcf_cipher">\t- Participants should have good programming skill in atleast one of the three languages (C, C++, java).\n
+\t- Participants should be good in typing.\n
+\t- Participants are not allowed to use any other language.\n
+</string>
+    <string name="spcf_electroguisial">\tCandidates must bring their own laptops, USB asp/burner to burn hex code into the microcontroller, pre-installed compile/build software for the microcontroller selected.\n
+\tChoices for microcontroller are  Ardiuno, 8051, Atmega16.\n
+</string>
+    <string name="spcf_annihilator"></string>
+    <string name="spcf_apptitude">\t1. Each participants should have sound skills in java programming language.\n
+\t2. Should be able to develop UI (User Interface) using XML language.\n
+\t3. Developers should use Android studio only.\n</string>
+    <string name="spcf_exgesis"></string>
+    <string name="spcf_concatenation"></string>
+    <string name="spcf_electrocio">
+\t1. Each and every participants should have proper knowledge of electronics devices and circuit theory.\n
+\t2. They should be aware about practical formation of circuits with help of electronics component.\n
+</string>
+    <string name="spcf_tinkerer">
+Knowledge of 12th standard Physics, Chemistry, Mathmatics and Common-Sense
+</string>
+    <string name="spcf_nopc"></string>
+    <string name="spcf_inclino"></string>
+    <string name="spcf_cuandigo">Allowed programming languages are: <b>Java</b>, <b>C</b>, <b>C++</b> and <b>Python</b>.\n
+Knowledge of at least one of the above languages is mandatory.</string>
+    <string name="spcf_ameliorator"></string>
+    <string name="spcf_hydrobot"></string>
+    <string name="spcf_abhivyakti"></string>
+    <string name="spcf_third_vision"></string>
+    <string name="spcf_mist"></string>
+    <string name="spcf_qcognito"></string>
+    <string name="spcf_freedscrawl">You will require following things to participate in event-\n
+        \t Colorful cards\n
+\t Sketch pens and vintage papers\n
+\t A properly sunlighted natural venue, whether it be a
+garden or a lawn.\n
+\t Proper sitting arrangement and pads for the contestants to have a support to write.\n
+\t Stopwatches.\n
+\t Proper arrangement for the guest writer if necessary.\n
+</string>
+    <string name="spcf_bursh_n_paint"></string>
+    <string name="spcf_enthuse"></string>
+    <string name="spcf_carrom"></string>
+    <string name="spcf_chess"></string>
+    <string name="spcf_badminton"></string>
+    <string name="spcf_table_tennis"></string>
+    <string name="spcf_nfs"></string>
+    <string name="spcf_counter_strike"></string>
+    <string name="spcf_fifa"></string>
+    <string name="spcf_rubik_cube"></string>
+    <string name="spcf_minimilitia"></string>
+    <string name="spcf_bowling"></string>
+    <string name="spcf_dart"></string>
+    <string name="spcf_throwball"></string>
+    <string name="spcf_anukriti"></string>
+    <string name="spcf_sargam"></string>
+    <string name="spcf_craftvilla"></string>
+    <string name="spcf_kritika"></string>
+    <string name="spcf_lol"></string>
+    <string name="spcf_samagam"></string>
+    <string name="spcf_celebrity_visit"></string>
+    <string name="spcf_startup_fair">1- The contest is open to students, corporate professionals, entrepreneurs, as well as other independent individuals (employed or unemployed). \n
+2- All the relevant aspects such as business concept, vision, market opportunity, competitive advantage, detailed competitive analysis and the resources and finances required to implement the idea can be included. Relevant financial projections including expected cash flows, pro-forma balance sheets and \'P and L\' statements can be included. Proposed management structure and relevant assumptions may also be included.\n
+        3- And registration is done by sending the abstract to  the provided email\n
+</string>
+
+
+    <string name="judg_hydroriser">
+<b>Elimination Round :</b> Top 32 teams with minimum time will qualify for the knockout round.\n
+<b>Knockout Round :</b> The team that drops the top ball first, will be declared as the winner of that particular round.\n
+\n
+
+The maximum time given for completing the task is 6 minutes. A setup time of 2 minutes would be given before the start of the run. The machine should not cross the marked line before the start of the run.\n
+\t• The control of the machine by the participants must only be syringes.\n
+\t• The machine has to climb the rope using hydraulic mechanisms only.\n
+\t• The run time starts from the moment any part of the machine crosses the starting line and stops the moment the ball on the topmost platform touches the ground.\n
+\t• Maximum of three interventions are allowed during a trial. Teams will have to start from the previous checkpoint. Time will not be stopped during the positioning of the machine.\n
+
+\n<b> Elimination Round :</b>\n
+\t• The participants should complete the task pushing the ball off the platform which is at a height of 500mm and then proceeding to climb a total height of 1000mm.\n
+\t• The time in this case stops when any part of the machine crosses the 1000mm line.\n
+\t• The only checkpoint in this task will be dropping the ball off the platform.\n
+\t• The run time of all the participants will be noted down and the top 10 teams with the minimum time for completion of the task will qualify for the next round.\n
+\t• The machine should physically come into contact with the ball to push it off the platform.\n
+\n<b> The knock-out round:</b>\n
+\t• Teams will go two at a time in a race to drop the ball of the topmost platform and the team that pushes the ball out of the top most platforms first will win the knock out.\n
+\t• The participants cannot clear a major checkpoint without clearing any previous major checkpoint i.e. a participant cannot drop the ball of the second platform without dropping the ball off from the first platform.\n
+\t• The machine should physically come into contact with the ball to push it off the platform.\n
+\t• If the organizers feel any necessity to conduct a rerun to differentiate the teams then a rerun will be conducted.\n
+\t• The tubes containing the fluid should not be taut at any point of time while the run is going on and no direct pull or push force should be applied via tubes.\n
+\t• The machine should not damage the ropes in any form. This might lead to disqualification.\n
+\t• It is suggested that people add colours to the fluid used in tubes. This might help them while controlling the machine.\n
+\t• The maximum time limit for the run is 10 minutes. If the team is not able to reach the Finish Line within the maximum time then points will be awarded in accordance to path travelled.\n
+\t• The machine cannot damage the rope in any way.This may attract disqualification from the event.\n
+
+
+
+</string>
+    <string name="judg_cipher">\tLess time of execution and less no. of errors.\n
+\tAlgorithm and complexity of the solution.\n
+\tParticipants arre not allowed to touch the monitor.\n
+
+</string>
+    <string name="judg_electroguisial">
+\t1. Points will be given on the basis of individual rounds.\n
+\t2. Lesser the time, more the points will be.\n
+\t3. Flnal output.\n
+\t4. If a tie occurs, \"smartest code\" will be considered.\n
+
+</string>
+    <string name="judg_annihilator">
+\t- The time limit is maximum of 5 minutes.\n
+\t- Width of the track is 35cm.\n
+\t- Penalties are imposed.
+\n\n
+Team completing the track in least time will be winner.
+
+</string>
+    <string name="judg_apptitude">1. No cheating or copying code from the Internet (obviously!).\n
+2. API/Libraries if used, must be limited to those provided in the standard library of the language you choose. In other words, no external Libraries. Although if you really need one, don\'t be afraid to ask, we\'ll see if it can be allowed.\n
+3. We\'ll have default Text Editors/IDEs installed on our machines for the target languages, although, you\'re free to use your own.\n
+        \nMoreover these are rules for judgement:-\n
+\t1. Solutions will be tested for correctness against some sample test cases.\n
+\t2. If all test cases pass, participants will be ranked based on their program\'s execution time. So, take as much time as you need ( near about 2Hrs/Round 1 and 3Hrs/Round 2 ) perfecting your source code.\n
+\t3. If not all test cases pass, participants will be ranked based on their program\'s degree of correctness (i.e. number of test cases passed).\n</string>
+    <string name="judg_exgesis">Round 1 is evaluated based on  number of question answered correctly.\n
+Round 2 is based on the solution and approach to a given question and time taken to complete the solution.\n
+Round 3 is based on output, time taken and efficiency of the solution.\n
+</string>
+    <string name="judg_concatenation">
+\t- Points will be given on the basis of no. of events completed in a series.\n
+\t- Full completion of events.\n
+\t- Complexity of series.\n
+\t- Final output.\n</string>
+    <string name="judg_electrocio">\t1. From all registered participants there would be 40 participants selected for ROUND 1 on priority basis or simple test.\n
+\t2. Participants would be selected on the basis of there knowledge about electronics in Round 1.\n
+\t3. Participants will achieve virtual money in this Round on the basis of there performance.\n
+\t4. 10 students would be selected among 40 for Round 2.\n
+\t5. Participants have to make circuit with help of electronic component which would be provided by virtual money.\n
+\t6. Participant who will complete this task first become the winner of this event and second participant will become runner up.\n
+</string>
+    <string name="judg_tinkerer">\t1. Level of correctness of decoded message: <b>(-1: Totally wrong, 0: Near, 1: Correct) x 11 marks</b>\n
+\t2. Time spent: <b>10000 / (time spent in seconds); (Only calculated if task is completed successfully or nearly)</b>\n
+\t3. Cooperativeness with others: <b>3 marks</b>\n
+</string>
+    <string name="judg_nopc">\t According to their performance as they are judged at hackerearth platform.\n
+</string>
+    <string name="judg_inclino">
+\t1. For each unit of mass sustained, points will be given.\n
+\t2. Time will be determining factor too.\n
+\t3. Angle of inclination will be checked.\n
+\t4. The team which scores highest points will be the winner.\n
+</string>
+    <string name="judg_cuandigo">1. Maximum of five members are allowed in a team, where only two of them are allowed on the arena at a time.\n
+2. The robot should not damage the arena.\n
+3. It is your responsibility to take care of all type of equipiment i.e, wire connection or any sort of robot assembly parts.\n
+4. No arguments regarding this issue will be entertained. The organiser decision regarding this issue or any other issue will be final.\n
+5. No technical assistance will be provided by the organising team at the time of event.\n
+6. Top three teams will get the certificate and prize money. \n
+\nJudging Criteria:-\n
+\t- The time limit is maximum of 5 minutes.\n
+\t- Width of the track is 35cm.\n
+\t- Penalties are imposed.\n
+
+Team completing the track in least time will be winner.\n
+        <b>Note</b>
+Extra point will be rewarded for autonomous robot.\n
+For any quaries contact to organiser.
+</string>
+    <string name="judg_ameliorator"></string>
+    <string name="judg_hydrobot">1. Minimum Time will be determining factor too.\n
+        2. Maximum Load of 2nd round will also be determining factor.
+    </string>
+    <string name="judg_abhivyakti">
+For Extempore\n
+\tEach role play will be evaluated as follows by the judges:\n
+    \t\t\tSpontaneity                      \t\t\t   \t\t     \t\t\t\t\t\t20 Marks\n
+    \t\t\tAbility to express thoughts            \t      \t\t\t\t\t\t10 Marks\n
+    \t\t\tFluency in language                    \t\t    \t\t\t\t\t\t10 Marks\n
+    \t\t\tBody Language / Confidence                     \t\t\t\t\t\t10 Marks\n
+
+For Debate\n
+\t\t\t\t\t\t        Criteria            \t\t\t\t\t\t \t\t                      Grades\n
+
+   \t\t\t Organization &amp; Clarity:       \t\t\t\t\t      \t\t\t               1-4\n
+    \t\t\tUse of Argument:                       \t\t\t \t\t\t      \t\t\t      1-4\n
+    \t\t\tUse of cross-examination and rebuttal:          \t\t\t  1-4\n
+    \t\t\tPresentation Style:                       \t\t\t \t\t\t        \t\t\t 1-4\n
+</string>
+    <string name="judg_third_vision">
+Judgement will based on likes on social site(Facebook). Participants must get their photographs liked, commented and shared on our Facebook page.
+Points will be given on the basis of likes, comments and shares on your picture.\n
+
+\t\t1 point for each like,\n
+\t\t2 points for each comment,\n
+\t\t5 points for each share.\n
+\n\n
+
+<b>Top 3 entries in each category will be declared as the winners.
+A maximum of two photographs can be sent per contestant.</b>
+\n\n
+Send your entries at <a href="jnanagnifet@gmail.com">jnanagnifet@gmail.com</a>
+</string>
+    <string name="judg_mist">In each round the qualified number groups will be selected on a first come first serve basis provided they have completed the trail of that round.\n\n
+        \t1. Open to all who register for JNANAGNI.\n
+\t2. Only 4 hunters per team.\n
+\t3. A preliminary round (ROOM NO. 208, FET) will be held to select the only eligible team.\n
+\t4. The Team That Stays Together. Your team must stay together at all times. You may not split up to “divide” tasks.\n
+\t5. Playing Fair. Have fun and try to win. But don’t let your competitive instincts drive you to ruin other people’s chances o win. If you do, your team will be disqualified. That means no sabotaging, lying, cheating, stealing, or copying other people’s work.\n
+\t6. Cheaters Never Win. If anyone on your team cheats or breaks the rules, the whole team gets disqualified\n
+\t7. Rules can be altered anytime for the sake of convenience.\n
+\t8. The decision of organizers will be the final.\n
+\t9. No mobile phones &amp; technology\n
+
+</string>
+    <string name="judg_qcognito">The team with the maximum number of correct answers is declared the winner.</string>
+    <string name="judg_freedscrawl">Word count in the case of long passages and poems.\n
+Number of stanzas in case of poems.\n
+The number of unique words with reference to dictionary.com database.\n
+Irregular end will attract more marks.\n</string>
+    <string name="judg_bursh_n_paint">\t1. Minimum time required will be determining factor\n
+\t2. The paintings will be selected by our jury member\n
+\t3. Top 3 will be selected for certification in the final round\n
+</string>
+    <string name="judg_enthuse">
+Judging will be done by a panel of four judges. Scoring will be done on a scale of 1-10 by each judge. The following factors will be considered:\n
+
+\t• Topic chosen by the participants\n
+\t• Creativity presented in the poster\n
+\t• Explanation and communication skill\n
+\t• Body language and confidence\n
+</string>
+    <string name="judg_carrom">
+\t1. Time will be determining factor.\n
+\t2. The participant who scores highest will be winner.\n
+</string>
+    <string name="judg_chess">
+\t1.Time will be determining factor.\n
+\t2.The participant who scores highest will be the winner.\n
+</string>
+    <string name="judg_badminton">Candidates are advised not to commit a fault. It could be any of these:\n
+\t1. Contact fault\n
+\t2. Over the net fault\n
+\t3. Service fault\n
+\t4. Receiver fault\n
+\t5. Doubles hit\n
+
+\nNote :-\n
+Selection will be done On the basis of points.
+
+</string>
+    <string name="judg_table_tennis"> Every game will be played in 3 rounds, with the winner winning 2/3 rounds.\n
+
+\t1. Time will be determining factor.\n
+\t2. The participant who scores highest will be winner.\n
+</string>
+    <string name="judg_nfs">\t100(it may be changed later) meter race, participant completed the race with minimum time will be the winner.
+\n\n
+
+\t•	Only valid participants are allowed.\n
+\t•	Carry jnanagni ID card.\n
+\t•	Participant should register online for this event.\n
+\t•	Games setup will be provided by organizers.\n
+\t•	Cheat codes will result in a permanent ban.\n
+</string>
+    <string name="judg_counter_strike">\t•	 Participant make a team of five members. One player can participate only once.\n
+\t•	Only one random map with two rounds, each round consist of five minutes.\n
+\t•	Team wins more rounds will be the winner.\n</string>
+    <string name="judg_fifa">This is a fun event so judgement will be based on your performance.</string>
+    <string name="judg_rubik_cube">For a fresh start the participants will have to purchase the coupon.
+        \n\nThe participants are judged based on the points scored per round.\n Points are scored based on the time taken to solve the cube in each round.\n The final point scored, will be the sum of scores of both the rounds.\n
+</string>
+    <string name="judg_minimilitia">This is a fun event so judgement will be based on your performance.</string>
+    <string name="judg_bowling">This is a fun event so judgement will be based on your performance.</string>
+    <string name="judg_dart">This is a fun event so judgement will be based on your performance.</string>
+    <string name="judg_throwball">This is a fun event so judgement will be based on your performance.</string>
+    <string name="judg_anukriti">Judging will be done by a panel of at least 3 judges. Scoring will be done on a scale of 1-10 in each stage.\n
+The following factors will be considered:\n
+\t• For solo performance:\n
+\t\t1. Dance moves\n
+        \t2. Public response\n
+\t\t3. Facial Expressions\n
+\t• For group performance:\n
+\t\t1. Coordination\n
+\t\t2. Creativity/music selection\n
+\t\t3. Public response\n
+\t\t4. Entertainment value\n</string>
+
+    \n\n
+    \t1. Maximum performance time:\n
+    \t\t• For solo performance:  5 minutes (max)\n
+    \t\t• For group performance: 8 minutes (max)\n
+    \n\t2. Each participant can perform only once in both categories i.e. solo and group.\n
+    <string name="judg_sargam">\t1. Entertainment\n
+\t2. Voice\n
+\t3. Consistency\n
+\t4. Rhythm\n
+\t5. Melody\n
+        \n\n
+        Note :- \n
+        \t1. Karaoke will be brought by the contestent.\n
+\t2. You will be provided a limited time duration.
+</string>
+    <string name="judg_craftvilla">1. Minimum Time will be determining factor too.\n
+2. The crafts will be selected by our jury member.\n
+3. Top 3 will be selected for certification in final round.\n</string>
+    <string name="judg_kritika"></string>
+    <string name="judg_lol"></string>
+    <string name="judg_samagam"></string>
+    <string name="judg_celebrity_visit"></string>
+    <string name="judg_startup_fair">\t1. On basis of the plan\'s practical approach\n
+\t2. On basis of your field work\n
+\t3. On basis of your revenue generation and expenditure plan\n
+\n\n
+
+General Rules\n
+\t- All the team members need not be from the same University / Business School / Organization.\n
+\t- Corporate professionals from different companies can form a team together and participate\n
+\t- No changes will be made in the team composition after registration.\n
+    </string>
+
+    <string name="coor_hydroriser">Akashveer\t+917275360069\nSandeep malav\t+919997105940, +918239724753\nAbhit Sharma\t+918439983273</string>
+    <string name="coor_cipher">Tulesh kumar Jaiswal\t+919720174269\ttuleshjaiswal@gmail.com\nKeshav Tiwari\t+917376421788</string>
+    <string name="coor_electroguisial">Vaibhav Maheshwari\t+919454826353\nDigvijay Katyal\t+919557843810\nVipin Maurya\t+917054369587</string>
+    <string name="coor_annihilator">Deepesh\t+918239157461\nPawan Awana\t+919119766497\nSuraj Kanojia\t+918791929405\nOmendra Prajapati</string>
+    <string name="coor_apptitude">VIPIN YADAV\t+919919716378\nKRISHNA CHAITANYA\t+919866511199\nRaghvendra Gupta\t+918756809878</string>
+    <string name="coor_exgesis">Khem Chand Saini\t+918764243338, +918077707732</string>
+    <string name="coor_concatenation">Abhay singh\t+918755308541\nShubaham mishra\nShubaham sharma</string>
+    <string name="coor_electrocio">RAHUL KUMAR JAISWAL\t+918853994496\trahuljaisawal08@gmail.com\nHARIOM PANDE\t+918755526099</string>
+    <string name="coor_tinkerer">Deepak Roy\t+918979844479\nVishal Kumar\t+917906733607\tvittu40@gmail.com</string>
+    <string name="coor_nopc">Mohit Kumar Singh\t+918090133905\tmohit.oct58@yahoo.in\nAyush Kumar Jaiswal\t+919455460089\tayush9662@gmail.com</string>
+    <string name="coor_inclino">Sourabh Gupta</string>
+    <string name="coor_cuandigo">Mithusayel Murmu\t+917535079848\nSandesh Mishra\t+918948803094</string>
+    <string name="coor_ameliorator"></string>
+    <string name="coor_hydrobot">Arun Kumar Mishra\t+918795178517\tarunmishra812@gmail.com</string>
+    <string name="coor_abhivyakti">Nagendra Chaudhary\t+917060196036\tnagendrachaudhary2016@gmail.com\nPVS Praveen\t+918394046125\nAnkit Kumar\t+917248184585</string>
+    <string name="coor_third_vision">Ku. Ashish Pratap Singh\t+917217569722\taps22jul@gmail.com\nSahil Singh\t+919536386845\nMukul Dev\t+919760467051</string>
+    <string name="coor_mist">YOGESH PANDEY\t+919473691198</string>
+    <string name="coor_qcognito">Harsh</string>
+    <string name="coor_freedscrawl">Ronak Sharma\t+917060335397\trsharma.ronaksharma@gmail.com\nVinit Mishra\tervinitinnovate@gmail.com</string>
+    <string name="coor_bursh_n_paint">LALIT KISHOR PARANGI\t+919557095386</string>
+    <string name="coor_enthuse">ABHIGYAN MISHRA\t+917275560298</string>
+    <string name="coor_carrom">NITIN SINGH\t+918601741398\tnitinsingh120696@gmail.com\nPUNEET NAYAK\t8755492241</string>
+    <string name="coor_chess">PULKIT CHATURVEDI\t+918958114532</string>
+    <string name="coor_badminton">Nitin Pareek\t+918937008060\tnitinpareek802@gmail.com</string>
+    <string name="coor_table_tennis">NITIN SINGH\t+918601741398\tnitinsingh120696@gmail.com\nPUNEET NAYAK\t8755492241</string>
+    <string name="coor_nfs">RAJAT VERMA\t9045455246</string>
+    <string name="coor_counter_strike">RAJAT VERMA\t9045455246</string>
+    <string name="coor_fifa"></string>
+    <string name="coor_rubik_cube">Gulab Singh\nVenkata Srikar Mukkavilli</string>
+    <string name="coor_minimilitia"></string>
+    <string name="coor_bowling"></string>
+    <string name="coor_dart"></string>
+    <string name="coor_throwball"></string>
+    <string name="coor_anukriti">Ankush Singh \t +91847502712 </string>
+    <string name="coor_sargam">Ojas Trivedi \t +919452441723</string>
+    <string name="coor_craftvilla">Rahul Kumar \t +918394866884</string>
+    <string name="coor_kritika">Kamlesh lohar \t +918475809611 \t kamleshlohar123445@gmail.com</string>
+    <string name="coor_lol"></string>
+    <string name="coor_samagam">Ashutosh Yadav\t+919473815173\nGaurav Suman\t+919012677749\nAditya Kumar Sinha\t+919012677806</string>
+    <string name="coor_celebrity_visit"></string>
+    <string name="coor_startup_fair"><b>Subhjyoti Das</b>\t
+vantdally@gmail.com\n
+<b>Khemchand saini</b>\t
++918764243338\n
+<b>Vikas</b>
+</string>
 </resources>

@@ -1,8 +1,5 @@
 package com.example.pranjul.materialtest;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -10,6 +7,9 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -100,7 +100,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         title_year=(TextView)nav_header_home.findViewById(R.id.title_nav_year);
         title_year.setTypeface(typeface);
 
-        fragMan=getFragmentManager();
+        fragMan=getSupportFragmentManager();
         fragMan.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
             public void onBackStackChanged() {

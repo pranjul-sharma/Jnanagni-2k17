@@ -1,19 +1,22 @@
 package com.example.pranjul.materialtest;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,6 +32,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private TextView title_year;
     private FragmentManager fragMan;
     private FragmentTransaction ft;
+    //private Handler mHandler = new Handler();
     private DrawerLayout drawer;
     private Runnable  mPendingRunnable;
     private int id;
@@ -65,6 +69,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             public void onDrawerClosed(View drawerView) {
                 if(navItemClicked)
                     mPendingRunnable.run();
+                //if (mPendingRunnable != null) {
+                    //mHandler.post(mPendingRunnable);
+                    //mPendingRunnable = null;
+                //}
             }
 
             @Override
@@ -92,7 +100,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         title_year=(TextView)nav_header_home.findViewById(R.id.title_nav_year);
         title_year.setTypeface(typeface);
 
-        fragMan=getSupportFragmentManager();
+        fragMan=getFragmentManager();
         fragMan.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
             public void onBackStackChanged() {
@@ -121,7 +129,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             public void run() {
                 ft=fragMan.beginTransaction();
                 if (id == R.id.nav_home) {
-                    if(fragMan.getBackStackEntryCount()>1)
                     fragMan.popBackStack();
                     getSupportActionBar().setTitle("Home");
                 } else if (id == R.id.nav_events) {

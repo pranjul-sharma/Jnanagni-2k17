@@ -2,7 +2,7 @@ package com.example.pranjul.materialtest;
 
 
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +29,6 @@ public class ViewWeb extends Fragment {
         WebView webView= (WebView) layout.findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
         webView.getSettings().setJavaScriptEnabled(true);
-        //webClient.url="http://maps.google.com/maps?29.918666,78.064041";
         webView.loadUrl("https://maps.google.com/maps?daddr=29.918666,78.064041");
         return layout;
     }

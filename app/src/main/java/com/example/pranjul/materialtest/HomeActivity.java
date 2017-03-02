@@ -1,9 +1,12 @@
 package com.example.pranjul.materialtest;
 
+import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -22,6 +25,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -134,8 +139,21 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 } else if (id == R.id.nav_events) {
                     startActivity(new Intent(HomeActivity.currObject, Main3Activity.class));
                 } else if (id == R.id.nav_location) {
-                    ft.replace(R.id.content_frame, new LocationFragment(), "visible_fragment");
+                    ft.replace(R.id.content_frame, new ViewWeb(), "visible_fragment");
                     getSupportActionBar().setTitle("Location");
+                    //ft.replace(R.id.content_frame, new LocationFragment(), "visible_fragment");
+                    //getSupportActionBar().setTitle("Location");
+                    /*try {
+                        //launchGoogleMaps(HomeActivity.currObject, 29.918666, 78.064041, "FET");
+                        String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?daddr=%f,%f (%s)", 29.918666, 78.064041, "FET");
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                        intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                        startActivity(intent);
+                    }
+                    catch(ActivityNotFoundException e) {
+                        ft.replace(R.id.content_frame, new ViewWeb(), "visible_fragment");
+                        getSupportActionBar().setTitle("Location");
+                    }*/
                 } else if (id == R.id.nav_login) {
                     ft.replace(R.id.content_frame,new RegisterFragment(),"visible_fragment");
                     getSupportActionBar().setTitle("Register");
@@ -191,5 +209,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             prevItem=navigationView.getMenu().findItem(R.id.nav_home);
             prevItem.setChecked(true);
         }
+    }
+    public static void launchGoogleMaps(Context context, double latitude, double longitude, String label) {
+        String format = "geo:0,0?q=" + Double.toString(latitude) + "," + Double.toString(longitude) + "(" + label + ")";
+        Uri uri = Uri.parse(format);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        context.startActivity(intent);
     }
 }

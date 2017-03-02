@@ -3,10 +3,12 @@ package com.example.pranjul.materialtest;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -22,6 +24,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -135,8 +139,22 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 } else if (id == R.id.nav_events) {
                     startActivity(new Intent(HomeActivity.currObject, Main3Activity.class));
                 } else if (id == R.id.nav_location) {
-                    ft.replace(R.id.content_frame, new LocationFragment(), "visible_fragment");
-                    getSupportActionBar().setTitle("Location");
+                    //ft.replace(R.id.content_frame, new LocationFragment(), "visible_fragment");
+                    Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                            Uri.parse("geo:0,0?q=29.918666,78.064041 ( FET "));
+                    try {
+                        startActivity(intent);
+                    }
+                    catch(ActivityNotFoundException e) {
+                        Log.e("WTF :", "why is it not working");
+                        //Intent intent2 = new Intent(Intent.ACTION_VIEW,
+                                //Uri.parse("http://maps.google.com/maps?" +
+                                                //"daddr=29.918666,78.064041"));
+                        //startActivity(intent2);
+                        ft.replace(R.id.content_frame,new ViewWeb(),"visible_fragment");
+                        getSupportActionBar().setTitle("Location");
+                    }
+                    //getSupportActionBar().setTitle("Location");
                 } else if (id == R.id.nav_login) {
                     ft.replace(R.id.content_frame,new RegisterFragment(),"visible_fragment");
                     getSupportActionBar().setTitle("Register");

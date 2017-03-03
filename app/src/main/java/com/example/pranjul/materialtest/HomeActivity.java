@@ -107,6 +107,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         fragMan.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
             public void onBackStackChanged() {
+                //Log.e("BackStackEntryCount :", ""+fragMan.getBackStackEntryCount());
                 Fragment fragment=fragMan.findFragmentByTag("visible_fragment");
                 Menu menuNav=navigationView.getMenu();
                 MenuItem item;
@@ -119,6 +120,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 }
             }
         });
+
         ft=fragMan.beginTransaction();
         ft.replace(R.id.content_frame, new HomeFragment(), "visible_fragment");
         ft.addToBackStack(null);
@@ -168,7 +170,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     ft.replace(R.id.content_frame, new ContactFragment(), "visible_fragment");
                     getSupportActionBar().setTitle("Contact Us");
                 }
-                if(id!=R.id.nav_home&&getFragmentManager().getBackStackEntryCount()!=2)
+                if(id!=R.id.nav_home&&fragMan.getBackStackEntryCount()!=2)
                     ft.addToBackStack(null);
                 if(id!=R.id.nav_events)
                     ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
@@ -184,8 +186,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             drawer.closeDrawer(GravityCompat.START);
         else {
             fragMan.popBackStack();
-            if (fragMan.getBackStackEntryCount() == 1)
+            Log.e("BackStackEntryCount :", ""+fragMan.getBackStackEntryCount());
+            if (fragMan.getBackStackEntryCount() == 1) {
+                Log.e("Alright :", "I'm here");
                 super.onBackPressed();
+            }
         }
     }
 

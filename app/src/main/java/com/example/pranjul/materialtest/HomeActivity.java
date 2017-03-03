@@ -1,8 +1,10 @@
 package com.example.pranjul.materialtest;
 
+import android.Manifest;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -10,6 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -37,12 +40,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private TextView title_year;
     private FragmentManager fragMan;
     private FragmentTransaction ft;
-    //private Handler mHandler = new Handler();
     private DrawerLayout drawer;
     private Runnable  mPendingRunnable;
     private int id;
     private View headerView;
-    private boolean navItemClicked=false;
+    private boolean navItemClicked=false, permissionGranted=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,10 +76,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             public void onDrawerClosed(View drawerView) {
                 if(navItemClicked)
                     mPendingRunnable.run();
-                //if (mPendingRunnable != null) {
-                    //mHandler.post(mPendingRunnable);
-                    //mPendingRunnable = null;
-                //}
             }
 
             @Override
@@ -134,26 +132,30 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             public void run() {
                 ft=fragMan.beginTransaction();
                 if (id == R.id.nav_home) {
-                    fragMan.popBackStack();
+                    if(fragMan.getBackStackEntryCount()>1)
+                        fragMan.popBackStack();
                     getSupportActionBar().setTitle("Home");
                 } else if (id == R.id.nav_events) {
                     startActivity(new Intent(HomeActivity.currObject, Main3Activity.class));
                 } else if (id == R.id.nav_location) {
-                    ft.replace(R.id.content_frame, new ViewWeb(), "visible_fragment");
-                    getSupportActionBar().setTitle("Location");
-                    //ft.replace(R.id.content_frame, new LocationFragment(), "visible_fragment");
-                    //getSupportActionBar().setTitle("Location");
-                    /*try {
-                        //launchGoogleMaps(HomeActivity.currObject, 29.918666, 78.064041, "FET");
+                    try {
                         String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?daddr=%f,%f (%s)", 29.918666, 78.064041, "FET");
                         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                         intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
                         startActivity(intent);
                     }
                     catch(ActivityNotFoundException e) {
-                        ft.replace(R.id.content_frame, new ViewWeb(), "visible_fragment");
-                        getSupportActionBar().setTitle("Location");
-                    }*/
+                        if (ActivityCompat.checkSelfPermission(HomeActivity.currObject, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(HomeActivity.currObject, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                            ActivityCompat.requestPermissions(HomeActivity.currObject, new String[]{
+                                            Manifest.permission.ACCESS_FINE_LOCATION,
+                                            Manifest.permission.ACCESS_COARSE_LOCATION},
+                                    11);
+                        }
+                        if(permissionGranted) {
+                            ft.replace(R.id.content_frame, new LocationFragment(), "visible_fragment");
+                            getSupportActionBar().setTitle("Location");
+                        }
+                    }
                 } else if (id == R.id.nav_login) {
                     ft.replace(R.id.content_frame,new RegisterFragment(),"visible_fragment");
                     getSupportActionBar().setTitle("Register");
@@ -210,11 +212,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             prevItem.setChecked(true);
         }
     }
-    public static void launchGoogleMaps(Context context, double latitude, double longitude, String label) {
-        String format = "geo:0,0?q=" + Double.toString(latitude) + "," + Double.toString(longitude) + "(" + label + ")";
-        Uri uri = Uri.parse(format);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        context.startActivity(intent);
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode == 11) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                permissionGranted=true;
+            }
+            else
+                permissionGranted=false;
+        }
     }
 }

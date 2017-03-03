@@ -44,9 +44,7 @@ LocationListener{
     private Location mLastLocation;
     public static GoogleMap map;
     private LatLng FET;
-    private boolean permissionGiven=true;
     private LocationManager locationManager;
-    private String locationProvider;
     private TextView toGo;
 
     public LocationFragment() {
@@ -82,14 +80,7 @@ LocationListener{
         // For zooming automatically to the location of the marker
         CameraPosition cameraPosition = new CameraPosition.Builder().target(FET).zoom(12).build();
         googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-        if (ActivityCompat.checkSelfPermission(HomeActivity.currObject, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(HomeActivity.currObject, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(HomeActivity.currObject, new String[]{
-                            Manifest.permission.ACCESS_FINE_LOCATION,
-                            Manifest.permission.ACCESS_COARSE_LOCATION},
-                    11);
-        }
-        if(permissionGiven)
-            googleMap.setMyLocationEnabled(true);
+        googleMap.setMyLocationEnabled(true);
         //Log.e("What the", "is happening");
     }
 
@@ -131,14 +122,8 @@ LocationListener{
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-        if (ActivityCompat.checkSelfPermission(HomeActivity.currObject, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(HomeActivity.currObject, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(HomeActivity.currObject, new String[]{
-                            Manifest.permission.ACCESS_FINE_LOCATION,
-                            Manifest.permission.ACCESS_COARSE_LOCATION},
-                    11);
-        }
+
         GoogleMapsPath mapsPath;
-        if (permissionGiven) {
             float[] results = new float[1];
             mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
             if (mLastLocation == null) {
@@ -158,7 +143,6 @@ LocationListener{
                 else
                     mapsPath = new GoogleMapsPath(HomeActivity.currObject, map, new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()), FET);
             }
-        }
     }
 
     @Override
@@ -170,17 +154,6 @@ LocationListener{
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        if (requestCode == 11) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                permissionGiven=true;
-            }
-            else
-                permissionGiven=false;
-        }
-    }
-
     @Override
     public void onLocationChanged(Location location) {
         CameraUpdate center = CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(),location.getLongitude()));

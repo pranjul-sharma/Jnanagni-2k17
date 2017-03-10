@@ -28,7 +28,7 @@
                 android:shadowDx="-1"
                 android:shadowDy="-1"
                 android:shadowRadius="1"
-                android:text="ABHISHEK MISRA\n+919917882075"
+                android:text="ABHISHEK MISHRA\n+919917882075"
                 android:textSize="20dp"/>
             <View
                 android:layout_width="match_parent"
@@ -112,6 +112,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
                 android:background="#757575" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -123,8 +124,10 @@
                 android:shadowDx="-1"
                 android:shadowDy="-1"
                 android:shadowRadius="1"
-                android:text="SATYENDHAR DUBEY\n+917895098673"
-                android:textSize="20dp"/>
+                android:text="SATYENDRA DUBEY\n+917895098673"
+                android:textSize="20dp"
+                android:id="@+id/textView" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -238,6 +241,25 @@
                 android:shadowDy="-1"
                 android:shadowRadius="1"
                 android:text="RAHUL KUMAR\n+918394866884"
+                android:textSize="20dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#757575" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                android:textColor="@color/light_font"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="-1"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="for any other query:\nsupport@jnanagni17.in"
                 android:textSize="20dp"/>
         </LinearLayout>
     </ScrollView>

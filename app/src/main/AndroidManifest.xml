@@ -43,6 +43,7 @@
             android:name=".EventInfoActivity"
             android:screenOrientation="portrait"></activity>
         <activity android:name=".DashBoardActivity"></activity>
+
     </application>
 
 </manifest>

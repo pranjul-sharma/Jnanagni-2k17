@@ -2,7 +2,9 @@ package com.example.pranjul.materialtest;
 
 import android.Manifest;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -40,6 +42,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawer;
     private Runnable  mPendingRunnable;
     private int id;
+    SharedPreferences sharedPreferences;
     private View headerView;
     private boolean navItemClicked=false, permissionGranted=true;
 
@@ -81,6 +84,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         });
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
+        final MenuItem home=navigationView.getMenu().findItem(R.id.nav_home);
+        sharedPreferences=getSharedPreferences("myPreferences", Context.MODE_PRIVATE);
+        if(sharedPreferences.getBoolean("IS_SIGNED_IN",false)){
+            home.setTitle("Dashboard");
+        }
+
         navigationView.setNavigationItemSelectedListener(this);
         headerView=navigationView.getHeaderView(0);
         headerView.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +98,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 drawer.closeDrawer(GravityCompat.START);
             }
         });
+
 
         LinearLayout nav_header_home=(LinearLayout)navigationView.getHeaderView(0);
         title=(TextView)nav_header_home.findViewById(R.id.title_nav);
@@ -131,9 +141,16 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             public void run() {
                 ft=fragMan.beginTransaction();
                 if (id == R.id.nav_home) {
+                    if(home.getTitle().equals("Dashboard")){
+                        Intent intent=new Intent(HomeActivity.this,DashBoardActivity.class);
+                        intent.putExtra("fname",sharedPreferences.getString("F_NAME",""));
+                        intent.putExtra("lname",sharedPreferences.getString("L_NAME",""));
+                        intent.putExtra("email",sharedPreferences.getString("USER_NAME",""));
+                        startActivity(intent);
+                    }else{
                     if(fragMan.getBackStackEntryCount()>1)
                         fragMan.popBackStack();
-                    getSupportActionBar().setTitle("Home");
+                    getSupportActionBar().setTitle("Home");}
                 } else if (id == R.id.nav_events) {
                     startActivity(new Intent(HomeActivity.currObject, Main3Activity.class));
                 } else if (id == R.id.nav_location) {

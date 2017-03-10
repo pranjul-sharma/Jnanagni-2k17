@@ -60,27 +60,25 @@ public class EventFragment extends Fragment {
     private void prepareEvents(String eventCategory) {
         switch (eventCategory){
             case "Technical":
-                String[] eventsTechnical={"HYDRORISER", "CI-PHER", "ELECTROGUISIAL", "ANNIHILATOR",
-                        "APPTITUD", "EX-GESIS", "CONCATENATION", "ELECTRICIO",
-                        "TINKERER", "NOPC", "INCLINO", "CUANDIGO", "AMELIORATOR",
-                        "HYDROBOT"};
+                String[] eventsTechnical={"HYDRORISER", "CI-PHER", "ELECTROGUISAL", "ANNIHILATOR",
+                        "APPTITUDE", "EX-GESIS", "CONCATENATION", "ELECTRICIO",
+                        "TINKERER", "NOPC", "INCLINO", "CUANDIGO", "AMELIORATOR"};
                 int[] coversTechnical={R.drawable.hydroriser,R.drawable.cipher,R.drawable.electroguisial,R.drawable.annihilator,
                         R.drawable.apptitude,R.drawable.exgesis,R.drawable.concatination,R.drawable.electricio
-                        ,R.drawable.tinkerer,R.drawable.nopc,R.drawable.inclino,R.drawable.cuandigo,R.drawable.ameliorator,
-                        R.drawable.hydrobot};
+                        ,R.drawable.tinkerer,R.drawable.nopc,R.drawable.inclino,R.drawable.cuandigo,R.drawable.ameliorator};
                 prepareEvents(eventsTechnical,coversTechnical);
                 break;
             case "Non Technical":
                 String[] eventsNonTechnical={"ABHIVYAKTI", "THIRD VISION",
                         "MIST TREASURE HUNT", "Q-COGNITO", "FREEDOSCRAWL",
-                        "KALAKRITI", "ENTHUSE"};
+                        "KALAKRITI","CRAFTS-VILLA", "ENTHUSE","CRICKET KEEDA"};
                 int[] coversNonTechnical={R.drawable.abhivakti,R.drawable.thirdvision,R.drawable.mist,R.drawable.qcognito
-                        ,R.drawable.freedoscrawl,R.drawable.brushndpaint,R.drawable.enthuse};
+                        ,R.drawable.freedoscrawl,R.drawable.brushndpaint,R.drawable.creativefashionshw,R.drawable.enthuse,R.drawable.cricket_keeda};
                 prepareEvents(eventsNonTechnical,coversNonTechnical);
                 break;
             case "Cultural":
-                String eventsCultural[]={"FANCY FOOTWORK", "SARGAM","CRAFT-VILLA" , "KRITIKA", "LOL"};
-                int coversCultural[]={R.drawable.anukriti,R.drawable.sargam,R.drawable.creativefashionshw,R.drawable.kritika,R.drawable.lol};
+                String eventsCultural[]={"FANCY FOOTWORK", "SARGAM" , "KRITIKA", "LOL","NAUTANKISHALA"};
+                int coversCultural[]={R.drawable.anukriti,R.drawable.sargam,R.drawable.kritika,R.drawable.lol,R.drawable.nautankishala};
                 prepareEvents(eventsCultural,coversCultural);
                 break;
             case "Mega Events":

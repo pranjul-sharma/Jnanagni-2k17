@@ -47,6 +47,7 @@ public class RegisterFragment extends Fragment {
         college=(EditText)view.findViewById(R.id.college);
         radioGroup=(RadioGroup)view.findViewById(R.id.radio_gender_group);
 
+        radioButton=(RadioButton)radioGroup.findViewById(R.id.radio_male);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -101,7 +102,7 @@ public class RegisterFragment extends Fragment {
         if (!validatePhone())
             return;
         BackgroundTask registrationTask=new BackgroundTask(getActivity());
-        registrationTask.execute(firstName.getText().toString(),lastName.getText().toString(),
+        registrationTask.execute("register",firstName.getText().toString(),lastName.getText().toString(),
                 email.getText().toString(),phone.getText().toString(),college.getText().toString(),password.getText().toString(),radioButton.getText().toString());
     }
 

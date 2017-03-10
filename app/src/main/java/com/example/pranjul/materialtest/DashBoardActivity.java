@@ -1,13 +1,203 @@
 package com.example.pranjul.materialtest;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class DashBoardActivity extends AppCompatActivity {
+    Button btnEvtList;
+    static List<String> evtRegList=new ArrayList<>();
+    FloatingActionButton btnEvent;
+    TextView fname,lname,emailView;
+    boolean check_logout=false;
+    String first_name,last_name,email;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
+        Intent intent=getIntent();
+        first_name=intent.getStringExtra("fname");
+        last_name=intent.getStringExtra("lname");
+        email=intent.getStringExtra("email");
+        fname=(TextView)findViewById(R.id.textView2);
+        toolbar=(Toolbar)findViewById(R.id.toolbar_dashboard);
+        btnEvtList=(Button)findViewById(R.id.button2);
+        toolbar.setTitle("DashBoard");
+        setSupportActionBar(toolbar);
+        lname=(TextView)findViewById(R.id.textView3);
+        emailView=(TextView)findViewById(R.id.textView4);
+        fname.setText(first_name);
+        lname.setText(last_name);
+        emailView.setText(email);
+        btnEvent=(FloatingActionButton) findViewById(R.id.button_event);
+
+        btnEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashBoardActivity.this,Main3Activity.class));
+            }
+
+
+        });
+
+        btnEvtList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BackgroundTask backgroundTask=new BackgroundTask(DashBoardActivity.this);
+                backgroundTask.execute("evt-reglist",emailView.getText().toString());
+            }
+        });
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (check_logout){
+            finish();
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+     getMenuInflater().inflate(R.menu.dashboard_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getTitle().equals("logout")){
+            Log.v("LOGOUT","ho gya");
+            SharedPreferences sharedPreferences=getSharedPreferences("myPreferences",Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor=sharedPreferences.edit();
+            Log.v("LOGOUT","sb clear se phle"+sharedPreferences.getString("F_NAME",""));
+            editor.putString("F_NAME","").putString("L_NAME","").putString("USER_NAME","");
+            editor.putBoolean("IS_SIGNED_IN",false);
+            check_logout=true;
+            editor.apply();
+            Log.v("LOGOUT","sb clear"+sharedPreferences.getString("F_NAME",""));
+            startActivity(new Intent(DashBoardActivity.this,HomeActivity.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    class myListAdapter extends BaseAdapter{
+        Context context;
+        TextView ttname;
+        Button btnDesc,btnUnreg;
+        List<String> list=new ArrayList<>();
+        final HashMap<String,String> map=new HashMap<>();
+
+        myListAdapter(Context context,List<String> list){
+            this.list=list;
+            this.context=context;
+        }
+        @Override
+        public int getCount() {
+            return list.size();
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return 0;
+        }
+
+        @Override
+        public View getView(final int i, View view, ViewGroup viewGroup) {
+            View myView=getLayoutInflater().inflate(R.layout.list_item_row,null);
+            ttname=(TextView)myView.findViewById(R.id.list_item_textview);
+            btnDesc=(Button)myView.findViewById(R.id.btn_desc);
+            btnUnreg=(Button)myView.findViewById(R.id.btn_unreg);
+
+            initMap();
+
+            btnDesc.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(DashBoardActivity.this,EventInfoActivity.class);
+                    intent.putExtra("eventName",ttname.getText().toString());
+                    context.startActivity(intent);
+                }
+            });
+
+            btnUnreg.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    BackgroundTask backgroundTask=new BackgroundTask(DashBoardActivity.this);
+                    backgroundTask.execute("evt-unregister",emailView.getText().toString(),map.get(ttname.getText().toString()));
+                }
+            });
+            return myView;
+        }
+
+        private void initMap() {
+            map.put("hydroriser","tevent-0");
+            map.put("ci-pher","tevent-1");
+            map.put("electroguisal","tevent-2");
+            map.put("annihilator","tevent-3");
+            map.put("appitude","tevent-4");
+            map.put("ex-gesis","tevent-5");
+            map.put("concatenation","tevent-6");
+            map.put("electricio","tevent-7");
+            map.put("tinkerer","tevent-8");
+            map.put("nopc","tevent-9");
+            map.put("inclino","tevent-10");
+            map.put("cuandigo","tevent-11");
+            map.put("ameliorator","tevent-12");
+            map.put("abhivyakti","ntevent-0");
+            map.put("third vision","ntevent-1");
+            map.put("mist treasure hunt","ntevent-2");
+            map.put("q-cognito","ntevent-3");
+            map.put("freedoscrawl","ntevent-4");
+            map.put("kalakriti","ntevent-5");
+            map.put("crafts-villa","ntevent-6");
+            map.put("enthuse","ntevent-7");
+            map.put("cricket keeda","ntevent-8");
+            map.put("fancy footwork","cevent-0");
+            map.put("sargam","cevent-1");
+            map.put("kritika","cevent-2");
+            map.put("lol","cevent-3");
+            map.put("nautankishala","cevent-4");
+            map.put("samagam","workshop-0");
+            map.put("celebrity visit","workshop-1");
+            map.put("startup fair","workshop-2");
+            map.put("carrom","sevent-0");
+            map.put("table tennis","sevent-1");
+            map.put("chess","sevent-2");
+            map.put("badminton","sevent-3");
+            map.put("need for speed","sevent-4");
+            map.put("counter strike","sevent-5");
+            map.put("fifa","sevent-6");
+            map.put("rubik\'s cube","fevent-0");
+            map.put("mini-militia","fevent-1");
+            map.put("bowling","fevent-2");
+            map.put("dart","fevent-3");
+            map.put("throwball","fevent-4");
+        }
+
+
     }
 }

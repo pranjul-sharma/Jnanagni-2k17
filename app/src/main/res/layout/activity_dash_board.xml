@@ -61,6 +61,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/mybutton2"
             android:layout_marginTop="31dp"
+            android:layout_marginStart="14sp"
+            android:layout_marginEnd="14sp"
             android:text="your registered events"
             android:layout_below="@id/textView4"
             android:id="@+id/button2" />
@@ -68,12 +70,13 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/evt_reg_list"
+        android:id="@+id/reg_list_view"
         android:paddingStart="14sp"
         android:layout_below="@id/button2"
         android:paddingRight="14sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
+
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

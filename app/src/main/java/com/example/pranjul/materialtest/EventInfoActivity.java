@@ -89,7 +89,7 @@ public class EventInfoActivity extends AppCompatActivity {
     private void loadDatatoMap() {
         myHashMap.put("hydroriser",createList(R.string.desc_hydroriser,R.string.task_hydroriser,R.string.venue_hydroriser,R.string.spcf_hydroriser,R.string.judg_hydroriser,R.string.coor_hydroriser));
         myHashMap.put("ci-pher",createList(R.string.desc_cipher,R.string.task_cipher,R.string.venue_cipher,R.string.spcf_cipher,R.string.judg_cipher,R.string.coor_cipher));
-        myHashMap.put("electroguisial",createList(R.string.desc_electroguisial,R.string.task_electroguisial,R.string.venue_electroguisial,R.string.spcf_electroguisial,R.string.judg_electroguisial,R.string.coor_electroguisial));
+        myHashMap.put("electroguisal",createList(R.string.desc_electroguisial,R.string.task_electroguisial,R.string.venue_electroguisial,R.string.spcf_electroguisial,R.string.judg_electroguisial,R.string.coor_electroguisial));
         myHashMap.put("annihilator",createList(R.string.desc_annihilator,R.string.task_annihilator,R.string.venue_annihilator,R.string.spcf_annihilator,R.string.judg_annihilator,R.string.coor_annihilator));
         myHashMap.put("apptitude",createList(R.string.desc_apptitude,R.string.task_apptitude,R.string.venue_apptitude,R.string.spcf_apptitude,R.string.judg_apptitude,R.string.coor_apptitude));
         myHashMap.put("ex-gesis",createList(R.string.desc_exgesis,R.string.task_exgesis,R.string.venue_exgesis,R.string.spcf_exgesis,R.string.judg_exgesis,R.string.coor_exgesis));

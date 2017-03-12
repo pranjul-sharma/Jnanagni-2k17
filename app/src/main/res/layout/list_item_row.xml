@@ -3,14 +3,15 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="20sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:id="@+id/list_item_textview" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_unreg"
-        android:background="#ffff"
+        android:background="@drawable/mybutton"
         android:text="Unregister"
         android:textColor="@color/colorAccent"
         android:layout_marginLeft="10sp"
@@ -23,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_desc"
-        android:background="#ffff"
+        android:background="@drawable/mybutton"
         android:text="Desc"
         android:textColor="@color/colorAccent"
         android:layout_marginStart="10sp"
@@ -31,7 +32,7 @@
         android:layout_marginTop="34dp"
         android:layout_below="@+id/list_item_textview"
         android:layout_marginEnd="20dp" />
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="3sp"
         android:textColor="#fff"

@@ -176,6 +176,16 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     ft.replace(R.id.content_frame,new RegisterFragment(),"visible_fragment");
                     getSupportActionBar().setTitle("Register");
                 } else if (id == R.id.nav_share) {
+                    try {
+                        Intent i = new Intent(Intent.ACTION_SEND);
+                        i.setType("text/plain");
+                        i.putExtra(Intent.EXTRA_SUBJECT, "Jnanagni 2K17");
+                        String shareStr = "\nDownload our college techfest Jnanagni 2K17 android app from the link :-\n\n";
+                        shareStr = shareStr + "paste_link_here \n\n";
+                        i.putExtra(Intent.EXTRA_TEXT, shareStr);
+                        startActivity(Intent.createChooser(i, "select any way to spread"));
+                    } catch(Exception e) {
+                    }
 
                 } else if (id == R.id.nav_send) {
                     ft.replace(R.id.content_frame, new FeedbackFragment(), "visible_fragment");

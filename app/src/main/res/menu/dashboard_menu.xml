@@ -7,5 +7,11 @@
         android:title="logout"
         android:id="@+id/logout"
         />
+    <item
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="share this app"
+        android:id="@+id/shareapp"
+        />
 
 </menu>

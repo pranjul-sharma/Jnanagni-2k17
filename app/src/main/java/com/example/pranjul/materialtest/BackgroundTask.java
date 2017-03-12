@@ -173,7 +173,7 @@ class BackgroundTask extends AsyncTask<String,Void,String> {
                 }
             });
 
-            if(!msg.equals("") && !prefChange){
+            if(!msg.equals("")){
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
             }

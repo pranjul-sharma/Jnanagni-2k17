@@ -95,6 +95,9 @@ class BackgroundTask extends AsyncTask<String,Void,String> {
                     url=new URL(event_reg_url);
                     email=strings[1];
                     event_name=strings[2];
+                    mMap=new HashMap<>();
+                    initMap();
+                    event_name=mMap.get(event_name);
                     data = URLEncoder.encode("tag", "UTF-8") + "=" + URLEncoder.encode(EVENT_REG_TAG, "UTF-8") + "&"
                             +URLEncoder.encode("email","UTF-8")+"="+URLEncoder.encode(email,"UTF-8")+"&"
                             +URLEncoder.encode("id","UTF-8")+"="+URLEncoder.encode(event_name,"UTF-8");
@@ -241,6 +244,7 @@ class BackgroundTask extends AsyncTask<String,Void,String> {
         mMap.put("samagam","workshop-0");
         mMap.put("celebrity visit","workshop-1");
         mMap.put("startup fair","workshop-2");
+        mMap.put("rock syndrome","workshop-3");
         mMap.put("carrom","sevent-0");
         mMap.put("table tennis","sevent-1");
         mMap.put("chess","sevent-2");

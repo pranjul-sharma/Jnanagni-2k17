@@ -23,7 +23,6 @@ import java.util.List;
 public class EventInfoActivity extends AppCompatActivity {
 
     private HashMap<String , ArrayList<String>> myHashMap=new HashMap<>();
-    HashMap<String,String> map=new HashMap<>();
     Toolbar toolbar;
     TextView eventDesc,eventTimeVenue,eventJudgementalCriteria,eventCoordinators,eventTask,eventPrerequisites;
     TextView ttDesc,ttVenue,ttJudge,ttCoor,ttTask,ttSpec;
@@ -73,9 +72,8 @@ public class EventInfoActivity extends AppCompatActivity {
                 if(!sharedPreferences.getBoolean("IS_SIGNED_IN",false)){
                     Toast.makeText(getApplicationContext(),"please login first to continue register for events",Toast.LENGTH_LONG).show();
                 }else{
-                    initiateMap();
                     BackgroundTask backgroundTask=new BackgroundTask(EventInfoActivity.this);
-                    backgroundTask.execute("evt-register",sharedPreferences.getString("USER_NAME",""),map.get(eventName.toLowerCase()));
+                    backgroundTask.execute("evt-register",sharedPreferences.getString("USER_NAME",""),eventName.toLowerCase());
                 }
             }
         });
@@ -129,6 +127,7 @@ public class EventInfoActivity extends AppCompatActivity {
         myHashMap.put("samagam",createList(R.string.desc_samagam,R.string.task_samagam,R.string.venue_samagam,R.string.spcf_samagam,R.string.judg_samagam,R.string.coor_samagam));
         myHashMap.put("celebrity visit",createList(R.string.desc_celebrity_visit,R.string.task_celebrity_visit,R.string.venue_celebrity_visit,R.string.spcf_celebrity_visit,R.string.judg_celebrity_visit,R.string.coor_celebrity_visit));
         myHashMap.put("startup fair",createList(R.string.desc_startup_fair,R.string.task_startup_fair,R.string.venue_startup_fair,R.string.spcf_startup_fair,R.string.judg_startup_fair,R.string.coor_startup_fair));
+        myHashMap.put("rock syndrome",createList(R.string.desc_rock_syndrome,R.string.task_rock_syndrome,R.string.venue_rock_syndrome,R.string.spcf_rock_syndrome,R.string.judg_rock_syndrome,R.string.coor_rock_syndrome));
     }
 
     private ArrayList<String> createList(int desc,int task,int timeVenue,int spcf,int judg,int coor) {
@@ -156,50 +155,5 @@ public class EventInfoActivity extends AppCompatActivity {
             ttJudge.setVisibility(View.GONE);
         if (eventDetails.get(5).equals(""))
             ttCoor.setVisibility(View.GONE);
-    }
-
-    private void initiateMap(){
-        map.put("hydroriser","tevent-0");
-        map.put("ci-pher","tevent-1");
-        map.put("electroguisal","tevent-2");
-        map.put("annihilator","tevent-3");
-        map.put("appitude","tevent-4");
-        map.put("ex-gesis","tevent-5");
-        map.put("concatenation","tevent-6");
-        map.put("electricio","tevent-7");
-        map.put("tinkerer","tevent-8");
-        map.put("nopc","tevent-9");
-        map.put("inclino","tevent-10");
-        map.put("cuandigo","tevent-11");
-        map.put("ameliorator","tevent-12");
-        map.put("abhivyakti","ntevent-0");
-        map.put("third vision","ntevent-1");
-        map.put("mist treasure hunt","ntevent-2");
-        map.put("q-cognito","ntevent-3");
-        map.put("freedoscrawl","ntevent-4");
-        map.put("kalakriti","ntevent-5");
-        map.put("crafts-villa","ntevent-6");
-        map.put("enthuse","ntevent-7");
-        map.put("cricket keeda","ntevent-8");
-        map.put("fancy footwork","cevent-0");
-        map.put("sargam","cevent-1");
-        map.put("kritika","cevent-2");
-        map.put("lol","cevent-3");
-        map.put("nautankishala","cevent-4");
-        map.put("samagam","workshop-0");
-        map.put("celebrity visit","workshop-1");
-        map.put("startup fair","workshop-2");
-        map.put("carrom","sevent-0");
-        map.put("table tennis","sevent-1");
-        map.put("chess","sevent-2");
-        map.put("badminton","sevent-3");
-        map.put("need for speed","sevent-4");
-        map.put("counter strike","sevent-5");
-        map.put("fifa","sevent-6");
-        map.put("rubik\'s cube","fevent-0");
-        map.put("mini-militia","fevent-1");
-        map.put("bowling","fevent-2");
-        map.put("dart","fevent-3");
-        map.put("throwball","fevent-4");
     }
 }

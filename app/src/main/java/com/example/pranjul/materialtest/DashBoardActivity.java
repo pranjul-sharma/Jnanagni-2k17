@@ -29,7 +29,6 @@ public class DashBoardActivity extends AppCompatActivity {
     boolean check_logout=false;
     String first_name,last_name,email;
     Toolbar toolbar;
-    boolean taskCheck=false;
     MyListAdapter listAdapter;
 
 
@@ -107,16 +106,14 @@ public class DashBoardActivity extends AppCompatActivity {
             return true;
         }
         if (item.getTitle().equals("share this app")){
-            try {
-                Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("text/plain");
-                i.putExtra(Intent.EXTRA_SUBJECT, "Jnanagni 2K17");
-                String shareStr = "\nDownload our college techfest Jnanagni 2K17 android app from the link :-\n\n";
-                shareStr = shareStr + "paste_link_here \n\n";
-                i.putExtra(Intent.EXTRA_TEXT, shareStr);
-                startActivity(Intent.createChooser(i, "select any way to spread"));
-            } catch(Exception e) {
-            }
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("text/plain");
+            i.putExtra(Intent.EXTRA_SUBJECT, "Jnanagni 2K17");
+            String shareStr = "\nDownload our college techfest Jnanagni 2K17 android app from the link :-\n\n";
+            shareStr = shareStr + "paste_link_here \n\n";
+            i.putExtra(Intent.EXTRA_TEXT, shareStr);
+            startActivity(Intent.createChooser(i, "select any way to spread"));
+
         }
         return super.onOptionsItemSelected(item);
     }

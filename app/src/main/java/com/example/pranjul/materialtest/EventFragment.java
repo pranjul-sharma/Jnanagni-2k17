@@ -82,8 +82,8 @@ public class EventFragment extends Fragment {
                 prepareEvents(eventsCultural,coversCultural);
                 break;
             case "Mega Events":
-                String eventsMega[]={"SAMAGAM","CELEBRITY VISIT","STARTUP FAIR"};
-                int coversMega[]={R.drawable.samagam,R.drawable.celeb,R.drawable.startup};
+                String eventsMega[]={"SAMAGAM","CELEBRITY VISIT","STARTUP FAIR","ROCK SYNDROME"};
+                int coversMega[]={R.drawable.samagam,R.drawable.celeb,R.drawable.startup,R.drawable.rocksynrom};
                 prepareEvents(eventsMega,coversMega);
                 break;
             case "Game On":

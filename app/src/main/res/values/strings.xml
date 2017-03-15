@@ -131,13 +131,7 @@ Round 1\n
 Round 2\n
 \tParticipants will have to code according to the instructions provided (3hrs time limit)\n
     </string>
-    <string name="desc_inclino">\t1. Participants have to construct their own inclined structure using some materials that we will provide.\n
-\t2. It will be tested for its strength and stability.\n
-\t3. Make your structure as inclined as possible but at the same time keep its strength in mind.\n
-\t4. Time constraint will be given.\n
-\t5. A participant has to finish the task as soon as possible.\n
-\t6. At the same time they have to take care of the accuracy too.\n
-</string>
+    <string name="desc_inclino">Ever wondered the concept of the Leaning tower of Pisa. Its time to construct your own inclined structure using materials defined below in rules. Then it will be tested for its strength and stability. Make your structure as inclined as possible but keep in mind about its strength. At the same time they have to take care of the accuracy too.</string>
     <string name="desc_cuandigo">Life as it is, is riddled with problems, both easy and complex. Most of these problems have solutions, and we tend to solve them manually and laboriously.\n
         Did we hear a "no"? Maybe you prefer more elegant solutions, perhaps even automating them. Hence, we present <span class="quote">Cuandigo</span>, bringing you an opportunity, to showcase your skills in solving real-life problems, because hey, we\'ve got loads of them.</string>
     <string name="desc_ameliorator">Debugging is the process of finding and resolving of defects that prevent correct operation of computer software or a system. Thus, this event is all about finding the nasty and mischievous bug(s) making our creation futile. Enhance your skill with figuring out the bugs.</string>
@@ -259,11 +253,12 @@ To get into the event however, you should clear our audition round.
     <string name="desc_craftvilla" formatted="false">CRAFT is skill where we have to make things with hands with your mind\'s creativity. Explore yourself in
     the world of craft . This time Jnanagni , FET welcomes everyone to show your creativity through craft.\n
     \nThis competition consists of three levels:\n
-    Primary Level:-\n
-    \t In this level you have to prepare a mosaic of your wish by using buttons which will be provided by us . The 50% of the contestant will be selected from this round.\n
-    Secondary Level:-\n
-    \t In this level you have to prepare a meaningful concept of your wish by using craft papers which will be provided by us . the 50% of the contest will be selected for the final round .\n
-    Final Level:-\n
+    Primary Level (paper craft):-\n
+    \t In this level you have to prepare a meaningful concept of your wish by using craft papers which will be provided by us . the 50% of the contest will be selected from this round .\n
+    Secondary Level (mosaic):-\n
+        \t In this level you have to prepare a mosaic of your wish by using buttons which will be provided by us . The 50% of the contestant will be selected from this round.\n
+
+    Final Level (wire sculpture):-\n
     \t In this level you have to prepare any 3D object or innovate things by using u=copper wire which will be provided by us . Top three contestants will be selected \n
     \n
     Note:-\t\tYou have to bring your own geometry stuff , Scissors etc as per the level requirement.\n </string>
@@ -283,7 +278,8 @@ To get into the event however, you should clear our audition round.
     <string name="desc_bowling"></string>
     <string name="desc_dart"></string>
     <string name="desc_throwball"></string>
-    <string name="desc_lol">Comedy is a genre of film in which the main emphasis is on Humour. These films are designed to make the audience laugh through amusement and most often through their expressions. Comedy Central brings you the funniest stuff on the planet. It  refers to any discourse or work generally intended to be humorous or amusing by inducing laughter, especially in theatre. </string>
+    <string name="desc_lol">Comedy is a genre of film in which the main emphasis is on Humour. These films are designed to make the audience laugh through amusement and most often through their expressions. Comedy Central brings you the funniest stuff on the planet. It  refers to any discourse or work generally intended to be humorous or amusing by inducing laughter, especially in theatre.
+    \nIt\'s a plateform where the performers tickles the audience with the best of your comic skills .Be the reason for all the giggles and laughs around. </string>
     <string name="desc_badminton"></string>
 
     <string name="task_hydroriser">\t1. The teams must adhere to the spirit of healthy competition.\n
@@ -394,9 +390,15 @@ Participant Groups should present their Own Developed App in front of the judges
 </string>
     <string name="task_nopc">\t1. All Rules of HackerEarth.\n
 \t2.  Participant can use any language supported by HackerEarth Platform.\n</string>
-    <string name="task_inclino">\t1. All the participants have to construct the tower on their own.\n
-\t2. Any rules or information are subject to change and nothing could be held liable against the Coordinators or the university staff.\n
-\t3. In such case, the decision of the management and organizing committee would be final.\n
+    <string name="task_inclino">
+1) All the participants have to construct the leaning tower and present it to the judges for technical inspection only.\n
+2) Your tower must fulfilled the basic requirement like Material constraints\n
+    \t\t- Popsicle sticks having length upto 11cm\n
+        \t\t- Wooden Base must fulfill the Dimension of 17cmx17cm\n
+
+\t\t- Fevicol\n
+3) Any rules or information are subject to change and nothing could be held liable against the Coordinators or the university staff
+        \tIn such case, the decision of the management and organizing committee would be final.\n
 </string>
     <string name="task_cuandigo"><b>Cuandigo</b> will be held in two rounds.
         \nRound 1\n
@@ -560,9 +562,22 @@ For support and rigidity of the setup you can use other things (chairs, tables, 
     <string name="task_sargam"></string>
     <string name="task_samagam"></string>
     <string name="task_kritika"></string>
-    <string name="task_lol"></string>
+    <string name="task_lol">• Number of participants 1 to 2.\n
+• Time limit 4 to 5 minutes.\n
+• Use of slangs, vulgarity and point out any religion are strictly prohibited.\n
+• Decision of the judges will be final and binding. \n
+</string>
     <string name="task_celebrity_visit"></string>
     <string name="task_startup_fair"></string>
+    <string name="task_rock_syndrome">All participants must be registered on the Jnanagni website. It is mandatory for the bands to reach the venue 30 minutes prior to the start of the event to avoid cancellation.\n
+Each band/performers shall have 15 minutes for performing. This duration will include actual performance time and sound check.\n
+    \tRules and Regulations \n
+  \t1. The bands must be present and signed on site for orientation.\n
+\t2. Song selection should be such that the lyrics are decent, no vulgarity shall be tolerated.\n
+\t3. No socially unacceptable behaviour will be tolerated.\n
+\t4. Violation of any of the above rules will lead to immediate disqualification.\n
+\t5. Decision of judges will be final.\n
+</string>
 
     <string name="venue_hydroriser">Round 1:-\nDay : 02 \nVenue: badminton court \nTiming: 10:00 AM to 01:00 PM\n\n
     Round 2:-\nDay : 03 \nVenue: badminton arena \nTiming: 09:00 AM to 12:00 PM</string>
@@ -633,7 +648,7 @@ For support and rigidity of the setup you can use other things (chairs, tables, 
     <string name="venue_samagam">Main performances:-\nDay : 01 \nVenue : Stage \nTiming : 05:30 PM to 10:30 PM</string>
     <string name="venue_celebrity_visit">Day : 03\nVenue : Football Ground \nTiming : 08:00 PM to 10:30 PM</string>
     <string name="venue_startup_fair">Day : 02\nVenue : NSH \nTiming : 04:00 PM to 06:30 PM</string>
-    <string name="venue_rock_syndrome"></string>
+    <string name="venue_rock_syndrome">Day : 02\nVenue : Stage \nTiming : 04:30 PM to 07:30 PM</string>
 
     <string name="spcf_cipher">\t- Participants should have good programming skill in atleast one of the three languages (C, C++, java).\n
 \t- Participants should be good in typing.\n
@@ -701,6 +716,7 @@ garden or a lawn.\n
     <string name="spcf_samagam"></string>
     <string name="spcf_celebrity_visit"></string>
     <string name="spcf_annihilator"></string>
+    <string name="spcf_rock_syndrome"></string>
 
 
 
@@ -800,11 +816,9 @@ Round 3 is based on output, time taken and efficiency of the solution.\n
     <string name="judg_nopc">\t According to their performance as they are judged at hackerearth platform.\n
 </string>
     <string name="judg_inclino">
-\t1. For each unit of mass sustained, points will be given.\n
-\t2. Time will be determining factor too.\n
-\t3. Angle of inclination will be checked.\n
-\t4. The team which scores highest points will be the winner.\n
-</string>
+1) For each unit of mass sustained, points will be given.\n
+        2) Angle of inclination will be checked (more the angle ,more will be point too )\n
+        3) The team which scores highest points will be the winner\n</string>
     <string name="judg_cuandigo">1. No cheating or copying code from the Internet (obviously!).\n
 2. API/Libraries if used, must be limited to those provided in the standard library of the language you choose. In other words, no external Libraries. Although if you really need one, don\'t be afraid to ask, we\'ll see if it can be allowed.\n
 3. We\'ll have default Text Editors/IDEs installed on our machines for the target languages, although, you\'re free to use your own.\n
@@ -958,9 +972,17 @@ General Rules\n
     </string>
     <string name="judg_cricket_keeda"></string>
     <string name="judg_kritika"></string>
-    <string name="judg_lol"></string>
+    <string name="judg_lol">• Content\n
+• Object delivery(fluency ,pause)\n
+• Crowd’s response\n </string>
     <string name="judg_samagam"></string>
     <string name="judg_celebrity_visit"></string>
+    <string name="judg_rock_syndrome">1. Originality\n
+2. Stage Presence\n
+3. Appearance and Personality\n
+4. Crowd Interaction and Crowd Applause\n
+5. Synchronization\n
+</string>
 
     <string name="coor_hydroriser">Akashveer\t+917275360069\nSunit Choudhary \t +919024247898</string>
     <string name="coor_cipher">Tulesh kumar Jaiswal\t+919720174269\ttuleshjaiswal@gmail.com\nKeshav Tiwari\t+917376421788</string>
@@ -997,12 +1019,13 @@ General Rules\n
     <string name="coor_sargam">Ojas Trivedi \t +919452441723</string>
     <string name="coor_craftvilla">Rahul Kumar \t +918394866884\nT. S. Suphal \t +918897402558</string>
     <string name="coor_kritika">Kamlesh lohar \t +918475809611 \t kamleshlohar123445@gmail.com\nSatyendra Dubey \t +917895098673</string>
-    <string name="coor_lol">Pankaj Pandey \t +918174871433\nVinayak \t +918273575815</string>
+    <string name="coor_lol">Pankaj Pandey \t +918174871433\nVinayak Jauhari\t +918273575815</string>
     <string name="coor_samagam">Ashutosh Yadav\t+919473815173\nGaurav Suman\t+919012677749\nAditya Kumar Sinha\t+919012677806</string>
     <string name="coor_startup_fair">Subhojoti Das \t +918017939183\nVishal Kumar \t +917300964586\nAditya Sinha \t +919012677806\nAshutosh Kumar \t +918581990272</string>
     <string name="coor_celebrity_visit"></string>
     <string name="coor_bowling"></string>
     <string name="coor_dart"></string>
     <string name="coor_throwball"></string>
+    <string name="coor_rock_syndrome"></string>
 
 </resources>

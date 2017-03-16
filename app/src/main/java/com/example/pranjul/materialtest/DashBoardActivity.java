@@ -110,7 +110,7 @@ public class DashBoardActivity extends AppCompatActivity {
             i.setType("text/plain");
             i.putExtra(Intent.EXTRA_SUBJECT, "Jnanagni 2K17");
             String shareStr = "\nDownload our college techfest Jnanagni 2K17 android app from the link :-\n\n";
-            shareStr = shareStr + "paste_link_here \n\n";
+            shareStr = shareStr + "https://jnanagni17.in/storage/jnanagni-app.apk \n\n";
             i.putExtra(Intent.EXTRA_TEXT, shareStr);
             startActivity(Intent.createChooser(i, "select any way to spread"));
 

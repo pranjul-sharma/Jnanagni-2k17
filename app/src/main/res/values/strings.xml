@@ -188,15 +188,8 @@ Mobile photography means not only the selfie of a person, it means that what can
 \t\tEtc.\n
         <b>NOTE: Participants whose photographs comes in our list of \'TOP THREE LUCKY\' photographs selected by the organising committee will get a 50% discount in the registration of our event Jnanagni.</b>\n
 </string>
-    <string name="desc_mist">If you’re a person who loves solving riddles, if the word <span class="quote"> “adventure” </span> makes adrenaline rush through your body, if you want to explore the campus or just want to make some new friends – treasure hunt is what might catch your fancy which is a game in which players search for hidden objects by following a trail of clues.</string>
-    <string name="desc_qcognito">Four teams will participate in which each branch student will be added in a team of four (CS + EC + ME + EE) so that these four teams perform current affairs quiz on technical developments worldwide.\n
-
-\nRound Details\n
- \t\t\t      <b>Level 1:</b>\t\t 6 minutes\n
-\t\t\t<b>Level 2:</b>\t\t 4 minutes\n
-\t\t\t<b>Level 3:</b>\t\t 3 minutes\n
-\t\t\t<b>Level 4:</b>\t\t 2 minutes (15 minutes)\n
-</string>
+    <string name="desc_mist">If you\'re a person who loves solving riddles, if the word <span class="quote"> "adventure" </span> makes adrenaline rush through your body, if you want to explore the campus or just want to make some new friends – treasure hunt is what might catch your fancy which is a game in which players search for hidden objects by following a trail of clues.</string>
+    <string name="desc_qcognito">Humans so called the super computers are the mass stroge of the data. If one need to acess to this data start googling the brain. Q-congnito provides you the platform to google.</string>
     <string name="desc_freedscrawl">This is to expose the inner spirit of writing hidden in you to the outside
 world.\nThe more you expose the more you learn.\n
 So BURN THE INNER YOU AND SHINE FOR OTHERS.\n
@@ -434,10 +427,35 @@ Round 2\n
 \t6. You also have to mention the category of the photograph with the same.\n
 \t7. Likes by only those people who have already liked our page will only be counted. Rest will be discarded.\n
 \t8. Auto likes will not be counted and the entry may be disqualified.\n</string>
-    <string name="task_mist">This event will test the speed and intelligence of the participants. Teams will be selected based on how well they perform in the preliminary round. All rounds will be held in FET. Clues could be inside any building, field or area.</string>
-    <string name="task_qcognito">\t1. A maximum of 10 seconds is allowed to answer a question.\n
-\t2. Questions are passed on to the next team if the current team is unable to answer.\n
-\t3. There are four levels, with each level having 5, 3, 2 and 1 questions respectively.\n</string>
+    <string name="task_mist">This event will test the speed and intelligence of the participants. Teams will be selected based on how well they perform in the preliminary round. All rounds will be held in FET. Clues could be inside any building, field or area.\n
+        In each round the qualified number groups will be selected on a first come first serve basis provided they have completed the trail of that round.\n\n
+    \n\nRules:-\n
+        \t1. Open to all who register for JNANAGNI.\n
+\t2. Only 4 hunters per team.\n
+\t3. A preliminary round (ROOM NO. 208, FET) will be held to select the only eligible team.\n
+\t4. The Team That Stays Together. Your team must stay together at all times. You may not split up to “divide” tasks.\n
+\t5. Playing Fair. Have fun and try to win. But don’t let your competitive instincts drive you to ruin other people’s chances o win. If you do, your team will be disqualified. That means no sabotaging, lying, cheating, stealing, or copying other people’s work.\n
+\t6. Cheaters Never Win. If anyone on your team cheats or breaks the rules, the whole team gets disqualified\n
+\t7. Rules can be altered anytime for the sake of convenience.\n
+\t8. The decision of organizers will be the final.\n
+\t9. No mobile phones &amp; technology\n</string>
+    <string name="task_qcognito">There are three Quizzes:\n\n1. BIZ-QUIZ\n
+The Business Quiz\n\n
+2. SLAM DUNK\n
+The Sports Quiz\n\n
+3. INDIA QUIZ\n
+All about India\n\n
+Each Quiz will have two rounds\n
+\t 1. PRELIMS
+\t It is a pen and paper round with 20 questions
+\n
+\t 2. STAGE ROUNDS\n
+\t It is an audio-visual round .\n\n\n
+    Rules:-\n
+    1. A maximum of 10 seconds is allowed to answer a question.\n
+    2. Questions are passed on to the next team if the current team is unable to answer.\n
+    3. It is a two member team event. Lone wolves can also participate.\n
+    4. Use of any electronic devices is prohibited.\n</string>
     <string name="task_freedscrawl"> Round 0: The online round-\n
 \tPresent a poem or story or any tale in just 100 words and mail it to us.\n
 \tDo mention your name, college name, place, and contact details along with it.\n
@@ -469,17 +487,17 @@ Candidate will have to write according to the theme.
 
 \n\nNOTE:- \n
         \t•The content provided in any round should not be copied and
-should be 100% unique on plagiarism tests.OTHERWISE you will be disqualified.</string>
-    <string name="task_exgesis">The event has three rounds which test your circuit debugging skills.\n
-
-ROUND 1\n
-In this round 10 general aptitude and 10 simple electronics and electrical related questions will be given.time provided for this round 30 min. participant are required to have basic knowledge of electronics and electrical.\n
-\n
-ROUND 2\n
-Participants who are selected to the second round are tested on their knowledge of digital circuitry. In this round 5 digital electronics questions will be given and they are supposed to identify the faults and rectify the circuit.time for this round is 45 min. in this round 5 analog circuit questions will also given. Paricipants are supposed to find the bugs and solve them. Time for this round is 45 min.\n
-\n
-ROUND 3\n
-Participants selected to this round are given a hardware circuit either digital or analog fault in the circuit should be identified to get the correct output. Time for this round is 2 hours\n
+should be 100% unique on plagiarism tests.OTHERWISE you will be disqualified.\n\n\n
+    RULES:-\n
+    1. Writings provided in online round should be unique and 100% plagiarism free.\n
+2. Copied work will not be tolerated and their candidature will be rejected.\n
+3. The decision of Organizing committee and judges will be the sole decision and no objections are expected.\n
+4. Those whosoever are not present at the event and have participated in online round would be disqualified.\n</string>
+    <string name="task_exgesis">1. Every team should consist a maximum of TWO members.\n
+2. Every team has to register for jnanagni 17. \n
+3. The decision of judges and event coordinators shall be treated as final and binding to all.\n
+4. A basic knowledge of digital and digital and analog circuitry is necessary. \n
+5. Any malpractice is strictly treated and is submitted to the jnanagni disciplinary committee.\n
 </string>
     <string name="task_concatenation">1. Start from a height of 4 feet.\n
 2. End the series by hitting a pyramid of glasses using rolling of ball in a final unguided run of 3 feet by building a contraption conforming to the specified design features.\n
@@ -516,7 +534,18 @@ And any other reasonable elements for accomplishment of tasks.\n
 \n\n
 NOTE\n
 Minimum 15 elements must be used in the design.\n
-For support and rigidity of the setup you can use other things (chairs, tables, bricks, etc.) but they shouldn’t contribute to the energy transfer in the chain.\n</string>
+For support and rigidity of the setup you can use other things (chairs, tables, bricks, etc.) but they shouldn\'t contribute to the energy transfer in the chain.\n
+
+    \n\nRules:-\n
+    1. Minimum 30 seconds (+1 points for every extra 2 seconds and maximum 20 pts can be awarded)\n
+2. Without the mandatory tasks in your setup, the team will be disqualified.\n
+3. For every human interruption, marks will be deducted. (‐3 points after 1 st interruption, (‐3‐5=) ‐8 points after 2nd interruption and (‐3‐5‐8=)‐16 points after 3rd interruption). More than 3 interruptions are not allowed.\n
+4. If the setup fails then you will be given only 1 more chance to reset your setup. You have to reset within 30 minutes. Failure will be considered as an interruption and will be given -16 points (16 negative points). Reevaluation for last chance will start from -16 points.\n
+5. Objects must remain within the arena. Once the reaction starts nothing should fall out of the arena points will be deducted if an item (part of setup) falls out of arena (12ft x 12ft).\n
+6. Once the series starts only one person from the participating team must be within the arena.\n
+7. Flames and electric appliances (other than batteries &amp; lights) are not allowed.\n
+8. No AC supply will be provided.\n
+</string>
     <string name="task_bursh_n_paint">
       \t  1. You have to carry your own painting tools, geometry box etc.\n
 \t2. The water colour, water, container will be provided to you in the second level.\n
@@ -561,7 +590,9 @@ For support and rigidity of the setup you can use other things (chairs, tables, 
     <string name="task_fifa"></string>
     <string name="task_sargam"></string>
     <string name="task_samagam"></string>
-    <string name="task_kritika"></string>
+    <string name="task_kritika">RULES:-\n
+Max time: 20 min\n
+Min time: 10 min</string>
     <string name="task_lol">• Number of participants 1 to 2.\n
 • Time limit 4 to 5 minutes.\n
 • Use of slangs, vulgarity and point out any religion are strictly prohibited.\n
@@ -579,53 +610,49 @@ Each band/performers shall have 15 minutes for performing. This duration will in
 \t5. Decision of judges will be final.\n
 </string>
 
-    <string name="venue_hydroriser">Round 1:-\nDay : 02 \nVenue: badminton court \nTiming: 10:00 AM to 01:00 PM\n\n
-    Round 2:-\nDay : 03 \nVenue: badminton arena \nTiming: 09:00 AM to 12:00 PM</string>
-    <string name="venue_cipher">Day : 03 \nVenue: Computer Center (CC) \nTiming: 09:00 AM to 12:00 PM</string>
-    <string name="venue_electroguisial">Round 1:-\nDay : 02 \nVenue: Room No 211 \nTiming: 1:30 PM to 04:30 PM\n\n
-    Round 2:-\nDay : 03 \nVenue: Embedded lab \nTiming: 03:30 PM to 06:00 PM</string>
-    <string name="venue_annihilator">Round 1:-\nDay : 01 \nVenue: Basket Ball Court &amp; ESH \nTiming: 10:00 AM to 01:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: Basket Ball Court &amp; ESH \nTiming: 10:00 AM to 01:00 PM\n\n
-    Round 3:-\nDay : 03 \nVenue: Basket Ball Court $amp; ESH \nTiming: 09:00 AM to 12:00 PM</string>
+    <string name="venue_hydroriser">Day : 02 \nVenue: badminton court 2\nTiming: 09:00 AM to 01:00 PM\n\n
+    Day : 03 \nVenue: badminton court 2\nTiming: 09:00 AM to 11:30 PM</string>
+    <string name="venue_cipher">Day : 01 \nVenue: Computer Center (CC) \nTiming: 01:30 PM to 04:00 PM</string>
+    <string name="venue_electroguisial">Day : 02 \nVenue: Room No 211 , Comm. Lab\nTiming: 1:30 PM to 04:00 PM</string>
+    <string name="venue_annihilator">Day : 01 \nVenue: Basket Ball Court &amp; ESH \nTiming: 10:00 AM to 01:00 PM\n\n
+    Day : 02 \nVenue: Basket Ball Court \nTiming: 09:00 AM to 01:00 PM\n\n
+    Day : 03 \nVenue: Basket Ball Court \nTiming: 09:00 AM to 11:30 PM</string>
     <string name="venue_apptitude">Day : 01 \nVenue: IBM lab \nTiming: 10:00 AM to 01:00 PM</string>
-    <string name="venue_exgesis">Round 1:-\nDay : 01 \nVenue : Room No 205 \nTiming : 04:00 PM to 05:00 PMn\n
-    Round 2:-\nDay : 02\nVenue : ECE Lab \nTiming : 04:00 PM to 07:30 PM\n\n
-    Round 3:-\nDay : 03 \nVenue: ECE Lab \nTiming: 09:00 AM to 12:00 PM</string>
-    <string name="venue_concatenation">Day : 03 \nVenue: Room No 205 \nTiming: 12:30 AM to 03:30 PM</string>
-    <string name="venue_electrocio">Round 1 :-\nDay : 01 \nVenue: Room No 211 \nTiming: 1:30 PM to 04:00 PM\n\n
-    Round 2 :-\nDay : 02 \nVenue: EC lab &amp; Room No 128 \nTiming: 10:00 AM to 01:00 PM</string>
-    <string name="venue_tinkerer">Round 1:-\nDay : 01 \nDuration: 2:30 hrs.\nVenue: Room No 127 \nTiming: 10:00 AM to 01:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: Chemistry lab &amp; EC Lab \nTiming: 04:00 PM to 07:30 PM</string>
-    <string name="venue_nopc">Day : 02 \nVenue: Computer Center (CC) \nTiming: 10:00 AM to 01:00 PM</string>
+    <string name="venue_exgesis">Day : 01 \nVenue : Room No 205 \nTiming : 03:00 PM to 05:00 PM\n\n
+    Day : 02\nVenue : ECE Lab 2\nTiming : 03:00 PM to 05:00 PM\n\n
+    Day : 03 \nVenue: ECE Lab \nTiming: 09:00 AM to 11:30 PM</string>
+    <string name="venue_concatenation">Day : 02 \nVenue: Mechanical Fluid Lab \nTiming: 01:30 AM to 04:00 PM</string>
+    <string name="venue_electrocio">Day : 01 \nVenue: Room No 211 \nTiming: 1:30 PM to 04:00 PM\n\n
+    Day : 02 \nVenue: ECE lab &amp; Room No 211 \nTiming: 09:00 AM to 01:00 PM</string>
+    <string name="venue_tinkerer">Day : 01 \nVenue: Room No 127 \nTiming: 10:00 AM to 01:00 PM\n\n
+    Day : 02 \nVenue: Chemistry lab &amp; ECE Lab 1\nTiming: 03:00 PM to 05:00 PM</string>
+    <string name="venue_nopc">Day : 02 \nVenue: Computer Center (CC) \nTiming: 09:00 AM to 01:00 PM</string>
     <string name="venue_inclino">Day : 01 \nVenue: Room No 205 \nTiming: 10:00 AM to 01:00 PM</string>
     <string name="venue_cuandigo">Day : 02 \nVenue: Computer Center (CC) \nTiming: 1:30 PM to 04:30 PM</string>
-    <string name="venue_ameliorator">Round 1:-\nDay : 02 \nVenue: IBM lab \nTiming: 10:00 AM to 01:00 PM\n\n
-    Round 2:-\nDay : 03 \nVenue: IBM lab \nTiming: 12:30 AM to 03:30 PM</string>
-    <string name="venue_abhivyakti">Round 1:-\nDay : 01 \nVenue : NSH \nTiming : 05:00 PM to 06:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: NSH \nTiming: 10:00 AM to 01:00 PM</string>
-    <string name="venue_third_vision">Day : 01 \nVenue: Yagya Arena \nTiming: 10:00 AM to 01:00 PM</string>
-    <string name="venue_mist">Round 1:-\nDay : 02 \nVenue: Room No 208 \nTiming: 2:00 PM to 04:00 PM\n\n
-    Round 2:-\nDay : 03 \nVenue: Campus \nTiming: 12:30 AM to 03:30 PM</string>
-    <string name="venue_qcognito">Round No 01:-\nDay : 01 \nVenue: NSH \nTiming: 02:30 PM to 04:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: OSH \nTiming: 04:00 PM to 05:30 PM</string>
-    <string name="venue_freedscrawl">Day : 02 \nVenue: NSH \nTiming: 02:00 PM to 04:00 PM</string>
-    <string name="venue_bursh_n_paint">Day : 02 \nVenue: Amrit Vatika \nTiming: 04:00 PM to 06:00 PM</string>
-    <string name="venue_enthuse">Day : 01 \nVenue: Canteen \nTiming: 01:30 PM to 04:00 PM</string>
-    <string name="venue_carrom">Round 1:-\nDay : 01 \nVenue: Electrical lab &amp; Canteen \nTiming: 01:30 PM to 04:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: Canteen \nTiming: 04:00 PM to 07:30 PM EE lab and Mess \nTiming: 12:30 PM to 03:30 PM</string>
-    <string name="venue_chess">Round 2:-\nDay : 01 \nVenue: Electrical lab &amp; Canteen \nTiming: 01:30 PM to 04:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: Canteen \nTiming: 04:00 PM to 07:30 PM EE lab and Mess \nTiming: 12:30 PM to 03:30 PM</string>
-    <string name="venue_badminton">Round 1:-\nDay : 01 \nVenue: Badminton Arena \nTiming: 10:00 AM to 01:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: Badminton Court \nTiming: 10:00 AM to 01:00 PM\n\n
-    Round 3:-\nDay : 03 \nVenue: Badminton Court \nTiming: 09:00 AM to 12:00 PM</string>
-    <string name="venue_table_tennis">Round 1:-\nDay : 01 \nVenue: Upper Canteen \nTiming: 1:30 PM to 04:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: Canteen \nTiming: 04:00 PM to 07:30 PM</string>
-    <string name="venue_nfs">Round 1:-\nDay : 01 \nVenue : Computer Center (CC) &amp; IBM lab \nTiming : 03:00 PM to 05:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: IBM Lab + CC \nTiming: 04:00 PM to 07:30 PM\n\n
-    Round 3:-\nDay : 03 \nVenue: IBM Lab + CC \nTiming: 03:30 PM to 06:00 PM</string>
-    <string name="venue_counter_strike">Round 1:-\nDay : 01 \nVenue : Computer Center (CC) &amp; IBM lab \nTiming : 03:00 PM to 05:00 PM\n\n
-    Round 2:-\nDay : 02 \nVenue: IBM Lab + CC \nTiming: 04:00 PM to 07:30 PM\n\n
-    Round 3:-\nDay : 03 \nVenue: IBM Lab + CC \nTiming: 03:30 PM to 06:00 PM</string>
+    <string name="venue_ameliorator">Day : 02 \nVenue: IBM lab \nTiming: 09:00 AM to 01:00 PM</string>
+    <string name="venue_abhivyakti">Day : 01 \nVenue : NSH \nTiming : 10:00 AM to 01:00 PM\n\n
+    Day : 02 \nVenue: ESH \nTiming: 09:00 AM to 01:00 PM</string>
+    <string name="venue_third_vision">Facebook Page \n1 feb to 28 feb\n\nDay : 01 \nVenue: Yagya Arena \nTiming: 10:00 AM to 01:00 PM</string>
+    <string name="venue_mist">Day : 02 \nVenue: Room No 208 , Campus\nTiming: 01:30 PM to 04:00 PM\n\n</string>
+    <string name="venue_qcognito">Day : 01 \nVenue: NSH \nTiming: 01:30 PM to 04:00 PM\n\n
+    Day : 02 \nVenue: OSH \nTiming: 03:00 PM to 05:00 PM\n\n
+    Day : 03 \nVenue: NSH \nTiming: 09:00 PM to 11:30 PM\n\n</string>
+    <string name="venue_freedscrawl">Day : 02 \nVenue: OSH \nTiming: 01:30 PM to 04:00 PM</string>
+    <string name="venue_bursh_n_paint">Day : 02 \nVenue: Amrit Vatika \nTiming: 03:00 PM to 05:00 PM</string>
+    <string name="venue_enthuse">Day : 01 \nVenue: Mechanical Fluid Lab \nTiming: 01:30 PM to 04:00 PM</string>
+    <string name="venue_carrom">Day : 01 \nVenue: Canteen and EE lab \nTiming: 01:30 PM to 04:00 PM\n\n
+    Day : 02 \nVenue: Canteen\nTiming: 03:00 PM to 05:00 PM</string>
+    <string name="venue_chess">Day : 01 \nVenue: Canteen and EE lab \nTiming: 01:30 PM to 04:00 PM\n\n
+    Day : 02 \nVenue: Canteen\nTiming: 03:00 PM to 05:00 PM</string>
+    <string name="venue_badminton">Day : 01 \nVenue: Badminton Arena \nTiming: 10:00 AM to 01:00 PM\n\n
+    Day : 02 \nVenue: Badminton Court \nTiming: 09:00 AM to 01:00 PM\n\n
+    Day : 03 \nVenue: Badminton Court \nTiming: 09:00 AM to 11:30 PM</string>
+    <string name="venue_table_tennis">Day : 01 \nVenue: Canteen and EE lab \nTiming: 01:30 PM to 04:00 PM\n\n
+    Day : 02 \nVenue: Canteen\nTiming: 03:00 PM to 05:00 PM</string>
+    <string name="venue_nfs">Day : 01 \nVenue : IBM lab \nTiming : 03:00 PM to 05:00 PM\n\n
+    Day : 02 \nVenue: IBM Lab \nTiming: 03:00 PM to 05:00 PM</string>
+    <string name="venue_counter_strike">Day : 01 \nVenue : IBM lab \nTiming : 03:00 PM to 05:00 PM\n\n
+    Day : 02 \nVenue: IBM Lab \nTiming: 03:00 PM to 05:00 PM</string>
     <string name="venue_fifa">Round 1:-\nDay : 01 \nVenue : Computer Center (CC) &amp; IBM lab \nTiming : 03:00 PM to 05:00 PM\n\n
     Round 2:-\nDay : 02 \nVenue: IBM Lab + CC \nTiming: 04:00 PM to 07:30 PM\n\n
     Round 3:-\nDay : 03 \nVenue: IBM Lab + CC \nTiming: 03:30 PM to 06:00 PM</string>
@@ -634,21 +661,20 @@ Each band/performers shall have 15 minutes for performing. This duration will in
     <string name="venue_bowling">Day : 1,2,3 \n Venue : near block entry gate\nTiming : all day long or coordinator\'s choice</string>
     <string name="venue_dart">Day : 1,2,3 \n Venue : near block entry gate\nTiming : all day long or coordinator\'s choice</string>
     <string name="venue_throwball">Day : 1,2,3 \n Venue : near block entry gate\nTiming : all day long or coordinator\'s choice</string>
-    <string name="venue_cricket_keeda">Day : 1 \n Venue : NSH \nTiming : 04:00 PM to 05:00 PM</string>
-    <string name="venue_anukriti">( for audition )Day : 01 \nVenue : Room No 208 &amp; MCR-1 \nTiming : 01:30 PM to 04:00 PM\n\n
-    Main performances:-\nDay : 01 \nVenue : Stage \nTiming : 05:30 PM to 10:30 PM &amp; Day 2 , 07:00 PM to 10:00 PM\n\n
-    Day : 03\nVenue : Stage \nTiming 05:30 PM to 06:30 PM</string>
-    <string name="venue_sargam">( for audition )Day : 01 \nVenue : Room No 208 &amp; MCR-1 \nTiming : 01:30 PM to 04:00 PM\n\n
-    Main performances:-\nDay : 01 \nVenue : Stage \nTiming : 05:30 PM to 10:30 PM &amp; Day 2 , 07:00 PM to 10:00 PM\n\n
-    (if any)\nDay : 03\nVenue : Stage \nTiming 05:30 PM to 06:30 PM</string>
-    <string name="venue_craftvilla">Day : 02 \nVenue: Room No 205 \nTiming: 1:30 PM to 04:00 PM &amp; Day 2 , 07:00 PM to 10:00 PM</string>
-    <string name="venue_kritika">Day : 01 \nVenue : Stage \nTiming : 01:30 PM to 04:00 PM &amp; Day 2 , 07:00 PM to 10:00 PM</string>
-    <string name="venue_lol">Day : 01 \nVenue : Stage \nTiming : starts from 03:00 PM onwards till 10:30 PM &amp; Day 2 , 07:00 PM to 10:00 PM</string>
-    <string name="venue_nautankishala">Day : 02 \nVenue : Amrit Vatika \nTiming : 01:30 PM to 04:30 PM</string>
-    <string name="venue_samagam">Main performances:-\nDay : 01 \nVenue : Stage \nTiming : 05:30 PM to 10:30 PM</string>
-    <string name="venue_celebrity_visit">Day : 03\nVenue : Football Ground \nTiming : 08:00 PM to 10:30 PM</string>
-    <string name="venue_startup_fair">Day : 02\nVenue : NSH \nTiming : 04:00 PM to 06:30 PM</string>
-    <string name="venue_rock_syndrome">Day : 02\nVenue : Stage \nTiming : 04:30 PM to 07:30 PM</string>
+    <string name="venue_cricket_keeda">Day : 1 \n Venue : OSH \nTiming : 03:00 PM to 05:00 PM\n\n
+    Day : 2 \ Venue : MSH \nTiming : 03:00 PM to 05:00 PM</string>
+    <string name="venue_anukriti">( for audition )Day : 01 \nVenue : MCR-1 \nTiming : 01:30 PM to 04:00 PM\n\n
+    Main performances:-\nDay : 01 and 02 \nVenue : Stage \nTiming : 05:00 PM to 10:00 PM\n</string>
+    <string name="venue_sargam">( for audition )Day : 01 \nVenue : Room No 208 \nTiming : 01:30 PM to 04:00 PM\n\n
+    Main performances:-\nDay : 01 and 02 \nVenue : Stage \nTiming : 05:00 PM to 10:00 PM\n</string>
+    <string name="venue_craftvilla">Day : 02 \nVenue: Room No 205 \nTiming: 1:30 PM to 04:00 PM</string>
+    <string name="venue_kritika">Day : 02 \nVenue : Stage \nTiming : 05:00 PM to 10:00 PM</string>
+    <string name="venue_lol">Day : 02 \nVenue : Stage \nTiming : 05:00 PM to 10:00 PM</string>
+    <string name="venue_nautankishala">Day : 02 \nVenue : Amrit Vatika \nTiming : 01:30 PM to 04:00 PM\n</string>
+    <string name="venue_samagam">Day : 01 \nVenue : Stage \nTiming : 05:00 PM to 10:00 PM</string>
+    <string name="venue_celebrity_visit">Day : 02 \nVenue : Stage \nTiming : 05:00 PM to 10:00 PM</string>
+    <string name="venue_startup_fair">Day : 02\nVenue : NSH \nTiming : 09:00 PM to 01:00 PM and 01:30 PM to 04:00 PM</string>
+    <string name="venue_rock_syndrome">Day : 01\nVenue : Stage \nTiming : 05:00 PM to 10:00 PM</string>
 
     <string name="spcf_cipher">\t- Participants should have good programming skill in atleast one of the three languages (C, C++, java).\n
 \t- Participants should be good in typing.\n
@@ -798,10 +824,15 @@ Round 2 is based on the solution and approach to a given question and time taken
 Round 3 is based on output, time taken and efficiency of the solution.\n
 </string>
     <string name="judg_concatenation">
-\t- Points will be given on the basis of no. of events completed in a series.\n
-\t- Full completion of events.\n
-\t- Complexity of series.\n
-\t- Final output.\n</string>
+1. End task (as mention earlier)\n
+2. Mandatory task (as mentioned earlier)\n
+3. Optional task (as mention earlier)\n
+4. Design (max of 10 marks) - New innovative ideas/arrangement\n
+\n
+\n
+NOTE\n
+1. The teams are requested to report to the arena atleast 2 hours before the starting of event, so that they have ample time to set up their contraption systems.\n
+2. The rules and regulations are liable to change at any point of time to introduce interest and adventures in the competition. In case of any dispute the decision of the event judges/Jnanagni team shall be considered as final.</string>
     <string name="judg_electrocio">\t1. From all registered participants there would be 40 participants selected for ROUND 1 on priority basis or simple test.\n
 \t2. Participants would be selected on the basis of there knowledge about electronics in Round 1.\n
 \t3. Participants will achieve virtual money in this Round on the basis of there performance.\n
@@ -817,8 +848,9 @@ Round 3 is based on output, time taken and efficiency of the solution.\n
 </string>
     <string name="judg_inclino">
 1) For each unit of mass sustained, points will be given.\n
-        2) Angle of inclination will be checked (more the angle ,more will be point too )\n
-        3) The team which scores highest points will be the winner\n</string>
+        2) Time will be determining factor too.\n
+        3) Angle of inclination will be checked (more the angle ,more will be point too )\n
+        4) The team which scores highest points will be the winner\n</string>
     <string name="judg_cuandigo">1. No cheating or copying code from the Internet (obviously!).\n
 2. API/Libraries if used, must be limited to those provided in the standard library of the language you choose. In other words, no external Libraries. Although if you really need one, don\'t be afraid to ask, we\'ll see if it can be allowed.\n
 3. We\'ll have default Text Editors/IDEs installed on our machines for the target languages, although, you\'re free to use your own.\n
@@ -834,7 +866,7 @@ For Extempore\n
     \t\t\tAbility to express thoughts            \t      \t\t\t\t\t\t10 Marks\n
     \t\t\tFluency in language                    \t\t    \t\t\t\t\t\t10 Marks\n
     \t\t\tBody Language / Confidence                     \t\t\t\t\t\t10 Marks\n
-
+\n\n\n
 For Debate\n
 \t\t\t\t\t\t        Criteria            \t\t\t\t\t\t \t\t                      Grades\n
 
@@ -857,23 +889,14 @@ A maximum of two photographs can be sent per contestant.</b>
 \n\n
 Send your entries at <a href="jnanagnifet@gmail.com">jnanagnifet@gmail.com</a>
 </string>
-    <string name="judg_mist">In each round the qualified number groups will be selected on a first come first serve basis provided they have completed the trail of that round.\n\n
-        \t1. Open to all who register for JNANAGNI.\n
-\t2. Only 4 hunters per team.\n
-\t3. A preliminary round (ROOM NO. 208, FET) will be held to select the only eligible team.\n
-\t4. The Team That Stays Together. Your team must stay together at all times. You may not split up to “divide” tasks.\n
-\t5. Playing Fair. Have fun and try to win. But don’t let your competitive instincts drive you to ruin other people’s chances o win. If you do, your team will be disqualified. That means no sabotaging, lying, cheating, stealing, or copying other people’s work.\n
-\t6. Cheaters Never Win. If anyone on your team cheats or breaks the rules, the whole team gets disqualified\n
-\t7. Rules can be altered anytime for the sake of convenience.\n
-\t8. The decision of organizers will be the final.\n
-\t9. No mobile phones &amp; technology\n
-
-</string>
+    <string name="judg_mist"></string>
     <string name="judg_qcognito">The team with the maximum number of correct answers is declared the winner.</string>
-    <string name="judg_freedscrawl">Word count in the case of long passages and poems.\n
-Number of stanzas in case of poems.\n
-The number of unique words with reference to dictionary.com database.\n
-Irregular end will attract more marks.\n</string>
+    <string name="judg_freedscrawl">Marks will be decided under expert judgment.\n
+1. Marks on poems will be credited on the rarity of rhyme scheme and the number of meaningful stanzas.\n
+2. Marks on tales will be given on the basis of word count and meaningful clauses.\n
+3. Marks for long narration and passages will be given on the basis of choice of words.\n
+4. Imaginative writing will be credited bonus points.\n
+5. Online round will help credit marks for final round\n</string>
     <string name="judg_bursh_n_paint">\t1. Minimum time required will be determining factor\n
 \t2. The paintings will be selected by our jury member\n
 \t3. Top 3 will be selected for certification in the final round\n
@@ -934,8 +957,8 @@ Selection will be done On the basis of points.
 The following factors will be considered:\n
 \t• For solo performance:\n
 \t\t1. Dance moves\n
-        \t2. Public response\n
-\t\t3. Facial Expressions\n
+        \t\t2. Public response\n
+\t\t3. Facial Expressions\n\n
 \t• For group performance:\n
 \t\t1. Coordination\n
 \t\t2. Creativity/music selection\n
@@ -971,7 +994,7 @@ General Rules\n
 \t- No changes will be made in the team composition after registration.\n
     </string>
     <string name="judg_cricket_keeda"></string>
-    <string name="judg_kritika"></string>
+    <string name="judg_kritika">The selection will be based on the performance in audutions and the preference of poetry written. Each participant will have enough time to do their best.</string>
     <string name="judg_lol">• Content\n
 • Object delivery(fluency ,pause)\n
 • Crowd’s response\n </string>
@@ -984,23 +1007,23 @@ General Rules\n
 5. Synchronization\n
 </string>
 
-    <string name="coor_hydroriser">Akashveer\t+917275360069\nSunit Choudhary \t +919024247898</string>
+    <string name="coor_hydroriser">Akashveer\t+917275360069\nSunit Chaudhary \t +919024247898\nSandeep Malav \t +919997105940, +918239724753</string>
     <string name="coor_cipher">Tulesh kumar Jaiswal\t+919720174269\ttuleshjaiswal@gmail.com\nKeshav Tiwari\t+917376421788</string>
-    <string name="coor_electroguisial">Vaibhav Maheshwari\t+919454826353\nDigvijay Katyal\t+919557843810\nVipin Maurya\t+917054369587</string>
+    <string name="coor_electroguisial">Vaibhav Maheshwari \t +919454826353\nDigvijay Katyal \t +919557843810\nVipin Maurya \t +917054369587</string>
     <string name="coor_annihilator">Deepesh\t+918239157461\nPawan Awana\t+919119766497\nSuraj Kanojia\t+918791929405\nOmendra Prajapati</string>
     <string name="coor_apptitude">VIPIN YADAV\t+919919716378\nKRISHNA CHAITANYA\t+919866511199</string>
     <string name="coor_exgesis">Khem Chand Saini\t+918764243338, +918077707732\nAyush Kr. \t +919012688379</string>
-    <string name="coor_concatenation">Abhay singh\t+918755308541\nShubaham mishra\nShubaham sharma</string>
-    <string name="coor_electrocio">RAHUL KUMAR JAISWAL\t+918853994496\trahuljaisawal08@gmail.com\nSuresh Verma\t+918573983435\nHARIOM PANDE\t+918755526099</string>
-    <string name="coor_tinkerer">Deepak Kumar\t+918979844479\nTapan Pandey\t+918004851757</string>
-    <string name="coor_nopc">Mohit Kumar Singh\t+918090133905\tmohit.oct58@yahoo.in\nAyush Kumar Jaiswal\t+919455460089\tayush9662@gmail.com\nNitish Rai</string>
-    <string name="coor_inclino">Sourabh Gupta</string>
+    <string name="coor_concatenation">Abhay singh\t+918755308541\nShubaham mishra \t +919125438166\nShubaham sharma</string>
+    <string name="coor_electrocio">RAHUL KUMAR JAISWAL\t+918853994496\trahuljaisawal08@gmail.com\nHARIOM PANDE\t+918755526099</string>
+    <string name="coor_tinkerer">Deepak Kumar\t+918979844479\nVISHAL KUMAR \t +917906733607 \t vittu40@gmail.com</string>
+    <string name="coor_nopc">Mohit Kumar Singh\t+918090133905\tmohit.oct58@yahoo.in\nAyush Kumar Jaiswal\t+919455460089\tayush9662@gmail.com\nNitish Rai \t +917275170582</string>
+    <string name="coor_inclino">Sourabh Gupta \t +919045279835</string>
     <string name="coor_cuandigo">Mithusayel Murmu \t +917535079848\nSandesh Mishra\t+918948803094</string>
     <string name="coor_ameliorator">Vivek Ji Baranwal \t+918853338455\tvivekjib@gmail.com\nAmit Kumar\t+919651388357\tsmartyamit264@gmail.com</string>
     <string name="coor_abhivyakti">Nagendra Chaudhary\t+917060196036\tnagendrachaudhary2016@gmail.com\nPVS Praveen\t+918394046125\nAnkit Kumar\t+917248184585</string>
     <string name="coor_third_vision">Ku. Ashish Pratap Singh\t+917217569722\taps22jul@gmail.com\nSahil Singh\t+919536386845</string>
     <string name="coor_mist">YOGESH PANDEY \t +919473691198\nKUMAR SANU \t +919119090816</string>
-    <string name="coor_qcognito">Alok Gupta \t +918126991137\nSashi Raj \t +919759297832</string>
+    <string name="coor_qcognito">Alok Gupta \t +918126991137\nSashi Raj \t +919759297832\nAnil Kumar Maurya</string>
     <string name="coor_freedscrawl">Ronak Sharma\t+917060335397\trsharma.ronaksharma@gmail.com\nVinit Mishra\t+919557337560\tervinitinnovate@gmail.com</string>
     <string name="coor_bursh_n_paint">Avinash Verma \t +919917796264\nAkshay Chauhan \t +918423727912\nMritunjay Singh \t +919616551412</string>
     <string name="coor_enthuse">ABHIGYAN MISHRA\t+917275560298</string>
@@ -1015,9 +1038,9 @@ General Rules\n
     <string name="coor_minimilitia">Mahesh Meena \t +919660530297</string>
     <string name="coor_cricket_keeda">ADITYA AGARWAL \t +917895928293</string>
     <string name="coor_nautankishala">RAJAT VASHISTH \t +919871331013, +918744018356\nGAURAV SUMAN \t +919012677749</string>
-    <string name="coor_anukriti">Ankush Singh \t +91847502712 \n Ayappa \t +917417903397</string>
-    <string name="coor_sargam">Ojas Trivedi \t +919452441723</string>
-    <string name="coor_craftvilla">Rahul Kumar \t +918394866884\nT. S. Suphal \t +918897402558</string>
+    <string name="coor_anukriti">Ankush Singh \t +91847502712 \n Naveen Ayappa \t +917417903397</string>
+    <string name="coor_sargam">HIMANSHU PANWAR \t +919058460779\nOjas Trivedi \t +919452441723</string>
+    <string name="coor_craftvilla">Rahul Kumar \t +918394866884\nSHUBHAM PATIDAR \t +919772319505\nT. S. Suphal \t +918897402558</string>
     <string name="coor_kritika">Kamlesh lohar \t +918475809611 \t kamleshlohar123445@gmail.com\nSatyendra Dubey \t +917895098673</string>
     <string name="coor_lol">Pankaj Pandey \t +918174871433\nVinayak Jauhari\t +918273575815</string>
     <string name="coor_samagam">Ashutosh Yadav\t+919473815173\nGaurav Suman\t+919012677749\nAditya Kumar Sinha\t+919012677806</string>
@@ -1026,6 +1049,6 @@ General Rules\n
     <string name="coor_bowling"></string>
     <string name="coor_dart"></string>
     <string name="coor_throwball"></string>
-    <string name="coor_rock_syndrome"></string>
+    <string name="coor_rock_syndrome">HIMANSHU PANWAR \t +919058460779\nPANKAJ SINGH \t +919760860970</string>
 
 </resources>

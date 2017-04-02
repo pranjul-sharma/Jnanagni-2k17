@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -134,6 +136,7 @@ class BackgroundTask extends AsyncTask<String,Void,String> {
 
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
             writer.write(data);
+            Log.v("data",data);
             writer.flush();
             writer.close();
             outputStream.close();
